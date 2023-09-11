@@ -3602,7 +3602,7 @@ function postHtml(...list) {
     `
     list[6].innerHTML += postHtml
 }
-if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+if (currentPage.includes("index.html")) {
     let position = document.querySelector("#news-slider")
     let newsContainer = document.querySelector(".news-container")
     if (news.length === 0) {
@@ -3611,6 +3611,9 @@ if (currentPage.includes("index.html") || currentPage === "/" || currentPage ===
         newsContainer.style.fontWeight = "500"
 
     }
+}
+if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+    
     for (let i = 0; i < news.length; i++) {
         let post = Object.values(news[i])
         let file = "#"
