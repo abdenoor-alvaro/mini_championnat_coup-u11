@@ -3602,7 +3602,7 @@ function postHtml(...list) {
     `
     list[6].innerHTML += postHtml
 }
-if (currentPage.includes("index.html") || currentPage === "/" || currentPage.includes("/mini_championnat_coup-u11/")) {
+if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
     let position = document.querySelector("#news-slider")
     let newsContainer = document.querySelector(".news-container")
     if (news.length === 0) {
@@ -3851,7 +3851,7 @@ function dateConventer(dayName, dayNumber, month, year) {
 }
 
 let fullDate = dateConventer(dayName, dayNumber, month, year) 
-if (currentPage.includes("index.html") || currentPage === "/" || currentPage.includes("/mini_championnat_coup-u11/")) {
+if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
     let num = 0
     let today = "Today"
     for (let j = 0; j < dayss.length; j++) {
@@ -4025,7 +4025,7 @@ function teams(...list) {
 }
 // End Group Stage Functions
 // Start Group Stage Page
-if (currentPage.includes("group-stage.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage.includes("/mini_championnat_coup-u11/")) {
+if (currentPage.includes("group-stage.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
     let groups = [groupA, groupB, groupC, groupD]
     let groupNames = ["Group A", "Group B", "Group C", "Group D"]
     let groupLen = Object.keys(groupA).length
@@ -4192,7 +4192,7 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
 // }
 // End Knockout Functions
 // Start Knockout Page
-// if (currentPage.includes("knockout.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage.includes("/mini_championnat_coup-u11/")) {
+// if (currentPage.includes("knockout.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
 //     let finalHeader = `<h3>FINAL</h3>`
 
 //     // let leftRoundOf16Upper = document.querySelector(".leftRoundOf16Upper")
@@ -4257,7 +4257,7 @@ function capitalize(sentence) {
 }
 // End Teams Functions
 // Start Teams Page
-if (currentPage.includes("teams.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage.includes("/mini_championnat_coup-u11/")) {
+if (currentPage.includes("teams.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
     let teamsLocation = document.querySelector(".teamsJs")
     for (let i = 0; i < AllTeams.length; i++) {
         let team = Object.values(AllTeams[i])
@@ -4369,7 +4369,7 @@ function teamNameId(teamName) {
 let clickedTeam = document.querySelectorAll('.teamForProfile');
 let teamUrlParams = new URLSearchParams(window.location.search);
 let teamId = teamUrlParams.get('id');
-if (currentPage.includes("teams.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage.includes("/mini_championnat_coup-u11/") || currentPage.includes("game-generate.html") || currentPage.includes("group-stage.html")   ) {
+if (currentPage.includes("teams.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/" || currentPage.includes("game-generate.html") || currentPage.includes("group-stage.html")   ) {
     function redirectToTeamPage(teamId) {
         window.location.href = `team-profile-generate.html?id=${teamId}`;
     }
