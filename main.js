@@ -511,14 +511,14 @@ let days = {
             teamOne: {
                 name: "abtal hai yasmine",
                 flag: "abtal-hai-yasmine.png",
-                score: false,
+                score: "0",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "canastel",
                 flag: "canastel.png",
-                score: false,
+                score: "6",
                 goals: {
                 },
             },
@@ -529,40 +529,18 @@ let days = {
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
-        game2: {
-            teamOne: {
-                name: "chabeb fajer wahran",
-                flag: "fajr-wahran.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "wihdat amel bir eldjir",
-                flag: "wihdat-amel-bir-eldjir.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group A",
-            time: "09:15",
-            match: "14",
-            city: "Oran",
-            stadium: "Stade Proxomite Hay Yasmine",
-            highlight: "#"
-        },
         game3: {
             teamOne: {
                 name: "yaghmouracen jil",
                 flag: "yaghmouracen.png",
-                score: false,
+                score: "2",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "emir khaled",
                 flag: "chabab emir khaled.png",
-                score: false,
+                score: "2",
                 goals: {
                 },
             },
@@ -573,18 +551,40 @@ let days = {
             stadium: "Stade Proxomite Emir Khaled",
             highlight: "#"
         },
+        game2: {
+            teamOne: {
+                name: "chabeb fajer wahran",
+                flag: "fajr-wahran.png",
+                score: "6",
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "wihdat amel bir eldjir",
+                flag: "wihdat-amel-bir-eldjir.png",
+                score: "0",
+                goals: {
+                },
+            },
+            group: "Group A",
+            time: "09:15",
+            match: "14",
+            city: "Oran",
+            stadium: "Stade Proxomite Hay Yasmine",
+            highlight: "#"
+        },
         game4: {
             teamOne: {
                 name: "taraji senia",
                 flag: "esperance es-senia.png",
-                score: false,
+                score: "1",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "aadl zabana",
                 flag: "cazamo.png",
-                score: false,
+                score: "4",
                 goals: {
                 },
             },
@@ -3148,44 +3148,44 @@ const barca = {
 // Start Groups Data
 const groupA = {
     t2: {
-        played: 2,
-        win: 2,
+        played: 3,
+        win: 3,
         draw: 0,
         lose: 0,
-        GoalDifference: +7,
-        points: 6,
+        GoalDifference: +13,
+        points: 9,
         subName: "CSJC",
         flagPic: "canastel.png"
     },
-    t5: {
-        played: 1,
+    t3: {
+        played: 2,
         win: 1,
         draw: 0,
-        lose: 0,
-        GoalDifference: +3,
+        lose: 1,
+        GoalDifference: 5,
+        points: 3,
+        subName: "CFO",
+        flagPic: "fajr-wahran.png"
+    },
+    t5: {
+        played: 2,
+        win: 1,
+        draw: 0,
+        lose: 1,
+        GoalDifference: -3,
         points: 3,
         subName: "WAB",
         flagPic: "wihdat-amel-bir-eldjir.png"
     },
     t1: {
-        played: 0,
-        win: 0,
-        draw: 0,
-        lose: 0,
-        GoalDifference: 0,
-        points: 0,
-        subName: "CSA",
-        flagPic: "abtal-hai-yasmine.png"
-    },
-    t3: {
         played: 1,
         win: 0,
         draw: 0,
         lose: 1,
-        GoalDifference: -1,
+        GoalDifference: -6,
         points: 0,
-        subName: "CFO",
-        flagPic: "fajr-wahran.png"
+        subName: "CSA",
+        flagPic: "abtal-hai-yasmine.png"
     },
     t4: {
         played: 2,
@@ -3200,12 +3200,12 @@ const groupA = {
 }
 const groupB = {
     t5: {
-        played: 1,
+        played: 2,
         win: 1,
-        draw: 0,
+        draw: 1,
         lose: 0,
         GoalDifference: +2,
-        points: 3,
+        points: 4,
         subName: "JIL",
         flagPic: "yaghmouracen.png"
     },
@@ -3216,39 +3216,38 @@ const groupB = {
         lose: 1,
         GoalDifference: 1,
         points: 3,
-        subName: "FCB",
         subName: "CSC",
         flagPic: "chorouk castor.png"
     },
-    t4: {
-        played: 1,
+    t1: {
+        played: 2,
         win: 1,
         draw: 0,
-        lose: 0,
-        GoalDifference: +1,
+        lose: 1,
+        GoalDifference: 0,
+        points: 3,
+        subName: "CZM",
+        flagPic: "cazamo.png"
+    },
+    t4: {
+        played: 2,
+        win: 1,
+        draw: 0,
+        lose: 1,
+        GoalDifference: -2,
         points: 3,
         subName: "ESS",
         flagPic: "esperance es-senia.png"
     },
     t2: {
-        played: 1,
+        played: 2,
         win: 0,
-        draw: 0,
+        draw: 1,
         lose: 1,
         GoalDifference: -1,
-        points: 0,
+        points: 1,
         subName: "CEK",
         flagPic: "chabab emir khaled.png"
-    },
-    t1: {
-        played: 1,
-        win: 0,
-        draw: 0,
-        lose: 1,
-        GoalDifference: -3,
-        points: 0,
-        subName: "CZM",
-        flagPic: "cazamo.png"
     },
 }
 const groupC = {
@@ -3533,6 +3532,13 @@ console.log(currentPage)
 
 // Start Latest News Data
 let newsData = {
+    news2: {
+        img: "man-of-the-match.jpg",
+        header: "دحو يونس | رجل اللقاء",
+        description: "رجل المقابلة لاعب فريق CZM من مباراة CZM و ESS, دحو يونس من مواليد 30 أوت 2012 سجل هدفين و أسيست على طريقة ليونيل ميسي",
+        date: "19 Sep 2023",
+        lan: "arabic"
+    },
     news1: {
         img: "firstNews.jpg",
         header: "بطولة مصغرة تحضيرية",
@@ -3540,13 +3546,6 @@ let newsData = {
         date: "12 Sep 2023",
         lan: "arabic"
     },
-    // news2: {
-    //     img: "barca.png",
-    //     header: "برشلونة | اختبار صعب",
-    //     description: "برشلونة في مواجهة ريال مدريد احد ابرز المرشحين بالفوز باللفب في الدور الربع النهائي ،فهل يستطيع رفقاء ليفاندوسكي تجاوز هذه العقبة والوصول الى النصف النهائي للمرة الثانية في تاريخه",
-    //     date: "19 Sep 2023",
-    //     lan: "arabic"
-    // },
     // news3: {
     //     img: "bayern.png",
     //     header: "بايرن ميونخ: الابطال",
