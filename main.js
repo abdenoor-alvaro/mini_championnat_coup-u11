@@ -3601,8 +3601,9 @@ function postHtml(...list) {
     `
     list[6].innerHTML += postHtml
 }
+
+let position = document.querySelector("#news-slider")
 if (currentPage.includes("index.html")) {
-    let position = document.querySelector("#news-slider")
     let newsContainer = document.querySelector(".news-container")
     if (news.length === 0) {
         newsContainer.innerHTML += "No News Available Yet"
