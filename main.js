@@ -3533,14 +3533,13 @@ console.log(currentPage)
 
 // Start Latest News Data
 let newsData = {
-    // news1: {
-    //     img: "riyad-mahrez.webp",
-    //     header: "رياض محرز | هدف البطولة",
-    //     description: " تم تحديد رياض محرز الفائز بجائزة Hyundai Goal of the Tournament، وهي الجائزة التي تم منحها لأول مرة في عام 2006، من خلال استطلاع للرأي العام.",
-    //     date: "19 Sep 2023",
-    //     lan: "arabic",
-    //     file: "riad mahrez news.html"
-    // },
+    news1: {
+        img: "firstNews.jpg",
+        header: "بطولة مصغرة تحضيرية",
+        description: "بطولة مصغرة على الطريقة الأوروبية و لأول مرة تحضيرا للموسم الرياضي الجديد من تنظيم كفاءات رياضية",
+        date: "12 Sep 2023",
+        lan: "arabic"
+    },
     // news2: {
     //     img: "barca.png",
     //     header: "برشلونة | اختبار صعب",
