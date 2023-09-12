@@ -169,6 +169,29 @@ let days = {
             stadium: "Stade Proxomite Yasmine",
             highlight: "#"
         },
+        game3: {
+            teamOne: {
+                name: "aadl zabana",
+                flag: "cazamo.png",
+                score: "0",
+                goals: {
+                    
+                }
+            },
+            teamTwo: {
+                name: "chorouk castor",
+                flag: "chorouk castor.png",
+                score: "3",
+                goals: {
+                },
+            },
+            group: "Group B",
+            time: "08:30",
+            match: "02",
+            city: "Oran",
+            stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
+        },
         game2: {
             teamOne: {
                 name: "canastel",
@@ -188,7 +211,7 @@ let days = {
             },
             group: "Group A",
             time: "09:15",
-            match: "02",
+            match: "03",
             city: "Oran",
             stadium: "Stade Proxomite Yasmine",
             highlight: "#"
@@ -197,29 +220,6 @@ let days = {
             //     scoreOne: "4",
             //     scoreTwo: "2"
             // }
-        },
-        game3: {
-            teamOne: {
-                name: "aadl zabana",
-                flag: "cazamo.png",
-                score: "0",
-                goals: {
-                    
-                }
-            },
-            teamTwo: {
-                name: "chorouk castor",
-                flag: "chorouk castor.png",
-                score: "3",
-                goals: {
-                },
-            },
-            group: "Group B",
-            time: "08:30",
-            match: "03",
-            city: "Oran",
-            stadium: "Stade Proxomite Emir Khaled",
-            highlight: "#"
         },
         // game4: {
         //     teamOne: {
@@ -368,28 +368,6 @@ let days = {
         //     stadium: "Stade Proxomite Hai Yasmine",
         //     highlight: "#"
         // },
-        game2: {
-            teamOne: {
-                name: "canastel",
-                flag: "canastel.png",
-                score: "6",
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "widad amal carteaux",
-                flag: "widad-amal-carteaux.png",
-                score: "0",
-                goals: {
-                },
-            },
-            group: "Group A",
-            time: "09:15",
-            match: "07",
-            city: "Oran",
-            stadium: "Stade Proxomite Hai Yasmine",
-            highlight: "#"
-        },
         game3: {
             teamOne: {
                 name: "emir khaled",
@@ -407,9 +385,31 @@ let days = {
             },
             group: "Group B",
             time: "08:30",
-            match: "08",
+            match: "07",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
+        },
+        game2: {
+            teamOne: {
+                name: "canastel",
+                flag: "canastel.png",
+                score: "6",
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "widad amal carteaux",
+                flag: "widad-amal-carteaux.png",
+                score: "0",
+                goals: {
+                },
+            },
+            group: "Group A",
+            time: "09:15",
+            match: "08",
+            city: "Oran",
+            stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
         game4: {
@@ -438,28 +438,6 @@ let days = {
     },
     day4: {
         date: "Saturday 09 September 2023",
-        game1: {
-            teamOne: {
-                name: "rmot",
-                flag: "csarmot.png",
-                score: "3",
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "j.t oranais",
-                flag: "talent.png",
-                score: "1",
-                goals: {
-                },
-            },
-            group: "Group C",
-            time: "09:15",
-            match: "10",
-            city: "Oran",
-            stadium: "Stade Proxomite Hai Yasmine",
-            highlight: "#"
-        },
         game2: {
             teamOne: {
                 name: "yaghmoracen jyo",
@@ -477,9 +455,31 @@ let days = {
             },
             group: "Group D",
             time: "08:30",
-            match: "11",
+            match: "10",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
+        },
+        game1: {
+            teamOne: {
+                name: "rmot",
+                flag: "csarmot.png",
+                score: "3",
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "j.t oranais",
+                flag: "talent.png",
+                score: "1",
+                goals: {
+                },
+            },
+            group: "Group C",
+            time: "09:15",
+            match: "11",
+            city: "Oran",
+            stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
         game3: {
@@ -546,7 +546,7 @@ let days = {
             },
             group: "Group B",
             time: "08:30",
-            match: "15",
+            match: "14",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
             highlight: "#"
@@ -568,7 +568,7 @@ let days = {
             },
             group: "Group A",
             time: "09:15",
-            match: "14",
+            match: "15",
             city: "Oran",
             stadium: "Stade Proxomite Hay Yasmine",
             highlight: "#"
@@ -620,28 +620,6 @@ let days = {
             stadium: "Stade Proxomite Emir Khaled",
             highlight: "#"
         },
-        game2: {
-            teamOne: {
-                name: "yaghmoracen jyo",
-                flag: "yaghmouracen2.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "Kawkeb Sportif oran",
-                flag: "kso.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group D",
-            time: "09:15",
-            match: "18",
-            city: "Oran",
-            stadium: "Stade Proxomite Emir Khaled",
-            highlight: "#"
-        },
         game3: {
             teamOne: {
                 name: "pepso",
@@ -659,9 +637,31 @@ let days = {
             },
             group: "Group C",
             time: "08:30",
-            match: "19",
+            match: "18",
             city: "Oran",
             stadium: "Stade Proxomite Hai Yasmine",
+            highlight: "#"
+        },
+        game2: {
+            teamOne: {
+                name: "yaghmoracen jyo",
+                flag: "yaghmouracen2.png",
+                score: false,
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "Kawkeb Sportif oran",
+                flag: "kso.png",
+                score: false,
+                goals: {
+                },
+            },
+            group: "Group D",
+            time: "09:15",
+            match: "19",
+            city: "Oran",
+            stadium: "Stade Proxomite Emir Khaled",
             highlight: "#"
         },
         game4: {
@@ -711,28 +711,6 @@ let days = {
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
-        game2: {
-            teamOne: {
-                name: "chabeb fajer wahran",
-                flag: "fajr-wahran.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "widad amal carteaux",
-                flag: "widad-amal-carteaux.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group A",
-            time: "09:15",
-            match: "22",
-            city: "Oran",
-            stadium: "Stade Proxomite Hai Yasmine",
-            highlight: "#"
-        },
         game3: {
             teamOne: {
                 name: "emir khaled",
@@ -750,9 +728,31 @@ let days = {
             },
             group: "Group B",
             time: "08:30",
-            match: "23",
+            match: "22",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
+        },
+        game2: {
+            teamOne: {
+                name: "chabeb fajer wahran",
+                flag: "fajr-wahran.png",
+                score: false,
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "widad amal carteaux",
+                flag: "widad-amal-carteaux.png",
+                score: false,
+                goals: {
+                },
+            },
+            group: "Group A",
+            time: "09:15",
+            match: "23",
+            city: "Oran",
+            stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
         game4: {
@@ -802,28 +802,6 @@ let days = {
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
-        game2: {
-            teamOne: {
-                name: "rmot",
-                flag: "csarmot.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "pepso",
-                flag: "pepso.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group C",
-            time: "09:15",
-            match: "26",
-            city: "Oran",
-            stadium: "Stade Proxomite Emir Hai Yasmine",
-            highlight: "#"
-        },
         game3: {
             teamOne: {
                 name: "espoir sport city",
@@ -841,9 +819,31 @@ let days = {
             },
             group: "Group D",
             time: "08:30",
-            match: "27",
+            match: "26",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
+        },
+        game2: {
+            teamOne: {
+                name: "rmot",
+                flag: "csarmot.png",
+                score: false,
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "pepso",
+                flag: "pepso.png",
+                score: false,
+                goals: {
+                },
+            },
+            group: "Group C",
+            time: "09:15",
+            match: "27",
+            city: "Oran",
+            stadium: "Stade Proxomite Emir Hai Yasmine",
             highlight: "#"
         },
         game4: {
@@ -893,28 +893,6 @@ let days = {
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
-        game2: {
-            teamOne: {
-                name: "abtal hai yasmine",
-                flag: "abtal-hai-yasmine.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "widad amal carteaux",
-                flag: "widad-amal-carteaux.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group A",
-            time: "09:15",
-            match: "30",
-            city: "Oran",
-            stadium: "Stade Proxomite Hai Yasmine",
-            highlight: "#"
-        },
         game3: {
             teamOne: {
                 name: "yaghmouracen jil",
@@ -932,9 +910,31 @@ let days = {
             },
             group: "Group B",
             time: "08:30",
-            match: "31",
+            match: "30",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
+        },
+        game2: {
+            teamOne: {
+                name: "abtal hai yasmine",
+                flag: "abtal-hai-yasmine.png",
+                score: false,
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "widad amal carteaux",
+                flag: "widad-amal-carteaux.png",
+                score: false,
+                goals: {
+                },
+            },
+            group: "Group A",
+            time: "09:15",
+            match: "31",
+            city: "Oran",
+            stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
         game4: {
@@ -984,28 +984,6 @@ let days = {
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
-        game2: {
-            teamOne: {
-                name: "aaawo",
-                flag: "aaawo.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "pepso",
-                flag: "pepso.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group C",
-            time: "09:15",
-            match: "34",
-            city: "Oran",
-            stadium: "Stade Proxomite Emir Hai Yasmine",
-            highlight: "#"
-        },
         game3: {
             teamOne: {
                 name: "espoir sport city",
@@ -1023,9 +1001,31 @@ let days = {
             },
             group: "Group D",
             time: "08:30",
-            match: "35",
+            match: "34",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
+        },
+        game2: {
+            teamOne: {
+                name: "aaawo",
+                flag: "aaawo.png",
+                score: false,
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "pepso",
+                flag: "pepso.png",
+                score: false,
+                goals: {
+                },
+            },
+            group: "Group C",
+            time: "09:15",
+            match: "35",
+            city: "Oran",
+            stadium: "Stade Proxomite Emir Hai Yasmine",
             highlight: "#"
         },
         game4: {
