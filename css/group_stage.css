@@ -665,8 +665,10 @@ header input:checked ~ .burger span:nth-of-type(3) {
 }
 .group-stage .container .boxes .box .teams .team {
     display: flex;
-    padding-block: 15px;
+    padding-block: 10px;
     border-top: 1px solid #eee;
+    align-items: center;
+    height: 50px;
 }
 .group-stage .container .boxes .box .teams .team .info {
     display: flex;
@@ -676,6 +678,7 @@ header input:checked ~ .burger span:nth-of-type(3) {
 .group-stage .container .boxes .box .teams .team .info a {
     display: flex;
     color: black;
+    align-items: center;
 }
 .group-stage .container .boxes .box .teams .team .info .name {
     font-weight: 500;
