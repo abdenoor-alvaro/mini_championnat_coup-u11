@@ -646,14 +646,14 @@ let days = {
             teamOne: {
                 name: "yaghmoracen jyo",
                 flag: "yaghmouracen2.png",
-                score: false,
+                score: "5",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "Kawkeb Sportif oran",
                 flag: "kso.png",
-                score: false,
+                score: "0",
                 goals: {
                 },
             },
@@ -668,14 +668,14 @@ let days = {
             teamOne: {
                 name: "rmot",
                 flag: "csarmot.png",
-                score: false,
+                score: "5",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "aaawo",
                 flag: "aaawo.png",
-                score: false,
+                score: "0",
                 goals: {
                 },
             },
@@ -3252,12 +3252,12 @@ const groupB = {
 }
 const groupC = {
     t2: {
-        played: 2,
-        win: 2,
+        played: 3,
+        win: 3,
         draw: 0,
         lose: 0,
-        GoalDifference: 10,
-        points: 6,
+        GoalDifference: 15,
+        points: 9,
         subName: "CRT",
         flagPic: "csarmot.png"
     },
@@ -3271,16 +3271,6 @@ const groupC = {
         subName: "JO",
         flagPic: "talent.png"
     },
-    t1: {
-        played: 0,
-        win: 0,
-        draw: 0,
-        lose: 0,
-        GoalDifference: 0,
-        points: 0,
-        subName: "AWO",
-        flagPic: "aaawo.png"
-    },
     t4: {
         played: 1,
         win: 0,
@@ -3291,6 +3281,16 @@ const groupC = {
         subName: "CSA",
         flagPic: "pepso.png"
     },
+    t1: {
+        played: 1,
+        win: 0,
+        draw: 0,
+        lose: 1,
+        GoalDifference: -5,
+        points: 0,
+        subName: "AWO",
+        flagPic: "aaawo.png"
+    },
     t3: {
         played: 1,
         win: 0,
@@ -3298,12 +3298,21 @@ const groupC = {
         lose: 1,
         GoalDifference: -8,
         points: 0,
-        subName: "FCB",
         subName: "AAS",
         flagPic: "espoir senia.png"
     },
 }
 const groupD = {
+    t4: {
+        played: 2,
+        win: 2,
+        draw: 0,
+        lose: 0,
+        GoalDifference: 6,
+        points: 6,
+        subName: "JYO",
+        flagPic: "yaghmouracen2.png"
+    },
     t2: {
         played: 2,
         win: 1,
@@ -3314,22 +3323,12 @@ const groupD = {
         subName: "WHZ",
         flagPic: "widad hai el zitoun.png"
     },
-    t4: {
-        played: 1,
-        win: 1,
-        draw: 0,
-        lose: 0,
-        GoalDifference: 1,
-        points: 3,
-        subName: "JYO",
-        flagPic: "yaghmouracen2.png"
-    },
     t5: {
-        played: 1,
+        played: 2,
         win: 0,
         draw: 1,
-        lose: 0,
-        GoalDifference: 0,
+        lose: 1,
+        GoalDifference: -5,
         points: 1,
         subName: "KSO",
         flagPic: "kso.png"
