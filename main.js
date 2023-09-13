@@ -598,46 +598,24 @@ let days = {
     },
     day6: {
         date: "Wednesday 13 September 2023",
-        game1: {
-            teamOne: {
-                name: "jil monte carlo",
-                flag: "jil monte carlo.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "widad hai el zitoun",
-                flag: "widad hai el zitoun.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group D",
-            time: "08:30",
-            match: "17",
-            city: "Oran",
-            stadium: "Stade Proxomite Emir Khaled",
-            highlight: "#"
-        },
         game3: {
             teamOne: {
                 name: "pepso",
                 flag: "pepso.png",
-                score: false,
+                score: "2",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "espoir senia",
                 flag: "espoir senia.png",
-                score: false,
+                score: "5",
                 goals: {
                 },
             },
             group: "Group C",
             time: "08:30",
-            match: "18",
+            match: "17",
             city: "Oran",
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
@@ -659,7 +637,7 @@ let days = {
             },
             group: "Group D",
             time: "09:15",
-            match: "19",
+            match: "18",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
             highlight: "#"
@@ -681,13 +659,38 @@ let days = {
             },
             group: "Group C",
             time: "09:15",
-            match: "20",
+            match: "19",
             city: "Oran",
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
     },
     day7: {
+        date: "Tuesday 14 September 2023",
+        game1: {
+            teamOne: {
+                name: "jil monte carlo",
+                flag: "jil monte carlo.png",
+                score: false,
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "widad hai el zitoun",
+                flag: "widad hai el zitoun.png",
+                score: false,
+                goals: {
+                },
+            },
+            group: "Group D",
+            time: "08:30",
+            match: "20",
+            city: "Oran",
+            stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
+        },
+    },
+    day8: {
         date: "Saturday 16 September 2023",
         game1: {
             teamOne: {
@@ -778,7 +781,7 @@ let days = {
             highlight: "#"
         },
     },
-    day8: {
+    day9: {
         date: "Sunday 17 September 2023",
         game1: {
             teamOne: {
@@ -869,7 +872,7 @@ let days = {
             highlight: "#"
         },
     },
-    day9: {
+    day10: {
         date: "Wednesday 20 September 2023",
         game1: {
             teamOne: {
@@ -960,7 +963,7 @@ let days = {
             highlight: "#"
         },
     },
-    day10: {
+    day11: {
         date: "thursday 21 September 2023",
         game1: {
             teamOne: {
@@ -1051,101 +1054,6 @@ let days = {
             highlight: "#"
         },
     },
-    // day7: {
-    //     date: "Monday 14 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Barcelona",
-    //             flag: "barca.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Arsenal",
-    //             flag: "arsenal.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group A",
-    //         time: "17:00",
-    //         match: "13",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Milan",
-    //             flag: "milan.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Manchester City",
-    //             flag: "Screenshot 2023-07-18 020900.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group A",
-    //         time: "19:00",
-    //         match: "14",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
     // day8: {
     //     date: "Tuesday 15 August 2023",
     //     game1: {
@@ -3271,12 +3179,22 @@ const groupC = {
         subName: "JO",
         flagPic: "talent.png"
     },
-    t4: {
-        played: 1,
-        win: 0,
+    t3: {
+        played: 2,
+        win: 1,
         draw: 0,
         lose: 1,
-        GoalDifference: -2,
+        GoalDifference: -5,
+        points: 3,
+        subName: "AAS",
+        flagPic: "espoir senia.png"
+    },
+    t4: {
+        played: 2,
+        win: 0,
+        draw: 0,
+        lose: 2,
+        GoalDifference: -5,
         points: 0,
         subName: "CSA",
         flagPic: "pepso.png"
@@ -3290,16 +3208,6 @@ const groupC = {
         points: 0,
         subName: "AWO",
         flagPic: "aaawo.png"
-    },
-    t3: {
-        played: 1,
-        win: 0,
-        draw: 0,
-        lose: 1,
-        GoalDifference: -8,
-        points: 0,
-        subName: "AAS",
-        flagPic: "espoir senia.png"
     },
 }
 const groupD = {
@@ -3531,6 +3439,13 @@ console.log(currentPage)
 
 // Start Latest News Data
 let newsData = {
+    news3: {
+        img: "news3.jpg",
+        header: " رائد مستقبل واد تليلات RMOT يهيمن",
+        description: "رائد مستقبل واد تليلات RMOT يطيح بفريق ودادية قدماء الحكام AAAWO بخماسية كاملة ويواصل صدارتة في المجموعة C بالعلامة الكاملة مع ضمان تأهله للدور القادم" ,
+        date: "13 Sep 2023",
+        lan: "arabic"
+    },
     news2: {
         img: "man-of-the-match.jpg",
         header: "دحو يونس | رجل اللقاء",
@@ -3545,13 +3460,6 @@ let newsData = {
         date: "12 Sep 2023",
         lan: "arabic"
     },
-    // news3: {
-    //     img: "bayern.png",
-    //     header: "بايرن ميونخ: الابطال",
-    //     description: "بقيادة النجم هاري كاين، توج فريق بايرن ميونخ بطلاً للدورة للمرة الاولى يوم الأحد. استرجع اللحظات الأساسية من رحلتهم العاطفية إلى المجد في فيلمنا الخاص الآن.",
-    //     date: "19 Sep 2023",
-    //     lan: "arabic"
-    // },
     // news4: {
     //     img: "CARVAJALThumb.jpg",
     //     header: " اصابة اللاعب كارفاخال ",
@@ -3656,7 +3564,7 @@ function dayHtml(location, date, games, groupsOrBrackets) {
 }
 function gameHtml(penalties, time, ...list) {
     let game = `        
-                            <div class="game"  id="g${list[10]}">
+                            <div class="game" id="g${list[10]}">
                                 <div class="game-body">
                                     <div class="game-number">Match ${list[10]}, ${list[1]}</div>
                                     <div class="game-score">
@@ -3684,7 +3592,7 @@ function gameHtml(penalties, time, ...list) {
                                 </div>
                                 ${penalties}
                             </div>
-                            
+                        
     `
         list[0].innerHTML += game
         return list[0].innerHTML
@@ -3999,7 +3907,7 @@ function teams(...list) {
                         <div class="team">
                             <div class="info">
                                 <span>${list[8]}</span>
-                                <a href="#" class="teamForProfile" id="${list[10]}">
+                                <a href="team-profile-generate.html?id=${list[10]}" class="teamForProfile" id="${list[10]}">
                                     <div class="flag"><img src="images/${list[7]}" alt=""></div>
                                     <div class="name">${list[6]}</div>
                                 </a>
@@ -4234,7 +4142,7 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
 // Start Teams Functions
 function addTeam(...list) {
     teamBox = `
-                <a href="#" class="team teamForProfile" id="${list[3]}">
+                <a href="team-profile-generate.html?id=${list[3]}"class="team teamForProfile" id="${list[3]}">
                     <img src="images/${list[2]}" alt="">
                     <h3>${list[0]}</h3>
                     <span>(${list[1]})</span>
@@ -4396,7 +4304,7 @@ if (currentPage.includes("team-profile-generate.html") ) {
                     let teamOne = Object.values(game[0])
                     let teamTwo = Object.values(game[1])
                     if (teamOne[0].toLowerCase() === teamName || teamTwo[0].toLowerCase() === teamName) {
-                        
+                        document.querySelector('title').textContent = teamName.toUpperCase()
                         createDay(day, day[0], teamName)
                     }
                 }
