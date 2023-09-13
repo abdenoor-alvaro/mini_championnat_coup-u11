@@ -3063,7 +3063,8 @@ const groupA = {
         GoalDifference: +13,
         points: 9,
         subName: "CSJC",
-        flagPic: "canastel.png"
+        flagPic: "canastel.png",
+        qualified: true
     },
     t3: {
         played: 2,
@@ -3167,7 +3168,8 @@ const groupC = {
         GoalDifference: 15,
         points: 9,
         subName: "RMT",
-        flagPic: "csarmot.png"
+        flagPic: "csarmot.png",
+        qualified: true
     },
     t5: {
         played: 2,
@@ -3906,10 +3908,12 @@ function teams(...list) {
     let teamLine = `
                         <div class="team">
                             <div class="info">
-                                <span>${list[8]}</span>
+                                <span class="qualified">${list[8]}</span>
                                 <a href="team-profile-generate.html?id=${list[10]}" class="teamForProfile" id="${list[10]}">
                                     <div class="flag"><img src="images/${list[7]}" alt=""></div>
-                                    <div class="name">${list[6]}</div>
+                                    <div class="name">${list[6]}
+                                    <div class="qualifiedText">${list[11]}</div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="stats">
@@ -3930,7 +3934,6 @@ function teams(...list) {
 if (currentPage.includes("group-stage.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
     let groups = [groupA, groupB, groupC, groupD]
     let groupNames = ["Group A", "Group B", "Group C", "Group D"]
-    let groupLen = Object.keys(groupA).length
 
     for (let j = 0; j < groups.length; j++) {
         let div = document.createElement("div")
@@ -3938,6 +3941,7 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
         for (let i = 0; i < groupLen; i++) {
             let file = "#"
             let player = Object.values(Object.values(groups[j])[i])
+            let qualified = " "
             if (player[8] !== undefined) {
                 file = player[8]
             }
@@ -3948,16 +3952,36 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
                     file = team[0]
                 }
             }
-            let infoList = [player[0], player[1], player[2], player[3], player[4], player[5], player[6], player[7], i+1, div, teamNameId(file)]
+            if (player[8] !== undefined) {
+                qualified = "qualified"
+            }
+            let infoList = [player[0], player[1], player[2], player[3], player[4], player[5], player[6], player[7], i + 1, div, teamNameId(file),qualified]
             let location = document.querySelector(".bjs")
 
             if (i === groupLen - 1) {
                 groupCreat(groupNames[j], location, teams(...infoList))
                 break
             } else {
-                teams(...infoList) 
+                teams(...infoList)
             }
+        }
     }
+    let qualifiedElement = document.querySelectorAll(".qualifiedText")
+    for (let i = 0; i < qualifiedElement.length; i++) {
+        // console.log(qualifiedElement[i])
+        if (qualifiedElement[i].innerHTML > " ") {
+            qualifiedElement[i].style.color = "#76b300"
+            qualifiedElement[i].style.fontSize = "10px"
+            console.log("je;")
+        }
+    }
+    
+    let qualified = document.querySelectorAll(".qualified")
+
+    for (let i = 0; i < qualified.length; i++) {
+        if (qualified[i].innerHTML === "1" || qualified[i].innerHTML === "2") {
+            qualified[i].style.borderLeft = "2px solid #76b300"
+        }
     }
 }
 // End Group Stage Page
