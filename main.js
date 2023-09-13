@@ -94,7 +94,7 @@ let allTeams = {
     },
     t12: {
         name: "rmot",
-        subName: "RMT",
+        subName: "CRT",
         flagPic: "csarmot.png"
     },
     t13: {
@@ -3536,7 +3536,7 @@ let newsData = {
         img: "man-of-the-match.jpg",
         header: "دحو يونس | رجل اللقاء",
         description: "رجل المقابلة لاعب فريق CZM من مباراة CZM و ESS, دحو يونس من مواليد 30 أوت 2012 سجل هدفين و أسيست على طريقة ليونيل ميسي",
-        date: "19 Sep 2023",
+        date: "12 Sep 2023",
         lan: "arabic"
     },
     news1: {
@@ -3851,48 +3851,26 @@ function dateConventer(dayName, dayNumber, month, year) {
     }
     return fullDate
 }
-
-let fullDate = dateConventer(dayName, dayNumber, month, year) 
-if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+function creatDayInHomePage(fullDate) {
     let num = 0
-    let today = "Today"
     for (let j = 0; j < dayss.length; j++) {
         let day = Object.values(dayss[j])
         if (day[0] === fullDate) {
-            
-            fullDate = dateConventer(dayName, dayNumber, month, year)
             if (dayss[j - 1] !== undefined) {
                 let day = Object.values(dayss[j - 1])
                 createDay(day, day[0])
             }
             num += 1
-        } else {
-            fullDate = dateConventer(dayName - 1, dayNumber - 1, month, year)
-            if (day[0] === fullDate) {
-                if (dayss[j - 1] !== undefined) {
-                    day = Object.values(dayss[j - 1])
-                    createDay(day, day[0])
-                }
-                num += 1
-            } else {
-                fullDate = dateConventer(dayName - 2, dayNumber - 2, month, year)
-                if (day[0] === fullDate) {
-                    if (dayss[j - 1] !== undefined) {
-                        day = Object.values(dayss[j - 1])
-                        createDay(day, day[0])
-                    }
-                    num += 1
-                }
-            }
-        }
-        fullDate = dateConventer(dayName, dayNumber, month, year) 
+        } 
         if (num === 1) {
+            fullDate = dateConventer(dayName, dayNumber, month, year)
             day = Object.values(dayss[j])
-            if (day[0] !== fullDate) {
-                today = day[0]
+            if (day[0] === fullDate) {
+                createDay(day, "Today")
+            } else {
+                createDay(day, day[0])
             }
             
-            createDay(day, today)
             num += 1
         }
 
@@ -3901,15 +3879,28 @@ if (currentPage.includes("index.html") || currentPage === "/" || currentPage ===
         //     if (dayss[j + 1] !== undefined) {
         //         day = Object.values(dayss[j + 1])
         //         today = "Tomorrow"
-        //         createDay(day, day[0])
+        //         createDay(day, today)
         //     }
         //     num += 1
         // }
     }
-    if (num === 0) {
-        createDay(Object.values(dayss[dayss.length - 2]), Object.values(dayss[dayss.length - 2])[0])
-        createDay(Object.values(dayss[dayss.length - 1]), Object.values(dayss[dayss.length - 1])[0])
+    return num
+}
+if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+    let fullDate = dateConventer(dayName, dayNumber, month, year) 
+    let returnedNum = creatDayInHomePage(fullDate)
+    if (returnedNum === 0) {
+        fullDate = dateConventer(dayName - 1, dayNumber - 1, month, year)
+        returnedNum = creatDayInHomePage(fullDate)
     }
+    if (returnedNum === 0) {
+        fullDate = dateConventer(dayName - 2, dayNumber - 2, month, year)
+        returnedNum = creatDayInHomePage(fullDate)
+    }
+    // if (num === 0) {
+    //     createDay(Object.values(dayss[dayss.length - 2]), Object.values(dayss[dayss.length - 2])[0])
+    //     createDay(Object.values(dayss[dayss.length - 1]), Object.values(dayss[dayss.length - 1])[0])
+    // }
 }
 // End Games And Scores In Home Page
 
@@ -3931,7 +3922,9 @@ if (currentPage.includes("games-and-scores.html")) {
     let fixed = document.querySelector(".fixed")
     for (let i = 0; i < special.length; i++) {
         special = document.querySelectorAll(".date")
+        fullDate = dateConventer(dayName, dayNumber, month, year)
         if (special[i].innerText === fullDate) {
+
             position = getElementPosition(special[i]) - 130;
 
             if (i !== 0) {
@@ -4285,9 +4278,13 @@ if (currentPage.includes("teams.html") || currentPage.includes("index.html") || 
 // Start Teams Profiles Functions
 function teamHtml(...list) {
     let struct = `
+    <div class="fullscreen" id="fullscreen">
+        <span class="close" onclick="closeFullscreen()">&times;</span>
+        <img src="" alt="Fullscreen Image" id="fullscreen-image">
+    </div>
     <div class="header">
-        <div class="container">
-            <img src="images/${list[0]}" alt="">
+        <div class="container" >
+            <img class="thumbnail" src="images/${list[0]}" alt="" onclick="openImage('images/${list[0]}')">
             <p>${list[1]}</p>
         </div>
     </div>
@@ -4367,6 +4364,7 @@ function teamNameId(teamName) {
     }
     return teamNameWithoutSpaceForId
 }
+// End Teams Profiles Functions
 
 let clickedTeam = document.querySelectorAll('.teamForProfile');
 let teamUrlParams = new URLSearchParams(window.location.search);
@@ -4378,10 +4376,7 @@ if (currentPage.includes("teams.html") || currentPage.includes("index.html") || 
 
     clickedTeam.forEach(element => {
         element.addEventListener("click", () => redirectToTeamPage(element.id));
-        console.log(element)
     });
-
-        console.log("hello")
     
 }
 
@@ -4410,73 +4405,27 @@ if (currentPage.includes("team-profile-generate.html") ) {
         }
     }
 }
+// Start Open Flag Image In Teams Profiles Functions
+function openImage(imageSrc) {
+    const fullscreen = document.getElementById('fullscreen');
+    const fullscreenImage = document.getElementById('fullscreen-image');
+    fullscreenImage.src = imageSrc;
+    fullscreen.style.display = 'block';
+}
 
-
-
-
-// function teamProfile(team, teamName) {
-//     for (let i = 0; i < AllTeams.length; i++) {
-//         let team = Object.values(AllTeams[i])
-        
-//         if (teamName === team[0]) {
-//             let list = [team[2], team[0].toUpperCase(), team[3]]
-//             teamHtml(...list)
-//         }
-//     }
-//     let playersLocation = document.querySelector(".squad-list-boxes")
-//     let managerLocation = document.querySelector(".manager-box")
-//     let objLen = Object.keys(team).length - 1
-
-//     let clubFlag = "empty.png"
-    
-//     for (let i = 0; i < AllTeams.length; i++) {
-//         let team = Object.values(AllTeams[i])
-//         if (teamName === team[0]) {
-//             clubFlag = team[2]
-//         }
-//     }
-//     for (let i = 0; i < objLen; i++) {
-//         let player = Object.values(Object.values(team)[i])
-//         let infoList = [player[0], player[1], player[2], player[3], player[4], player[5], player[6], player[7], clubFlag, playersLocation]
-//         playerCardHTML(...infoList)
-//     }
-    
-//     manager = Object.values(Object.values(team)[objLen])
-//     let infoListManager = [manager[0], manager[1], manager[2], manager[3], manager[4], manager[5], manager[6], manager[7], clubFlag, managerLocation]
-//     playerCardHTML(...infoListManager)
-
-//     let dayss = Object.values(days)
-    
-//     for (let j = 0; j < dayss.length; j++) {
-//         let day = Object.values(dayss[j])
-//         for (let i = 0; i < day.length - 1; i++) {
-//             let game = Object.values(day[i + 1])
-//             let teamOne = Object.values(game[0])
-//             let teamTwo = Object.values(game[1])
-            
-//             if (teamOne[0].toLowerCase() === teamName || teamTwo[0].toLowerCase() === teamName) {
-//                 createDay(day, day[0], teamName)
-//             }
-//         }
-//     }
-// }
-// End Teams Profiles Functions
-// if (currentPage.includes("manchester%20city.html") || currentPage.includes("Manchester%20City.html")) {
-//     teamProfile(manCity, "manchester city")
-// }
-// if (currentPage.includes("real%20madrid.html") || currentPage.includes("Real%20Madrid.html")) {
-//     teamProfile(realMadrid, "real madrid")
-// }
-// if (currentPage.includes("barcelona.html") || currentPage.includes("Barcelona.html")) {
-//     teamProfile(barca, "barcelona")
-// }
+function closeFullscreen() {
+    const fullscreen = document.getElementById('fullscreen');
+    fullscreen.style.display = 'none';
+}
+// End Open Flag Image In Teams Profiles Functions
 // End Teams Profiles
 
 
 
 
 
-
+// Start Game Profiles
+// Start Game Profiles Functions
 
 function gameProfileHtml(leftTeamGoals, rightTeamGoals, ...list) {
     gameHtml = `
@@ -4554,16 +4503,18 @@ function goalHtmlTeamTwo(...list) {
     `
     list[0].innerHTML += goal
     return list[0].innerHTML
+}    
+function redirectToGamePage(gameId) {
+    window.location.href = `game-generate.html?id=${gameId}`;
 }
+// End Game Profiles Functions
+
 const clickedGame = document.querySelectorAll('.game');
 
 clickedGame.forEach(element => {
     element.addEventListener("click", () => redirectToGamePage(element.id));
 });
-    
-function redirectToGamePage(gameId) {
-    window.location.href = `game-generate.html?id=${gameId}`;
-}
+
 
 
 let gameContent = document.querySelector(".gameGenerateJs")
@@ -4805,7 +4756,7 @@ for (let i = 0; i < dayss.length; i++) {
 }
 
 
-
+// End Game Profiles
 
 
 
