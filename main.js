@@ -94,7 +94,7 @@ let allTeams = {
     },
     t12: {
         name: "rmot",
-        subName: "CRT",
+        subName: "RMT",
         flagPic: "csarmot.png"
     },
     t13: {
@@ -3166,7 +3166,7 @@ const groupC = {
         lose: 0,
         GoalDifference: 15,
         points: 9,
-        subName: "CRT",
+        subName: "RMT",
         flagPic: "csarmot.png"
     },
     t5: {
