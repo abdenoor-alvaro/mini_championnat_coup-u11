@@ -699,7 +699,7 @@ let days = {
                 score: "1",
                 goals: {
                     goal1: {
-                        minute: "29'",
+                        minute: "19'",
                         player: "Chetouane haytem",
                         assist: false,
                         penalty: false
@@ -4428,8 +4428,6 @@ function gameProfileHtml(leftTeamGoals, rightTeamGoals, ...list) {
                 <div class="stadium">${list[17]}</div>
             </div>
             ${list[15]}
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/D9ZGWE-1fp4?si=lInxRqKRawv2NZjK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
     `
     list[0].innerHTML = gameHtml
 }
