@@ -666,20 +666,44 @@ let days = {
         },
     },
     day7: {
-        date: "Tuesday 14 September 2023",
+        date: "Thursday 14 September 2023",
         game1: {
             teamOne: {
                 name: "jil monte carlo",
                 flag: "jil monte carlo.png",
-                score: false,
+                score: "3",
                 goals: {
+                    goal1: {
+                        minute: "10'",
+                        player: "Dechira ayman",
+                        assist: "Bouhdjar rayane",
+                        penalty: false
+                    },
+                    goal2: {
+                        minute: "18'",
+                        player: "Bouhdjar rayane",
+                        assist: false,
+                        penalty:false
+                    },
+                    goal3: {
+                        minute: "25'",
+                        player: "Bouhdjar rayane",
+                        assist: false,
+                        penalty: false
+                    },
                 },
             },
             teamTwo: {
                 name: "widad hai el zitoun",
                 flag: "widad hai el zitoun.png",
-                score: false,
+                score: "1",
                 goals: {
+                    goal1: {
+                        minute: "20'",
+                        player: "uknown",
+                        assist: false,
+                        penalty: false
+                    },
                 },
             },
             group: "Group D",
@@ -3224,14 +3248,24 @@ const groupD = {
         flagPic: "yaghmouracen2.png"
     },
     t2: {
-        played: 2,
+        played: 3,
         win: 1,
         draw: 1,
-        lose: 0,
-        GoalDifference: 1,
+        lose: 1,
+        GoalDifference: -1,
         points: 4,
         subName: "WHZ",
         flagPic: "widad hai el zitoun.png"
+    },
+    t1: {
+        played: 1,
+        win: 1,
+        draw: 0,
+        lose: 0,
+        GoalDifference: 2,
+        points: 3,
+        subName: "JMC",
+        flagPic: "jil monte carlo.png"
     },
     t5: {
         played: 2,
@@ -3242,16 +3276,6 @@ const groupD = {
         points: 1,
         subName: "KSO",
         flagPic: "kso.png"
-    },
-    t1: {
-        played: 0,
-        win: 0,
-        draw: 0,
-        lose: 0,
-        GoalDifference: 0,
-        points: 0,
-        subName: "JMC",
-        flagPic: "jil monte carlo.png"
     },
     t3: {
         played: 2,
@@ -3441,6 +3465,13 @@ console.log(currentPage)
 
 // Start Latest News Data
 let newsData = {
+    news4: {
+        img: "news4.jpg",
+        header: "بوحجر ريان يتألق",
+        description: "اللاعب بوحجر ريان يقود فريقه في اول ظهور للفوز بثلاثية كاملة في مقابلة دراماتيكية امام منافس عنيد اسمه وداد حي الزيتون ,حيث برز اللاعب بتقديم اسيست و تسجيل هدفين منهم الهدف الثالث الذي قتل المباراة وقتل طموح المنافس في تعديل النتيجة",
+        date: "14 Sep 2023",
+        lan: "arabic"
+    },
     news3: {
         img: "news3.jpg",
         header: " رائد مستقبل واد تليلات RMOT يهيمن",
@@ -3462,13 +3493,6 @@ let newsData = {
         date: "12 Sep 2023",
         lan: "arabic"
     },
-    // news4: {
-    //     img: "CARVAJALThumb.jpg",
-    //     header: " اصابة اللاعب كارفاخال ",
-    //     description: "تعرض لاعب الفريق الأول لريال مدريد، كارفاخال, لإصابة في العضلة الرباعية اليمنى. إنه غير متاح للاختيار وتعافيه سيحدد عودته.",
-    //     date: "19 Sep 2023",
-    //     lan: "arabic"
-    // },
     // news5: {
     //     img: "dortmund.png",
     //     header: "اقصاء دورتموند المبكر",
@@ -4358,6 +4382,8 @@ function closeFullscreen() {
 // Start Game Profiles
 // Start Game Profiles Functions
 
+
+
 function gameProfileHtml(leftTeamGoals, rightTeamGoals, ...list) {
     gameHtml = `
             <div class="stage-and-date">
@@ -4402,6 +4428,8 @@ function gameProfileHtml(leftTeamGoals, rightTeamGoals, ...list) {
                 <div class="stadium">${list[17]}</div>
             </div>
             ${list[15]}
+
+            
     `
     list[0].innerHTML = gameHtml
 }
@@ -4509,7 +4537,7 @@ for (let i = 0; i < dayss.length; i++) {
         `
         let highlight = `
             <div class="highlights-btn">
-                <a href="${game[7]}">
+                <a href="${game[7]}" id="playButton">
                     <i class="fa fa-play"></i>
                 highlights
                 </a>
