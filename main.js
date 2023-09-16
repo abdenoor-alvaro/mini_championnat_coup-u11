@@ -39,18 +39,265 @@ if (!currentPage.includes("games-and-scores.html")) {
 let allTeams = {
     t1: {
         name: "abtal hai yasmine",
-        subName: "CSA",
-        flagPic: "abtal-hai-yasmine.png"
+        subName: "AHY",
+        flagPic: "abtal-hai-yasmine.png",
+        // players: {
+        //     p1: {
+        //         fName: "Santana",
+        //         lName: "EDERSON",
+        //         position: "GOALKEEPER",
+        //         photo: "ederson.webp",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p2: {
+        //         fName: "Ruben",
+        //         lName: "DIAS",
+        //         position: "DEFENDER",
+        //         photo: "ruben-dias.webp",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p3: {
+        //         fName: "Kyle",
+        //         lName: "WALKER",
+        //         position: "DEFENDER",
+        //         photo: "kyle-walker.webp",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p4: {
+        //         fName: "Kevin",
+        //         lName: "DE BRUYNE",
+        //         position: "MIDFIELDER",
+        //         photo: "kevin-de-bruyne.webp",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p5: {
+        //         fName: "Hernandez",
+        //         lName: "RODRIGO",
+        //         position: "MIDFIELDER",
+        //         photo: "rodrigo.webp",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p6: {
+        //         fName: "Riyad",
+        //         lName: "MAHREZ",
+        //         position: "FORWARD",
+        //         photo: "riyad-mahrez.webp",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p7: {
+        //         fName: "Erling",
+        //         lName: "HAALAND",
+        //         position: "FORWARD",
+        //         photo: "erling-haaland.webp",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     manager: {
+        //         fName: "Pep",
+        //         lName: "GUARDIOLA",
+        //         position: "MANAGER",
+        //         photo: "pep-guardiola.webp",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     }
+        // }
     },
     t2: {
         name: "canastel",
         subName: "CSJC",
-        flagPic: "canastel.png"
+        flagPic: "canastel.png",
+        // players: {
+        //     p1: {
+        //         fName: "Thibaut",
+        //         lName: "COURTOIS",
+        //         position: "GOALKEEPER",
+        //         photo: "COURTOISthumb.jpg",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p2: {
+        //         fName: "Daniel",
+        //         lName: "CARVAJAL",
+        //         position: "DEFENDER",
+        //         photo: "CARVAJALThumb.jpg",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p3: {
+        //         fName: "Eder",
+        //         lName: "MILITAO",
+        //         position: "DEFENDER",
+        //         photo: "MILITAO.jpg",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p4: {
+        //         fName: "Luka",
+        //         lName: "MODRIC",
+        //         position: "MIDFIELDER",
+        //         photo: "MODRICThumb.jpg",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p5: {
+        //         fName: "Toni",
+        //         lName: "KROOS",
+        //         position: "MIDFIELDER",
+        //         photo: "KROOSThumb.jpg",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p6: {
+        //         fName: "Paixao de Oliveira",
+        //         lName: "VINICIUS JR.",
+        //         position: "FORWARD",
+        //         photo: "VINICIUSThumb.jpg",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p7: {
+        //         fName: "Goes",
+        //         lName: "RODRYGO",
+        //         position: "FORWARD",
+        //         photo: "RODRYGOThumb.jpg",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     manager: {
+        //         fName: "Carlo",
+        //         lName: "ANCELOTTI",
+        //         position: "MANAGER",
+        //         photo: "ANCELOTTIThumb.jpg",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     }
+        // }
     },
     t3: {
         name: "chabeb fajer wahran",
         subName: "CFO",
-        flagPic: "fajr-wahran.png"
+        flagPic: "fajr-wahran.png",
+        // players: {
+        //     p1: {
+        //         fName: "Ter",
+        //         lName: "STEGEN",
+        //         position: "GOALKEEPER",
+        //         photo: "01-MARC-ANDRE_TER_STEGEN-removebg-preview.png",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p2: {
+        //         fName: "Ronald",
+        //         lName: "ARAUJO",
+        //         position: "DEFENDER",
+        //         photo: "04-RONALD_ARAUJO_-removebg-preview.png",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p3: {
+        //         fName: "Eric",
+        //         lName: "GARCIA",
+        //         position: "DEFENDER",
+        //         photo: "24-ERIC_GARCIA-removebg-preview.png",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p4: {
+        //         fName: "González López",
+        //         lName: "PEDRI",
+        //         position: "DEFENDER",
+        //         photo: "08-PEDRI-removebg-preview.png",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p5: {
+        //         fName: "Frenkie",
+        //         lName: "DE JONG",
+        //         position: "MIDFIELDER",
+        //         photo: "21-FRENKIE_DE_JONG-removebg-preview.png",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p6: {
+        //         fName: "Robert",
+        //         lName: "LEWANDOWSKI",
+        //         position: "FORWARD",
+        //         photo: "09-ROBERT_LEWANDOWSKI-removebg-preview.png",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p7: {
+        //         fName: "&#8203;",
+        //         lName: "RAPHINHA",
+        //         position: "FORWARD",
+        //         photo: "22-RAPHINHA-removebg-preview.png",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     manager: {
+        //         fName: "XAVI",
+        //         lName: "HERNANDEZ",
+        //         position: "MANAGER",
+        //         photo: "00_XAVI_HERNANDEZ-removebg-preview.png",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     }
+        // }
+
     },
     t4: {
         name: "widad amal carteaux",
@@ -64,12 +311,12 @@ let allTeams = {
     },
     t6: {
         name: "aadl zabana",
-        subName: "CZM",
+        subName: "WZM",
         flagPic: "cazamo.png"
     },
     t7: {
         name: "emir khaled",
-        subName: "CEK",
+        subName: "CAK",
         flagPic: "chabab emir khaled.png"
     },
     t8: {
@@ -114,7 +361,7 @@ let allTeams = {
     },
     t16: {
         name: "jil monte carlo",
-        subName: "CSA",
+        subName: "JMC",
         flagPic: "jil monte carlo.png"
     },
     t17: {
@@ -720,14 +967,14 @@ let days = {
             teamOne: {
                 name: "wihdat amel bir eldjir",
                 flag: "wihdat-amel-bir-eldjir.png",
-                score: false,
+                score: "2",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "abtal hai yasmine",
                 flag: "abtal-hai-yasmine.png",
-                score: false,
+                score: "6",
                 goals: {
                 },
             },
@@ -742,14 +989,14 @@ let days = {
             teamOne: {
                 name: "emir khaled",
                 flag: "chabab emir khaled.png",
-                score: false,
+                score: "0",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "aadl zabana",
                 flag: "cazamo.png",
-                score: false,
+                score: "3",
                 goals: {
                 },
             },
@@ -764,14 +1011,14 @@ let days = {
             teamOne: {
                 name: "chabeb fajer wahran",
                 flag: "fajr-wahran.png",
-                score: false,
+                score: "7",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "widad amal carteaux",
                 flag: "widad-amal-carteaux.png",
-                score: false,
+                score: "0",
                 goals: {
                 },
             },
@@ -786,14 +1033,14 @@ let days = {
             teamOne: {
                 name: "taraji senia",
                 flag: "esperance es-senia.png",
-                score: false,
+                score: "0",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "chorouk castor",
                 flag: "chorouk castor.png",
-                score: false,
+                score: "3",
                 goals: {
                 },
             },
@@ -2826,256 +3073,6 @@ let dayss = Object.values(days)
 // End All Games & Scores Data
 
 
-// Start Teams Profiles
-const manCity = {
-    p1: {
-        fName: "Santana",
-        lName: "EDERSON",
-        position: "GOALKEEPER",
-        photo: "ederson.webp",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p2: {
-        fName: "Ruben",
-        lName: "DIAS",
-        position: "DEFENDER",
-        photo: "ruben-dias.webp",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p3: {
-        fName: "Kyle",
-        lName: "WALKER",
-        position: "DEFENDER",
-        photo: "kyle-walker.webp",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p4: {
-        fName: "Kevin",
-        lName: "DE BRUYNE",
-        position: "MIDFIELDER",
-        photo: "kevin-de-bruyne.webp",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p5: {
-        fName: "Hernandez",
-        lName: "RODRIGO",
-        position: "MIDFIELDER",
-        photo: "rodrigo.webp",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p6: {
-        fName: "Riyad",
-        lName: "MAHREZ",
-        position: "FORWARD",
-        photo: "riyad-mahrez.webp",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p7: {
-        fName: "Erling",
-        lName: "HAALAND",
-        position: "FORWARD",
-        photo: "erling-haaland.webp",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    manager: {
-        fName: "Pep",
-        lName: "GUARDIOLA",
-        position: "MANAGER",
-        photo: "pep-guardiola.webp",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    }
-};
-const realMadrid = {
-    p1: {
-        fName: "Thibaut",
-        lName: "COURTOIS",
-        position: "GOALKEEPER",
-        photo: "COURTOISthumb.jpg",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p2: {
-        fName: "Daniel",
-        lName: "CARVAJAL",
-        position: "DEFENDER",
-        photo: "CARVAJALThumb.jpg",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p3: {
-        fName: "Eder",
-        lName: "MILITAO",
-        position: "DEFENDER",
-        photo: "MILITAO.jpg",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p4: {
-        fName: "Luka",
-        lName: "MODRIC",
-        position: "MIDFIELDER",
-        photo: "MODRICThumb.jpg",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p5: {
-        fName: "Toni",
-        lName: "KROOS",
-        position: "MIDFIELDER",
-        photo: "KROOSThumb.jpg",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p6: {
-        fName: "Paixao de Oliveira",
-        lName: "VINICIUS JR.",
-        position: "FORWARD",
-        photo: "VINICIUSThumb.jpg",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p7: {
-        fName: "Goes",
-        lName: "RODRYGO",
-        position: "FORWARD",
-        photo: "RODRYGOThumb.jpg",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    manager: {
-        fName: "Carlo",
-        lName: "ANCELOTTI",
-        position: "MANAGER",
-        photo: "ANCELOTTIThumb.jpg",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    }
-};
-const barca = {
-    p1: {
-        fName: "Ter",
-        lName: "STEGEN",
-        position: "GOALKEEPER",
-        photo: "01-MARC-ANDRE_TER_STEGEN-removebg-preview.png",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p2: {
-        fName: "Ronald",
-        lName: "ARAUJO",
-        position: "DEFENDER",
-        photo: "04-RONALD_ARAUJO_-removebg-preview.png",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p3: {
-        fName: "Eric",
-        lName: "GARCIA",
-        position: "DEFENDER",
-        photo: "24-ERIC_GARCIA-removebg-preview.png",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p4: {
-        fName: "González López",
-        lName: "PEDRI",
-        position: "DEFENDER",
-        photo: "08-PEDRI-removebg-preview.png",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p5: {
-        fName: "Frenkie",
-        lName: "DE JONG",
-        position: "MIDFIELDER",
-        photo: "21-FRENKIE_DE_JONG-removebg-preview.png",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p6: {
-        fName: "Robert",
-        lName: "LEWANDOWSKI",
-        position: "FORWARD",
-        photo: "09-ROBERT_LEWANDOWSKI-removebg-preview.png",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    p7: {
-        fName: "&#8203;",
-        lName: "RAPHINHA",
-        position: "FORWARD",
-        photo: "22-RAPHINHA-removebg-preview.png",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    },
-    manager: {
-        fName: "XAVI",
-        lName: "HERNANDEZ",
-        position: "MANAGER",
-        photo: "00_XAVI_HERNANDEZ-removebg-preview.png",
-        city: "SI hawes",
-        age: "52yo",
-        height: "178cm",
-        proClub: "without club"
-    }
-};
-// End Teams Profiles
-
-
 
 // Start Groups Data
 const groupA = {
@@ -3091,47 +3088,67 @@ const groupA = {
         qualified: true
     },
     t3: {
-        played: 2,
-        win: 1,
+        played: 3,
+        win: 2,
         draw: 0,
         lose: 1,
-        GoalDifference: 5,
-        points: 3,
+        GoalDifference: 12,
+        points: 6,
         subName: "CFO",
         flagPic: "fajr-wahran.png"
     },
-    t5: {
+    t1: {
         played: 2,
         win: 1,
         draw: 0,
         lose: 1,
-        GoalDifference: -3,
+        GoalDifference: -2,
+        points: 3,
+        subName: "AHY",
+        flagPic: "abtal-hai-yasmine.png"
+    },
+    t5: {
+        played: 3,
+        win: 1,
+        draw: 0,
+        lose: 2,
+        GoalDifference: -7,
         points: 3,
         subName: "WAB",
         flagPic: "wihdat-amel-bir-eldjir.png"
     },
-    t1: {
-        played: 1,
-        win: 0,
-        draw: 0,
-        lose: 1,
-        GoalDifference: -6,
-        points: 0,
-        subName: "CSA",
-        flagPic: "abtal-hai-yasmine.png"
-    },
     t4: {
-        played: 2,
+        played: 3,
         win: 0,
         draw: 0,
-        lose: 2,
-        GoalDifference: -9,
+        lose: 3,
+        GoalDifference: -16,
         points: 0,
         subName: "WAC",
         flagPic: "widad-amal-carteaux.png"
     },
 }
 const groupB = {
+    t3: {
+        played: 3,
+        win: 2,
+        draw: 0,
+        lose: 1,
+        GoalDifference: 4,
+        points: 6,
+        subName: "CSC",
+        flagPic: "chorouk castor.png"
+    },
+    t1: {
+        played: 3,
+        win: 2,
+        draw: 0,
+        lose: 1,
+        GoalDifference: 3,
+        points: 6,
+        subName: "WZM",
+        flagPic: "cazamo.png"
+    },
     t5: {
         played: 2,
         win: 1,
@@ -3142,44 +3159,24 @@ const groupB = {
         subName: "JIL",
         flagPic: "yaghmouracen.png"
     },
-    t3: {
-        played: 2,
-        win: 1,
-        draw: 0,
-        lose: 1,
-        GoalDifference: 1,
-        points: 3,
-        subName: "CSC",
-        flagPic: "chorouk castor.png"
-    },
-    t1: {
-        played: 2,
-        win: 1,
-        draw: 0,
-        lose: 1,
-        GoalDifference: 0,
-        points: 3,
-        subName: "CZM",
-        flagPic: "cazamo.png"
-    },
     t4: {
-        played: 2,
+        played: 3,
         win: 1,
         draw: 0,
-        lose: 1,
-        GoalDifference: -2,
+        lose: 2,
+        GoalDifference: -5,
         points: 3,
         subName: "ESS",
         flagPic: "esperance es-senia.png"
     },
     t2: {
-        played: 2,
+        played: 3,
         win: 0,
         draw: 1,
-        lose: 1,
-        GoalDifference: -1,
+        lose: 2,
+        GoalDifference: -4,
         points: 1,
-        subName: "CEK",
+        subName: "CAK",
         flagPic: "chabab emir khaled.png"
     },
 }
@@ -3465,6 +3462,20 @@ console.log(currentPage)
 
 // Start Latest News Data
 let newsData = {
+    news6: {
+        img: "news6.jpg",
+        header: "CFO | الطريق نحو التأهل",
+        description: "بعد الأداء الرائع ونتيجة اليوم المبشرة, شباب فجر وهران يسير نحو التأهل للدور الثاني من البلاي أوف بقيادة الكوتش عبدالخالق قديدر",
+        date: "16 Sep 2023",
+        lan: "arabic"
+    },
+    news5: {
+        img: "news5.jpg",
+        header: "شروق كاسطور في الصدارة",
+        description: "ثلاثي فريق شروق كاسطور يضرب بثلاثية كاملة و يضع فريقه في صدارة ترتيب المجموعة B",
+        date: "16 Sep 2023",
+        lan: "arabic"
+    },
     news4: {
         img: "news4.jpg",
         header: "بوحجر ريان يتألق",
@@ -3493,20 +3504,6 @@ let newsData = {
         date: "12 Sep 2023",
         lan: "arabic"
     },
-    // news5: {
-    //     img: "dortmund.png",
-    //     header: "اقصاء دورتموند المبكر",
-    //     description: "فشل دورتموند في التاهل من مجموعته هذا الموسم، على الرغم من امتلاكه أحد أكثر المهاجمين غزارة في أوروبا وهو سيباستيان هالر .",
-    //     date: "19 Sep 2023",
-    //     lan: "arabic"
-    // },
-    // news6: {
-    //     img: "01-MARC-ANDRE_TER_STEGEN-removebg-preview.png",
-    //     header: "تير شتيقن، 350 مباراة مع برشلونة",
-    //     description: "وصل تير شتيقن إلى رقم بارز آخر مع نادي برشلونة يوم الأحد، حيث كان ظهوره ضد قادش بالفوز 2-0 هو الظهور رقم 350 له مع فريق برشلونة الأول. ظهر اللاعب لأول مرة في مباراة كأس الملك ضد سبتة في نوفمبر 2010 بفوز 5-1 ويأتي ظهوره الأخير كقائد للفريق الأول.",
-    //     date: "19 Sep 2023",
-    //     lan: "arabic"
-    // }
 }
 let news = Object.values(newsData)
 // End Latest News Data
@@ -3930,7 +3927,7 @@ function groupCreat(groupName,location,teamLine) {
 }
 function teams(...list) {
     let teamLine = `
-                        <div class="team">
+                        <div class="team" ${list[12]}>
                             <div class="info">
                                 <span class="qualified">${list[8]}</span>
                                 <a href="team-profile-generate.html?id=${list[10]}" class="teamForProfile" id="${list[10]}">
@@ -3961,28 +3958,27 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
 
     for (let j = 0; j < groups.length; j++) {
         let div = document.createElement("div")
-        let groupLen = Object.keys(groups[j]).length
-        for (let i = 0; i < groupLen; i++) {
+        let objectGroups = Object.values(groups[j])
+        for (let i = 0; i < objectGroups.length; i++) {
             let file = "#"
-            let player = Object.values(Object.values(groups[j])[i])
+            let teamline = Object.values(objectGroups[i])
             let qualified = " "
-            if (player[8] !== undefined) {
-                file = player[8]
+            if (teamline[8] !== undefined) {
+                file = teamline[8]
             }
             for (let i = 0; i < AllTeams.length; i++) {
                 let team = Object.values(AllTeams[i])
-                // console.log(player[6])
-                if (player[6] === team[1]) {
+                if (teamline[6] === team[1]) {
                     file = team[0]
                 }
             }
-            if (player[8] !== undefined) {
+            if (teamline[8] !== undefined) {
                 qualified = "qualified"
             }
-            let infoList = [player[0], player[1], player[2], player[3], player[4], player[5], player[6], player[7], i + 1, div, teamNameId(file),qualified]
+            let infoList = [teamline[0], teamline[1], teamline[2], teamline[3], teamline[4], teamline[5], teamline[6], teamline[7], i + 1, div, teamNameId(file),qualified]
             let location = document.querySelector(".bjs")
 
-            if (i === groupLen - 1) {
+            if (i === objectGroups.length - 1) {
                 groupCreat(groupNames[j], location, teams(...infoList))
                 break
             } else {
@@ -3992,11 +3988,9 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
     }
     let qualifiedElement = document.querySelectorAll(".qualifiedText")
     for (let i = 0; i < qualifiedElement.length; i++) {
-        // console.log(qualifiedElement[i])
         if (qualifiedElement[i].innerHTML > " ") {
             qualifiedElement[i].style.color = "#76b300"
             qualifiedElement[i].style.fontSize = "10px"
-            console.log("je;")
         }
     }
     
@@ -4231,6 +4225,33 @@ if (currentPage.includes("teams.html") || currentPage.includes("index.html") || 
 
 // Start Teams Profiles 
 // Start Teams Profiles Functions
+function openImage(imageSrc) {
+    const fullscreen = document.getElementById('fullscreen');
+    const fullscreenImage = document.getElementById('fullscreen-image');
+    fullscreenImage.src = imageSrc;
+    fullscreen.style.display = 'block';
+}
+function closeFullscreen() {
+    const fullscreen = document.getElementById('fullscreen');
+    fullscreen.style.display = 'none';
+}
+function redirectToTeamPage(teamId) {
+    window.location.href = `team-profile-generate.html?id=${teamId}`;
+}
+function teamNameId(teamName) {
+    let teamNameSplited = teamName.split("")
+    let teamNameWithoutSpaceForId =""
+    for (let j = 0; j < teamNameSplited.length; j++) {
+        if (teamNameSplited[j] === " ") {
+            teamNameSplited[j] = "_"
+        }
+        teamNameWithoutSpaceForId += teamNameSplited[j] 
+    }
+    return teamNameWithoutSpaceForId
+}
+
+
+    
 function teamHtml(...list) {
     let struct = `
     <div class="fullscreen" id="fullscreen">
@@ -4251,6 +4272,17 @@ function teamHtml(...list) {
                     
                 </div>
             </div>
+
+            <!-- Start Group Stage -->
+            <div class="group-stage" id="group-stage">
+                <div class="container" style="padding: 0">
+                    <h2 class="special-header">Group</h2>
+                    <div class="boxes bjs">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Group Stage -->
 
             <div class="manager">
                 <h2 class="special-header">Manager</h2>
@@ -4308,34 +4340,17 @@ function playerCardHTML(...infolist) {
                     `
     infolist[9].innerHTML += playerCardHTML
 }
-function teamNameId(teamName) {
-    let teamNameSplited = teamName.split("")
-    let teamNameWithoutSpaceForId =""
-    for (let j = 0; j < teamNameSplited.length; j++) {
-        if (teamNameSplited[j] === " ") {
-            teamNameSplited[j] = "_"
-        }
-        teamNameWithoutSpaceForId += teamNameSplited[j] 
-    }
-    return teamNameWithoutSpaceForId
-}
 // End Teams Profiles Functions
 
 let clickedTeam = document.querySelectorAll('.teamForProfile');
 let teamUrlParams = new URLSearchParams(window.location.search);
 let teamId = teamUrlParams.get('id');
-if (currentPage.includes("teams.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/" || currentPage.includes("game-generate.html") || currentPage.includes("group-stage.html")   ) {
-    function redirectToTeamPage(teamId) {
-        window.location.href = `team-profile-generate.html?id=${teamId}`;
-    }
 
+if (currentPage.includes("teams.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage.includes("group-stage.html")   ) {
     clickedTeam.forEach(element => {
         element.addEventListener("click", () => redirectToTeamPage(element.id));
     });
-    
 }
-
-
 
 if (currentPage.includes("team-profile-generate.html") ) {
     for (let i = 0; i < AllTeams.length; i++) {
@@ -4357,31 +4372,120 @@ if (currentPage.includes("team-profile-generate.html") ) {
                     }
                 }
             }
+
+
+            let groups = [groupA, groupB, groupC, groupD]
+            let groupNames = ["Group A", "Group B", "Group C", "Group D"]
+            for (let j = 0; j < groups.length; j++) {
+                let div = document.createElement("div")
+                let objectGroups = Object.values(groups[j])
+                for (let n = 0; n < objectGroups.length; n++) {
+                    let teamline = Object.values(objectGroups[n])
+                    if (team[1] === teamline[6]) {
+                        for (let i = 0; i < objectGroups.length; i++) {
+                            let file = "#"
+                            let teamline = Object.values(objectGroups[i])
+                            let qualified = " "
+                            let changeBg = ""
+                            if (teamline[8] !== undefined) {
+                                file = teamline[8]
+                            }
+                            for (let i = 0; i < AllTeams.length; i++) {
+                                let team = Object.values(AllTeams[i])
+                                if (teamline[6] === team[1]) {
+                                    file = team[0]
+                                }
+                            }
+                            if (teamline[8] !== undefined) {
+                                qualified = "qualified"
+                            }
+                            if (team[1] === teamline[6]) {
+                                changeBg = `style="background-color:#faf7f7;"`                               
+                            }
+                            let infoList = [teamline[0], teamline[1], teamline[2], teamline[3], teamline[4], teamline[5], teamline[6], teamline[7], i + 1, div, teamNameId(file), qualified, changeBg]
+                            let location = document.querySelector(".bjs")
+                            if (i === objectGroups.length - 1) {
+                                groupCreat(groupNames[j], location, teams(...infoList))
+                                break
+                            } else {
+                                teams(...infoList)
+                            }
+                        }
+                        
+                        let qualifiedElement = document.querySelectorAll(".qualifiedText")
+                        for (let i = 0; i < qualifiedElement.length; i++) {
+                        if (qualifiedElement[i].innerHTML > " ") {
+                                qualifiedElement[i].style.color = "#76b300"
+                                qualifiedElement[i].style.fontSize = "10px"
+                            }
+                        }
+                        
+                        let qualified = document.querySelectorAll(".qualified")
+                    
+                        for (let i = 0; i < qualified.length; i++) {
+                            if (qualified[i].innerHTML === "1" || qualified[i].innerHTML === "2") {
+                                qualified[i].style.borderLeft = "2px solid #76b300"
+                            }
+                        }
+                    } 
+                }
+                
+            }
+
+            if (team[3] !== undefined) {
+                let players = Object.values(team[3])
+                let manager = Object.values(players[7])
+                let clubFlag = team[2]
+                let playersLocation = document.querySelector(".squad-list-boxes")
+                let managerLocation = document.querySelector(".manager-box")
+
+                let infoListManager = [manager[0], manager[1], manager[2], manager[3], manager[4], manager[5], manager[6], manager[7], clubFlag, managerLocation]
+                playerCardHTML(...infoListManager)
+                for (let i = 0; i < players.length - 1; i++) {
+                    let player = Object.values(players[i])
+                    let infoListPlayer = [player[0], player[1], player[2], player[3], player[4], player[5], player[6], player[7], clubFlag, playersLocation]
+                    playerCardHTML(...infoListPlayer)
+                }
+            }
         }
     }
-}
-// Start Open Flag Image In Teams Profiles Functions
-function openImage(imageSrc) {
-    const fullscreen = document.getElementById('fullscreen');
-    const fullscreenImage = document.getElementById('fullscreen-image');
-    fullscreenImage.src = imageSrc;
-    fullscreen.style.display = 'block';
-}
 
-function closeFullscreen() {
-    const fullscreen = document.getElementById('fullscreen');
-    fullscreen.style.display = 'none';
+    
 }
-// End Open Flag Image In Teams Profiles Functions
 // End Teams Profiles
-
 
 
 
 
 // Start Game Profiles
 // Start Game Profiles Functions
+function openVideoFullscreen(id) {
+    const fullscreen = document.getElementById('fullscreenn');
+    fullscreen.style.display = 'block';
+    const videoIdOrUrl = id;
 
+    const iframe = document.getElementById('fullscreen-video');
+    if (videoIdOrUrl.includes('youtube.com')) {
+        const videoId = videoIdOrUrl.split('v=')[1];
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+    } else {
+        iframe.src = `https://www.youtube.com/embed/${videoIdOrUrl}`;
+    }
+}
+function openHighlightNTFullscreen() {
+    const fullscreenHighlightNT = document.getElementById('fullscreenHighlightNT');
+    fullscreenHighlightNT.style.display = 'block';
+}
+function closeFullscreenn() {
+    const fullscreen = document.getElementById('fullscreenn');
+    fullscreen.style.display = 'none';
+    const fullscreenHighlightNT = document.getElementById('fullscreenHighlightNT');
+    fullscreenHighlightNT.style.display = 'none';
+
+    // Pause the YouTube video by resetting the iframe source
+    const iframe = document.getElementById('fullscreen-video');
+    iframe.src = '';
+}
 
 
 function gameProfileHtml(leftTeamGoals, rightTeamGoals, ...list) {
@@ -4392,7 +4496,7 @@ function gameProfileHtml(leftTeamGoals, rightTeamGoals, ...list) {
             </div>
             <div class="teams">
                 <div class="left-team">
-                    <a href="#" class="team teamForProfile" id="${list[18]}">
+                    <a href="team-profile-generate.html?id=${list[18]}" class="team teamForProfile" id="${list[18]}">
                         <div class="team-name" >${list[1]} ${list[20]}</div>
                         <div class="flag"><img ${list[12]} src="images/${list[2]}" alt=""></div>
                     </a>
@@ -4401,7 +4505,7 @@ function gameProfileHtml(leftTeamGoals, rightTeamGoals, ...list) {
                     ${list[9]}
                 </div>
                 <div class="right-team">
-                    <a href="#" class="team teamForProfile" id="${list[19]}">
+                    <a href="team-profile-generate.html?id=${list[19]}" class="team teamForProfile" id="${list[19]}">
                         <div class="flag"><img ${list[13]} src="images/${list[4]}" alt=""></div>
                         <div class="team-name">${list[3]} ${list[21]}</div>
                     </a>
@@ -4428,6 +4532,15 @@ function gameProfileHtml(leftTeamGoals, rightTeamGoals, ...list) {
                 <div class="stadium">${list[17]}</div>
             </div>
             ${list[15]}
+            <div class="fullscreenn" id="fullscreenn">
+                <span class="closee" onclick="closeFullscreenn()">&times;</span>
+                <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="fullscreen-video"></iframe>
+            </div>
+            <div class="fullscreenHighlightNT" id="fullscreenHighlightNT">
+                <span class="closee" onclick="closeFullscreenn()">&times;</span>
+                Highlight Not Available
+            </div>
+
     `
     list[0].innerHTML = gameHtml
 }
@@ -4467,16 +4580,13 @@ function redirectToGamePage(gameId) {
 // End Game Profiles Functions
 
 const clickedGame = document.querySelectorAll('.game');
-
 clickedGame.forEach(element => {
     element.addEventListener("click", () => redirectToGamePage(element.id));
 });
-
-
-
 let gameContent = document.querySelector(".gameGenerateJs")
 const urlParams = new URLSearchParams(window.location.search);
 const gameId = urlParams.get('id');
+
 
 for (let i = 0; i < dayss.length; i++) {
     let day = Object.values(dayss[i])
@@ -4535,12 +4645,24 @@ for (let i = 0; i < dayss.length; i++) {
         `
         let highlight = `
             <div class="highlights-btn">
-                <a href="${game[7]}" id="playButton">
+                <a href="#" id="playButton" onclick="openVideoFullscreen('${game[7]}')">
                     <i class="fa fa-play"></i>
                 highlights
                 </a>
             </div>
         `
+        if (game[7] === "#") {
+
+            highlight = `
+            <div class="highlights-btn">
+                <a href="#" id="playButton"  onclick="openHighlightNTFullscreen()">
+                    <i class="fa fa-play"></i>
+                highlights
+                </a>
+            </div>
+            `
+        }
+        // console.log(highlight)
         if (screen.width < 768) {
             for (let i = 0; i < AllTeams.length; i++) {
                 let team = Object.values(AllTeams[i])
@@ -4580,7 +4702,6 @@ for (let i = 0; i < dayss.length; i++) {
             <span>(${drawInfo[1]})</span>
             `
         }
-
         if (teamOne[1] === "empty.png") {
             leftFlag = `style="border: 5px solid rgb(16, 30, 63);"`
         }
@@ -4651,7 +4772,6 @@ for (let i = 0; i < dayss.length; i++) {
                 break
             } else {
                 
-                console.log("hello")
                 goalHtmlTeamTwo(...listTeamTwo)
             }
         }
@@ -4722,33 +4842,9 @@ for (let i = 0; i < dayss.length; i++) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let clickedTeamm = document.querySelectorAll('.teamForProfile');
+if (currentPage.includes("game-generate.html")) {
+    clickedTeamm.forEach(element => {
+        element.addEventListener("click", () => redirectToTeamPage(element.id));
+    });
+}
