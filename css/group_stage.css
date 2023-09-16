@@ -1,4 +1,5 @@
 
+
 /* Global Rules */
 * {
     -webkit-box-sizing: border-box;
@@ -669,6 +670,10 @@ header input:checked ~ .burger span:nth-of-type(3) {
     border-top: 1px solid #eee;
     align-items: center;
     height: 50px;
+    transition: 0.3s;
+}
+.group-stage .container .boxes .box .teams .team:hover {
+    background-color: #faf7f7;
 }
 .group-stage .container .boxes .box .teams .team .info {
     display: flex;
@@ -1631,3 +1636,47 @@ body ::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 /* Start Open Flag Image In Teams Profiles Functions */
+.fullscreenn {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000000;
+    overflow: hidden;
+    text-align: center;
+    /* padding-top: 35vh; */
+}
+
+.fullscreenn iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.closee {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+.fullscreenHighlightNT {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000000;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 35vh;
+}
