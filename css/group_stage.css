@@ -1635,6 +1635,10 @@ body ::-webkit-scrollbar-thumb {
     color: #fff;
     cursor: pointer;
 }
+
+.close:hover {
+    color: red;
+}
 /* Start Open Flag Image In Teams Profiles Functions */
 .fullscreenn {
     display: none;
@@ -1663,6 +1667,9 @@ body ::-webkit-scrollbar-thumb {
     font-weight: bold;
     color: #fff;
     cursor: pointer;
+}
+.closee:hover {
+    color: red;
 }
 .fullscreenHighlightNT {
     color: white;
