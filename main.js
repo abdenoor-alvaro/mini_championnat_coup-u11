@@ -4841,6 +4841,7 @@ for (let i = 0; i < dayss.length; i++) {
             functionCallTeamTwo = goalHtmlTeamTwo(...listTeamTwo)
         }
         if (gameId === `g${game[4]}`) {
+            document.querySelector('title').textContent = `MATCH ${game[4]}`
             let list = [gameContent, leftTeamName, teamOne[1], rightTeamName, teamTwo[1], game[2], game[3], game[4], date, score, penalties, fullTime, leftFlag, rightFlag, goals, highlight, game[5], game[6], teamNameId(teamOne[0]), teamNameId(teamTwo[0]), winnerTeamLeft, winnerTeamRight]
             gameProfileHtml(functionCallTeamOne, functionCallTeamTwo, ...list)
         }
