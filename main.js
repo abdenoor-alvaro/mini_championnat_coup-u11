@@ -1058,14 +1058,14 @@ let days = {
             teamOne: {
                 name: "j.t oranais",
                 flag: "talent.png",
-                score: false,
+                score: "6",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "aaawo",
                 flag: "aaawo.png",
-                score: false,
+                score: "2",
                 goals: {
                 },
             },
@@ -1080,14 +1080,14 @@ let days = {
             teamOne: {
                 name: "espoir sport city",
                 flag: "espoir sport city.png",
-                score: false,
+                score: "3",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "jil monte carlo",
                 flag: "jil monte carlo.png",
-                score: false,
+                score: "4",
                 goals: {
                 },
             },
@@ -1102,14 +1102,14 @@ let days = {
             teamOne: {
                 name: "rmot",
                 flag: "csarmot.png",
-                score: false,
+                score: "11",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "pepso",
                 flag: "pepso.png",
-                score: false,
+                score: "3",
                 goals: {
                 },
             },
@@ -1124,14 +1124,14 @@ let days = {
             teamOne: {
                 name: "yaghmoracen jyo",
                 flag: "yaghmouracen2.png",
-                score: false,
+                score: "4",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "widad hai el zitoun",
                 flag: "widad hai el zitoun.png",
-                score: false,
+                score: "0",
                 goals: {
                 },
             },
@@ -3182,23 +3182,23 @@ const groupB = {
 }
 const groupC = {
     t2: {
-        played: 3,
-        win: 3,
+        played: 4,
+        win: 4,
         draw: 0,
         lose: 0,
-        GoalDifference: 15,
-        points: 9,
+        GoalDifference: 23,
+        points: 12,
         subName: "RMT",
         flagPic: "csarmot.png",
         qualified: true
     },
     t5: {
-        played: 2,
-        win: 1,
+        played: 3,
+        win: 2,
         draw: 0,
         lose: 1,
-        GoalDifference: 0,
-        points: 3,
+        GoalDifference: 4,
+        points: 6,
         subName: "JO",
         flagPic: "talent.png"
     },
@@ -3213,21 +3213,21 @@ const groupC = {
         flagPic: "espoir senia.png"
     },
     t4: {
-        played: 2,
+        played: 3,
         win: 0,
         draw: 0,
-        lose: 2,
-        GoalDifference: -5,
+        lose: 3,
+        GoalDifference: -13,
         points: 0,
         subName: "CSA",
         flagPic: "pepso.png"
     },
     t1: {
-        played: 1,
+        played: 2,
         win: 0,
         draw: 0,
-        lose: 1,
-        GoalDifference: -5,
+        lose: 2,
+        GoalDifference: -9,
         points: 0,
         subName: "AWO",
         flagPic: "aaawo.png"
@@ -3235,34 +3235,35 @@ const groupC = {
 }
 const groupD = {
     t4: {
+        played: 3,
+        win: 3,
+        draw: 0,
+        lose: 0,
+        GoalDifference: 10,
+        points: 9,
+        subName: "JYO",
+        flagPic: "yaghmouracen2.png",
+        qualified: true
+    },
+    t1: {
         played: 2,
         win: 2,
         draw: 0,
         lose: 0,
-        GoalDifference: 6,
+        GoalDifference: 3,
         points: 6,
-        subName: "JYO",
-        flagPic: "yaghmouracen2.png"
+        subName: "JMC",
+        flagPic: "jil monte carlo.png"
     },
     t2: {
-        played: 3,
+        played: 4,
         win: 1,
         draw: 1,
-        lose: 1,
-        GoalDifference: -1,
+        lose: 2,
+        GoalDifference: -5,
         points: 4,
         subName: "WHZ",
         flagPic: "widad hai el zitoun.png"
-    },
-    t1: {
-        played: 1,
-        win: 1,
-        draw: 0,
-        lose: 0,
-        GoalDifference: 2,
-        points: 3,
-        subName: "JMC",
-        flagPic: "jil monte carlo.png"
     },
     t5: {
         played: 2,
@@ -3275,11 +3276,11 @@ const groupD = {
         flagPic: "kso.png"
     },
     t3: {
-        played: 2,
+        played: 3,
         win: 0,
         draw: 0,
-        lose: 2,
-        GoalDifference: -2,
+        lose: 3,
+        GoalDifference: -3,
         points: 0,
         subName: "SC",
         flagPic: "espoir sport city.png"
@@ -3462,6 +3463,20 @@ console.log(currentPage)
 
 // Start Latest News Data
 let newsData = {
+    news8: {
+        img: "yaghmouracen2.png",
+        header: "JYO الى الدور الثاني",
+        description: "جيل يغموراسن يضفر اليوم بمرتبة مؤهلة للدور الثاني بعد رباعية كاملة أمام منافس لم يكن في يومه وداد حي الزيتون",
+        date: "17 Sep 2023",
+        lan: "arabic"
+    },
+    news7: {
+        img: "csarmot.png",
+        header: "RMOT | العلامة الكاملة",
+        description: "رائد مستقبل واد تليلات ينهي دور المجموعات بالعلامة الكاملة في مشوار البطولة و التأهل الرسمي للدور الثاني PLAY OF في انتضار من سيكون المنافس",
+        date: "17 Sep 2023",
+        lan: "arabic"
+    },
     news6: {
         img: "news6.jpg",
         header: "CFO | الطريق نحو التأهل",
@@ -3925,7 +3940,7 @@ function groupCreat(groupName,location,teamLine) {
                 `
     location.innerHTML += groupBox
 }
-function teams(...list) {
+function teamlines(...list) {
     let teamLine = `
                         <div class="team" ${list[12]}>
                             <div class="info">
@@ -3979,10 +3994,10 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
             let location = document.querySelector(".bjs")
 
             if (i === objectGroups.length - 1) {
-                groupCreat(groupNames[j], location, teams(...infoList))
+                groupCreat(groupNames[j], location, teamlines(...infoList))
                 break
             } else {
-                teams(...infoList)
+                teamlines(...infoList)
             }
         }
     }
@@ -4405,10 +4420,10 @@ if (currentPage.includes("team-profile-generate.html") ) {
                             let infoList = [teamline[0], teamline[1], teamline[2], teamline[3], teamline[4], teamline[5], teamline[6], teamline[7], i + 1, div, teamNameId(file), qualified, changeBg]
                             let location = document.querySelector(".bjs")
                             if (i === objectGroups.length - 1) {
-                                groupCreat(groupNames[j], location, teams(...infoList))
+                                groupCreat(groupNames[j], location, teamlines(...infoList))
                                 break
                             } else {
-                                teams(...infoList)
+                                teamlines(...infoList)
                             }
                         }
                         
