@@ -3137,7 +3137,8 @@ const groupB = {
         GoalDifference: 8,
         points: 9,
         subName: "CSC",
-        flagPic: "chorouk castor.png"
+        flagPic: "chorouk castor.png",
+        qualified: true
     },
     t1: {
         played: 3,
