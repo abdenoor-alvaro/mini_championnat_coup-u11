@@ -663,14 +663,14 @@ let days = {
             teamOne: {
                 name: "chorouk castor",
                 flag: "chorouk castor.png",
-                score: "1",
+                score: "3",
                 goals: {
                 },
             },
             teamTwo: {
                 name: "yaghmouracen jil",
                 flag: "yaghmouracen.png",
-                score: "3",
+                score: "1",
                 goals: {
                 },
             },
@@ -3131,11 +3131,11 @@ const groupA = {
 const groupB = {
     t3: {
         played: 3,
-        win: 2,
+        win: 3,
         draw: 0,
-        lose: 1,
-        GoalDifference: 4,
-        points: 6,
+        lose: 0,
+        GoalDifference: 8,
+        points: 9,
         subName: "CSC",
         flagPic: "chorouk castor.png"
     },
@@ -3149,16 +3149,6 @@ const groupB = {
         subName: "WZM",
         flagPic: "cazamo.png"
     },
-    t5: {
-        played: 2,
-        win: 1,
-        draw: 1,
-        lose: 0,
-        GoalDifference: +2,
-        points: 4,
-        subName: "JIL",
-        flagPic: "yaghmouracen.png"
-    },
     t4: {
         played: 3,
         win: 1,
@@ -3168,6 +3158,16 @@ const groupB = {
         points: 3,
         subName: "ESS",
         flagPic: "esperance es-senia.png"
+    },
+    t5: {
+        played: 2,
+        win: 0,
+        draw: 1,
+        lose: 1,
+        GoalDifference: -2,
+        points: 1,
+        subName: "JIL",
+        flagPic: "yaghmouracen.png"
     },
     t2: {
         played: 3,
@@ -3468,56 +3468,64 @@ let newsData = {
         header: "JYO الى الدور الثاني",
         description: "جيل يغموراسن يضفر اليوم بمرتبة مؤهلة للدور الثاني بعد رباعية كاملة أمام منافس لم يكن في يومه وداد حي الزيتون",
         date: "17 Sep 2023",
-        lan: "arabic"
+        lan: "arabic",
+        postId: "n8"
     },
     news7: {
         img: "csarmot.png",
         header: "RMOT | العلامة الكاملة",
         description: "رائد مستقبل واد تليلات ينهي دور المجموعات بالعلامة الكاملة في مشوار البطولة و التأهل الرسمي للدور الثاني PLAY OF في انتضار من سيكون المنافس",
         date: "17 Sep 2023",
-        lan: "arabic"
+        lan: "arabic",
+        postId: "n7"
     },
     news6: {
         img: "news6.jpg",
         header: "CFO | الطريق نحو التأهل",
         description: "بعد الأداء الرائع ونتيجة اليوم المبشرة, شباب فجر وهران يسير نحو التأهل للدور الثاني من البلاي أوف بقيادة الكوتش عبدالخالق قديدر",
         date: "16 Sep 2023",
-        lan: "arabic"
+        lan: "arabic",
+        postId: "n6"
     },
     news5: {
         img: "news5.jpg",
         header: "شروق كاسطور في الصدارة",
         description: "ثلاثي فريق شروق كاسطور يضرب بثلاثية كاملة و يضع فريقه في صدارة ترتيب المجموعة B",
         date: "16 Sep 2023",
-        lan: "arabic"
+        lan: "arabic",
+        postId: "n5"
     },
     news4: {
         img: "news4.jpg",
         header: "بوحجر ريان يتألق",
         description: "اللاعب بوحجر ريان يقود فريقه في اول ظهور للفوز بثلاثية كاملة في مقابلة دراماتيكية امام منافس عنيد اسمه وداد حي الزيتون ,حيث برز اللاعب بتقديم اسيست و تسجيل هدفين منهم الهدف الثالث الذي قتل المباراة وقتل طموح المنافس في تعديل النتيجة",
         date: "14 Sep 2023",
-        lan: "arabic"
+        lan: "arabic",
+        postId: "n4"
     },
     news3: {
         img: "news3.jpg",
         header: " رائد مستقبل واد تليلات RMOT يهيمن",
         description: "رائد مستقبل واد تليلات RMOT يطيح بفريق ودادية قدماء الحكام AAAWO بخماسية كاملة ويواصل صدارتة في المجموعة C بالعلامة الكاملة مع ضمان تأهله للدور القادم" ,
         date: "13 Sep 2023",
-        lan: "arabic"
+        lan: "arabic",
+        postId: "n3"
     },
     news2: {
         img: "man-of-the-match.jpg",
         header: "دحو يونس | رجل اللقاء",
         description: "رجل المقابلة لاعب فريق CZM من مباراة CZM و ESS, دحو يونس من مواليد 30 أوت 2012 سجل هدفين و أسيست على طريقة ليونيل ميسي",
         date: "12 Sep 2023",
-        lan: "arabic"
+        lan: "arabic",
+        postId: "n2"
     },
     news1: {
         img: "firstNews.jpg",
         header: "بطولة مصغرة تحضيرية",
         description: "بطولة مصغرة على الطريقة الأوروبية و لأول مرة تحضيرا للموسم الرياضي الجديد من تنظيم كفاءات رياضية",
         date: "12 Sep 2023",
-        lan: "arabic"
+        lan: "arabic",
+        postId: "n1"
     },
 }
 let news = Object.values(newsData)
@@ -3531,15 +3539,15 @@ function postHtml(...list) {
                 <div class="post-slide">
                     <div class="post-img">
                         <img src="images/${list[0]}" alt="">
-                        <a href="${list[5]}" class="over-layer"><i class="fa fa-link"></i></a>
+                        <a href="${list[5]}" class="over-layer forNewsPage" id="${list[7]}"><i class="fa fa-link"></i></a>
                     </div>
                     <div class="post-content">
                         <h3 class="post-title ${list[4]}">
-                            <a href="${list[5]}">${list[1]}</a>
+                            <a href="${list[5]}" class="forNewsPage" id="${list[7]}">${list[1]}</a>
                         </h3>
                         <p class="post-description ${list[4]}">${list[2]}</p>
                         <span class="post-date"><i class="fa fa-clock"></i>${list[3]}</span>
-                        <a href="${list[5]}" class="read-more">read more</a>
+                        <a href="${list[5]}" class="read-more forNewsPage" id="${list[7]}">read more</a>
                     </div>
                 </div>
     `
@@ -3561,10 +3569,10 @@ if (currentPage.includes("index.html") || currentPage === "/" || currentPage ===
     for (let i = 0; i < news.length; i++) {
         let post = Object.values(news[i])
         let file = "#"
-        if (post[5] !== undefined) {
-            file = post[5]
-        }
-        let list = [post[0], post[1], post[2], post[3], post[4], file, position]
+        // if (post[5] !== undefined) {
+        //     file = post[5]
+        // }
+        let list = [post[0], post[1], post[2], post[3], post[4], file, position, post[5]]
         
         postHtml(...list)
     }
@@ -3581,6 +3589,56 @@ if (currentPage.includes("index.html") || currentPage === "/" || currentPage ===
         });
     });
 }
+// Start News Generate
+function newsGenerateHtml(...list) {
+    let newsGenerateHtml = `
+    <div class="news-generate-page">
+        <div class="container">
+            <div class="header-section">
+                <div class="news-header ${list[4]}">${list[1]}</div>
+                <div class="date-section">
+                    <p>published:</p>
+                    <div class="date">${list[3]}</div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/${list[0]}" alt="" class="thumbnail" onclick="openImage('images/${list[0]}')">
+            </div>
+            <div class="news ${list[4]}">
+            ${list[2]}
+            </div>
+            <div class="fullscreen" id="fullscreen">
+                <span class="close" onclick="closeFullscreen()">&times;</span>
+                <img src="" alt="Fullscreen Image" class="fullscreen-image"id="fullscreen-image">
+            </div>
+            <div class="fullscreenHighlightNT" id="fullscreenHighlightNT">
+                <span class="closee" onclick="closeFullscreenn()">&times;</span>
+                Highlight Not Available
+            </div>
+        </div>
+    </div>
+    `
+    pageBody.innerHTML += newsGenerateHtml
+}
+let clickednews = document.querySelectorAll('.forNewsPage');
+let newsUrlParams = new URLSearchParams(window.location.search);
+let newsId = newsUrlParams.get('id');
+
+if (currentPage.includes("index.html") || currentPage === "/" || currentPage.includes("news-generate.html")) {
+    clickednews.forEach(element => {
+        element.addEventListener("click", () => window.location.href = `news-generate.html?id=${element.id}` );
+    });
+}
+
+for (let i = 0; i < news.length; i++) {
+    let post = Object.values(news[i])
+    if (newsId === post[5]) {
+        let list = [post[0], post[1], post[2], post[3], post[4], post[5]]
+        newsGenerateHtml(...list)
+    }
+}
+
+// End News Generate 
 // End Latest News
 
 
@@ -4271,11 +4329,11 @@ function teamHtml(...list) {
     let struct = `
     <div class="fullscreen" id="fullscreen">
         <span class="close" onclick="closeFullscreen()">&times;</span>
-        <img src="" alt="Fullscreen Image" id="fullscreen-image">
+        <img src="" class="fullscreen-image"  alt="Fullscreen Image" id="fullscreen-image">
     </div>
     <div class="header">
         <div class="container" >
-            <img class="thumbnail" src="images/${list[0]}" alt="" onclick="openImage('images/${list[0]}')">
+            <img src="images/${list[0]}" alt="" class="thumbnail" onclick="openImage('images/${list[0]}')">
             <p>${list[1]}</p>
         </div>
     </div>
@@ -4372,6 +4430,7 @@ if (currentPage.includes("team-profile-generate.html") ) {
         let team = Object.values(AllTeams[i])
         let teamName = teamNameId(team[0])
         if (teamId === teamName) {
+            console.log(teamId)
             let list = [team[2], capitalize(team[0])]
             teamHtml(...list)
             let teamName = team[0].toLowerCase()
@@ -4859,8 +4918,8 @@ for (let i = 0; i < dayss.length; i++) {
 
 
 let clickedTeamm = document.querySelectorAll('.teamForProfile');
-if (currentPage.includes("game-generate.html")) {
+if (currentPage.includes("news-generate.html")) {
     clickedTeamm.forEach(element => {
-        element.addEventListener("click", () => redirectToTeamPage(element.id));
+        element.addEventListener("click", () => redirectToNewsPage(element.id));
     });
 }
