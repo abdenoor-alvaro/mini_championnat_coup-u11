@@ -286,7 +286,7 @@ header input:checked ~ .burger span:nth-of-type(3) {
     overflow: hidden;
     
 }
-.post-slide .arabic {
+.arabic {
     font-family: "Cairo" , sans-serif;
     direction: rtl;
 }
@@ -1590,6 +1590,61 @@ body ::-webkit-scrollbar-thumb {
     }
 }
 /* End Game Generate */
+/* Start News Generage page */
+.news-generate-page .container {
+    background: white;
+    padding: 4rem 0 20rem;
+    border-radius: 20px;
+}
+.news-generate-page .container .header-section {
+    padding-inline: 10rem;
+}
+.news-generate-page .container .header-section .news-header {
+    font-size: 50px;
+    font-weight: 500;
+}
+.news-generate-page .container .header-section .date-section {
+    font-size: 14px;
+    padding: 30px 0px 15px;
+    width: 100%;
+    border-bottom: 1px solid #00b8ff;
+    color: #505b73;
+}
+.news-generate-page .container .header-section .date {
+    font-weight: 500;
+    margin-top: 5px;
+}
+.news-generate-page .container .image {
+    aspect-ratio: 3 / 2;
+    /* overflow: hidden; */
+}
+.news-generate-page .container .image img {
+    width: 100%;
+    margin-block: 40px;
+    object-fit: cover;
+    aspect-ratio: 3 / 2;
+}
+.news-generate-page .container .news {
+    padding-inline: 10rem;
+    font-size: 30px;
+    line-height: 1.7;
+}
+@media (max-width:992px) {
+    .news-generate-page .container {
+        padding: 4rem 0 12rem;
+    }
+    .news-generate-page .container .header-section {
+        padding-inline: 6rem;
+    }
+    .news-generate-page .container .header-section .news-header {
+        font-size: 40px;
+    }
+    .news-generate-page .container .news {
+        padding-inline: 6rem;
+        font-size: 25px;
+    }
+}
+/* End News Generage page */
 /* Start Open Flag Image In Teams Profiles Functions */
 .thumbnail {
     cursor: pointer;
@@ -1608,7 +1663,7 @@ body ::-webkit-scrollbar-thumb {
 .fullscreen {
     display: none;
     position: fixed;
-    top: 0%;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1616,20 +1671,23 @@ body ::-webkit-scrollbar-thumb {
     z-index: 1000000;
     overflow: auto;
     text-align: center;
-    padding-top: 35vh;
+    /* padding-top: 35vh; */
 }
 
 .fullscreen-image {
-    width: 90%;
-    max-height: 90%;
-    /* margin: auto; */
+    /* width: 90%; */
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: block;
 }
 
 .close {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 5px;
+    right: 40px;
     font-size: 40px;
     font-weight: bold;
     color: #fff;
