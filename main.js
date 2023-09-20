@@ -3464,6 +3464,14 @@ console.log(currentPage)
 
 // Start Latest News Data
 let newsData = {
+    news9: {
+        img: "news9.jpg",
+        header: " قرعة الدور التمهيدي الأول",
+        description: "رسميا تم تحديد يوم  الجمعة 22 سبتمبر 2023 لاجراء قرعة الكأس في دورها التمهيدي الأول",
+        date: "20 Sep 2023",
+        lan: "arabic",
+        postId: "n9"
+    },
     news8: {
         img: "yaghmouracen2.png",
         header: "JYO الى الدور الثاني",
@@ -3504,30 +3512,30 @@ let newsData = {
         lan: "arabic",
         postId: "n4"
     },
-    news3: {
-        img: "news3.jpg",
-        header: " رائد مستقبل واد تليلات RMOT يهيمن",
-        description: "رائد مستقبل واد تليلات RMOT يطيح بفريق ودادية قدماء الحكام AAAWO بخماسية كاملة ويواصل صدارتة في المجموعة C بالعلامة الكاملة مع ضمان تأهله للدور القادم" ,
-        date: "13 Sep 2023",
-        lan: "arabic",
-        postId: "n3"
-    },
-    news2: {
-        img: "man-of-the-match.jpg",
-        header: "دحو يونس | رجل اللقاء",
-        description: "رجل المقابلة لاعب فريق CZM من مباراة CZM و ESS, دحو يونس من مواليد 30 أوت 2012 سجل هدفين و أسيست على طريقة ليونيل ميسي",
-        date: "12 Sep 2023",
-        lan: "arabic",
-        postId: "n2"
-    },
-    news1: {
-        img: "firstNews.jpg",
-        header: "بطولة مصغرة تحضيرية",
-        description: "بطولة مصغرة على الطريقة الأوروبية و لأول مرة تحضيرا للموسم الرياضي الجديد من تنظيم كفاءات رياضية",
-        date: "12 Sep 2023",
-        lan: "arabic",
-        postId: "n1"
-    },
+    // news3: {
+    //     img: "news3.jpg",
+    //     header: " رائد مستقبل واد تليلات RMOT يهيمن",
+    //     description: "رائد مستقبل واد تليلات RMOT يطيح بفريق ودادية قدماء الحكام AAAWO بخماسية كاملة ويواصل صدارتة في المجموعة C بالعلامة الكاملة مع ضمان تأهله للدور القادم" ,
+    //     date: "13 Sep 2023",
+    //     lan: "arabic",
+    //     postId: "n3"
+    // },
+    // news2: {
+    //     img: "man-of-the-match.jpg",
+    //     header: "دحو يونس | رجل اللقاء",
+    //     description: "رجل المقابلة لاعب فريق CZM من مباراة CZM و ESS, دحو يونس من مواليد 30 أوت 2012 سجل هدفين و أسيست على طريقة ليونيل ميسي",
+    //     date: "12 Sep 2023",
+    //     lan: "arabic",
+    //     postId: "n2"
+    // },
+    // news1: {
+    //     img: "firstNews.jpg",
+    //     header: "بطولة مصغرة تحضيرية",
+    //     description: "بطولة مصغرة على الطريقة الأوروبية و لأول مرة تحضيرا للموسم الرياضي الجديد من تنظيم كفاءات رياضية",
+    //     date: "12 Sep 2023",
+    //     lan: "arabic",
+    //     postId: "n1"
+    // },
 }
 let news = Object.values(newsData)
 // End Latest News Data
