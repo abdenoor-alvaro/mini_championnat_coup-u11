@@ -1143,188 +1143,188 @@ let days = {
             highlight: "#"
         },
     },
-    day10: {
-        date: "Wednesday 20 September 2023",
-        game1: {
-            teamOne: {
-                name: "canastel",
-                flag: "canastel.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "wihdat amel bir eldjir",
-                flag: "wihdat-amel-bir-eldjir.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group A",
-            time: "08:30",
-            match: "29",
-            city: "Oran",
-            stadium: "Stade Proxomite Hai Yasmine",
-            highlight: "#"
-        },
-        game3: {
-            teamOne: {
-                name: "yaghmouracen jil",
-                flag: "yaghmouracen.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "aadl zabana",
-                flag: "cazamo.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group B",
-            time: "08:30",
-            match: "30",
-            city: "Oran",
-            stadium: "Stade Proxomite Emir Khaled",
-            highlight: "#"
-        },
-        game2: {
-            teamOne: {
-                name: "abtal hai yasmine",
-                flag: "abtal-hai-yasmine.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "widad amal carteaux",
-                flag: "widad-amal-carteaux.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group A",
-            time: "09:15",
-            match: "31",
-            city: "Oran",
-            stadium: "Stade Proxomite Hai Yasmine",
-            highlight: "#"
-        },
-        game4: {
-            teamOne: {
-                name: "emir khaled",
-                flag: "chabab emir khaled.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "chorouk castor",
-                flag: "chorouk castor.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group B",
-            time: "09:15",
-            match: "32",
-            city: "Oran",
-            stadium: "Stade Proxomite Emir Khaled",
-            highlight: "#"
-        },
-    },
-    day11: {
-        date: "thursday 21 September 2023",
-        game1: {
-            teamOne: {
-                name: "j.t oranais",
-                flag: "talent.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "espoir senia",
-                flag: "espoir senia.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group C",
-            time: "08:30",
-            match: "33",
-            city: "Oran",
-            stadium: "Stade Proxomite Hai Yasmine",
-            highlight: "#"
-        },
-        game3: {
-            teamOne: {
-                name: "espoir sport city",
-                flag: "espoir sport city.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "Kawkeb Sportif oran",
-                flag: "kso.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group D",
-            time: "08:30",
-            match: "34",
-            city: "Oran",
-            stadium: "Stade Proxomite Emir Khaled",
-            highlight: "#"
-        },
-        game2: {
-            teamOne: {
-                name: "aaawo",
-                flag: "aaawo.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "pepso",
-                flag: "pepso.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group C",
-            time: "09:15",
-            match: "35",
-            city: "Oran",
-            stadium: "Stade Proxomite Emir Hai Yasmine",
-            highlight: "#"
-        },
-        game4: {
-            teamOne: {
-                name: "yaghmoracen jyo",
-                flag: "yaghmouracen2.png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "jil monte carlo",
-                flag: "jil monte carlo.png",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group D",
-            time: "09:15",
-            match: "36",
-            city: "Oran",
-            stadium: "Stade Proxomite Emir Khaled",
-            highlight: "#"
-        },
-    },
+    // day10: {
+    //     date: "Wednesday 20 September 2023",
+    //     game1: {
+    //         teamOne: {
+    //             name: "canastel",
+    //             flag: "canastel.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         teamTwo: {
+    //             name: "wihdat amel bir eldjir",
+    //             flag: "wihdat-amel-bir-eldjir.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         group: "Group A",
+    //         time: "08:30",
+    //         match: "29",
+    //         city: "Oran",
+    //         stadium: "Stade Proxomite Hai Yasmine",
+    //         highlight: "#"
+    //     },
+    //     game3: {
+    //         teamOne: {
+    //             name: "yaghmouracen jil",
+    //             flag: "yaghmouracen.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         teamTwo: {
+    //             name: "aadl zabana",
+    //             flag: "cazamo.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         group: "Group B",
+    //         time: "08:30",
+    //         match: "30",
+    //         city: "Oran",
+    //         stadium: "Stade Proxomite Emir Khaled",
+    //         highlight: "#"
+    //     },
+    //     game2: {
+    //         teamOne: {
+    //             name: "abtal hai yasmine",
+    //             flag: "abtal-hai-yasmine.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         teamTwo: {
+    //             name: "widad amal carteaux",
+    //             flag: "widad-amal-carteaux.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         group: "Group A",
+    //         time: "09:15",
+    //         match: "31",
+    //         city: "Oran",
+    //         stadium: "Stade Proxomite Hai Yasmine",
+    //         highlight: "#"
+    //     },
+    //     game4: {
+    //         teamOne: {
+    //             name: "emir khaled",
+    //             flag: "chabab emir khaled.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         teamTwo: {
+    //             name: "chorouk castor",
+    //             flag: "chorouk castor.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         group: "Group B",
+    //         time: "09:15",
+    //         match: "32",
+    //         city: "Oran",
+    //         stadium: "Stade Proxomite Emir Khaled",
+    //         highlight: "#"
+    //     },
+    // },
+    // day11: {
+    //     date: "thursday 21 September 2023",
+    //     game1: {
+    //         teamOne: {
+    //             name: "j.t oranais",
+    //             flag: "talent.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         teamTwo: {
+    //             name: "espoir senia",
+    //             flag: "espoir senia.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         group: "Group C",
+    //         time: "08:30",
+    //         match: "33",
+    //         city: "Oran",
+    //         stadium: "Stade Proxomite Hai Yasmine",
+    //         highlight: "#"
+    //     },
+    //     game3: {
+    //         teamOne: {
+    //             name: "espoir sport city",
+    //             flag: "espoir sport city.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         teamTwo: {
+    //             name: "Kawkeb Sportif oran",
+    //             flag: "kso.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         group: "Group D",
+    //         time: "08:30",
+    //         match: "34",
+    //         city: "Oran",
+    //         stadium: "Stade Proxomite Emir Khaled",
+    //         highlight: "#"
+    //     },
+    //     game2: {
+    //         teamOne: {
+    //             name: "aaawo",
+    //             flag: "aaawo.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         teamTwo: {
+    //             name: "pepso",
+    //             flag: "pepso.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         group: "Group C",
+    //         time: "09:15",
+    //         match: "35",
+    //         city: "Oran",
+    //         stadium: "Stade Proxomite Emir Hai Yasmine",
+    //         highlight: "#"
+    //     },
+    //     game4: {
+    //         teamOne: {
+    //             name: "yaghmoracen jyo",
+    //             flag: "yaghmouracen2.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         teamTwo: {
+    //             name: "jil monte carlo",
+    //             flag: "jil monte carlo.png",
+    //             score: false,
+    //             goals: {
+    //             },
+    //         },
+    //         group: "Group D",
+    //         time: "09:15",
+    //         match: "36",
+    //         city: "Oran",
+    //         stadium: "Stade Proxomite Emir Khaled",
+    //         highlight: "#"
+    //     },
+    // },
     // day8: {
     //     date: "Tuesday 15 August 2023",
     //     game1: {
@@ -3909,10 +3909,10 @@ if (currentPage.includes("index.html") || currentPage === "/" || currentPage ===
         fullDate = dateConventer(dayName - 2, dayNumber - 2, month, year)
         returnedNum = creatDayInHomePage(fullDate)
     }
-    // if (num === 0) {
-    //     createDay(Object.values(dayss[dayss.length - 2]), Object.values(dayss[dayss.length - 2])[0])
-    //     createDay(Object.values(dayss[dayss.length - 1]), Object.values(dayss[dayss.length - 1])[0])
-    // }
+    if (returnedNum === 0) {
+        createDay(Object.values(dayss[dayss.length - 2]), Object.values(dayss[dayss.length - 2])[0])
+        createDay(Object.values(dayss[dayss.length - 1]), Object.values(dayss[dayss.length - 1])[0])
+    }
 }
 // End Games And Scores In Home Page
 
