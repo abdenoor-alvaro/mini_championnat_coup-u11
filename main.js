@@ -3470,7 +3470,8 @@ let newsData = {
         description: "رسميا تم تحديد يوم  الجمعة 22 سبتمبر 2023 لاجراء قرعة الكأس في دورها التمهيدي الأول",
         date: "20 Sep 2023",
         lan: "arabic",
-        postId: "n9"
+        postId: "n9",
+        // video: "C42yuyRpb6I?si=v6KHfsMd0K_nViKN"
     },
     news8: {
         img: "yaghmouracen2.png",
@@ -3547,6 +3548,7 @@ function postHtml(...list) {
     let postHtml = `
                 <div class="post-slide">
                     <div class="post-img">
+                        ${list[8]}
                         <img src="images/${list[0]}" alt="">
                         <a href="${list[5]}" class="over-layer forNewsPage" id="${list[7]}"><i class="fa fa-link"></i></a>
                     </div>
@@ -3578,10 +3580,11 @@ if (currentPage.includes("index.html") || currentPage === "/" || currentPage ===
     for (let i = 0; i < news.length; i++) {
         let post = Object.values(news[i])
         let file = "#"
-        // if (post[5] !== undefined) {
-        //     file = post[5]
-        // }
-        let list = [post[0], post[1], post[2], post[3], post[4], file, position, post[5]]
+        let video = " "
+        if (post[6] !== undefined) {
+            video = `<a href="${file}" class="forNewsPage" id="${post[5]}"><div class="video-icon"></div></a> `
+        }
+        let list = [post[0], post[1], post[2], post[3], post[4], file, position, post[5], video]
         
         postHtml(...list)
     }
@@ -3611,7 +3614,7 @@ function newsGenerateHtml(...list) {
                 </div>
             </div>
             <div class="image">
-                <img src="images/${list[0]}" alt="" class="thumbnail" onclick="openImage('images/${list[0]}')">
+                ${list[5]}
             </div>
             <div class="news ${list[4]}">
             ${list[2]}
@@ -3641,8 +3644,12 @@ if (currentPage.includes("index.html") || currentPage === "/" || currentPage.inc
 
 for (let i = 0; i < news.length; i++) {
     let post = Object.values(news[i])
+    let newsMedia = `<img src="images/${post[0]}" alt="" class="thumbnail" onclick="openImage('images/${post[0]}')"></img>`
+    if (post[6] !== undefined) {
+        newsMedia = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${post[6]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+    }
     if (newsId === post[5]) {
-        let list = [post[0], post[1], post[2], post[3], post[4], post[5]]
+        let list = [post[0], post[1], post[2], post[3], post[4], newsMedia]
         newsGenerateHtml(...list)
     }
 }
