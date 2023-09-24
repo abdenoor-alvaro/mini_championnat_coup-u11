@@ -18,8 +18,8 @@ let pageHeaderHtml = `
                 <li><a href="games-and-scores.html">Games & Scores</a></li>
                 <li><a href="group-stage.html">Groups</a></li>
                 <li><a href="knockout.html">Knockout</a></li>
+                <li><a href="all-news.html">News</a></li>
                 <li><a href="teams.html">Teams</a></li>
-                <li><a href="rules.html">Rules</a></li>
             </ul>
         </div>
     </header>
@@ -3471,7 +3471,7 @@ let newsData = {
         date: "20 Sep 2023",
         lan: "arabic",
         postId: "n9",
-        // video: "C42yuyRpb6I?si=v6KHfsMd0K_nViKN"
+        video: "C42yuyRpb6I?si=v6KHfsMd0K_nViKN"
     },
     news8: {
         img: "yaghmouracen2.png",
@@ -3513,37 +3513,86 @@ let newsData = {
         lan: "arabic",
         postId: "n4"
     },
-    // news3: {
-    //     img: "news3.jpg",
-    //     header: " رائد مستقبل واد تليلات RMOT يهيمن",
-    //     description: "رائد مستقبل واد تليلات RMOT يطيح بفريق ودادية قدماء الحكام AAAWO بخماسية كاملة ويواصل صدارتة في المجموعة C بالعلامة الكاملة مع ضمان تأهله للدور القادم" ,
-    //     date: "13 Sep 2023",
-    //     lan: "arabic",
-    //     postId: "n3"
-    // },
-    // news2: {
-    //     img: "man-of-the-match.jpg",
-    //     header: "دحو يونس | رجل اللقاء",
-    //     description: "رجل المقابلة لاعب فريق CZM من مباراة CZM و ESS, دحو يونس من مواليد 30 أوت 2012 سجل هدفين و أسيست على طريقة ليونيل ميسي",
-    //     date: "12 Sep 2023",
-    //     lan: "arabic",
-    //     postId: "n2"
-    // },
-    // news1: {
-    //     img: "firstNews.jpg",
-    //     header: "بطولة مصغرة تحضيرية",
-    //     description: "بطولة مصغرة على الطريقة الأوروبية و لأول مرة تحضيرا للموسم الرياضي الجديد من تنظيم كفاءات رياضية",
-    //     date: "12 Sep 2023",
-    //     lan: "arabic",
-    //     postId: "n1"
-    // },
+    news3: {
+        img: "news3.jpg",
+        header: " رائد مستقبل واد تليلات RMOT يهيمن",
+        description: "رائد مستقبل واد تليلات RMOT يطيح بفريق ودادية قدماء الحكام AAAWO بخماسية كاملة ويواصل صدارتة في المجموعة C بالعلامة الكاملة مع ضمان تأهله للدور القادم" ,
+        date: "13 Sep 2023",
+        lan: "arabic",
+        postId: "n3"
+    },
+    news2: {
+        img: "man-of-the-match.jpg",
+        header: "دحو يونس | رجل اللقاء",
+        description: "رجل المقابلة لاعب فريق CZM من مباراة CZM و ESS, دحو يونس من مواليد 30 أوت 2012 سجل هدفين و أسيست على طريقة ليونيل ميسي",
+        date: "12 Sep 2023",
+        lan: "arabic",
+        postId: "n2"
+    },
+    news1: {
+        img: "firstNews.jpg",
+        header: "بطولة مصغرة تحضيرية",
+        description: "بطولة مصغرة على الطريقة الأوروبية و لأول مرة تحضيرا للموسم الرياضي الجديد من تنظيم كفاءات رياضية",
+        date: "12 Sep 2023",
+        lan: "arabic",
+        postId: "n1"
+    },
 }
 let news = Object.values(newsData)
 // End Latest News Data
 
 
+// Start All News Page
+if (currentPage.includes("all-news.html")) {
+    function allNewsPageHtml(newsBoxes) {
+        let allNewsPageHtml = `
+        <div class="all-news-page">
+            <div class="all-news-header">Latest News</div>
+            <div class="all-news">
+                ${newsBoxes}
+            </div>
+        </div>
+        `
+        pageBody.innerHTML += allNewsPageHtml
+    }
+    function newsBoxes(...list) {
+        let newsBox = `
+        <a href="#" class="news-box forNewsPage" id="${list[3]}">
+            <div class="image">
+                ${list[5]}
+                <img src="images/${list[0]}" alt="">
+            </div>
+            <div class="news-header ${list[2]}">
+                <p>${list[1]}</p>
+            </div>
+        </a>
+        `
+        list[4].innerHTML += newsBox
+        console.log(list[4])
+        return list[4].innerHTML
+    }
 
-// Start Latest News
+
+    let newsBoxLocation = document.createElement("div")
+    for (let i = 0; i < news.length; i++) {
+        let post = Object.values(news[i])
+        let video = " "
+        if (post[6] !== undefined) {
+            video = `<div class="video-icon-in-news-page"></div> `
+        }
+        let list = [post[0], post[1], post[4], post[5], newsBoxLocation, video]
+        if (i === news.length - 1) {
+            allNewsPageHtml(newsBoxes(...list))
+        } else {
+            newsBoxes(...list)
+        }
+    }
+}
+
+// End All News Page
+
+
+// Start Latest News In Home Page
 function postHtml(...list) {
     let postHtml = `
                 <div class="post-slide">
@@ -3578,11 +3627,14 @@ if (currentPage.includes("index.html")) {
 if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
     
     for (let i = 0; i < news.length; i++) {
+        if (i === 6) {
+            break;
+        }
         let post = Object.values(news[i])
         let file = "#"
         let video = " "
         if (post[6] !== undefined) {
-            video = `<a href="${file}" class="forNewsPage" id="${post[5]}"><div class="video-icon"></div></a> `
+            video = `<a href="${file}" class="forNewsPage" id="${post[5]}"><div class="video-icon-in-post-slide"></div></a> `
         }
         let list = [post[0], post[1], post[2], post[3], post[4], file, position, post[5], video]
         
@@ -3601,6 +3653,8 @@ if (currentPage.includes("index.html") || currentPage === "/" || currentPage ===
         });
     });
 }
+
+// End Latest News In Home Page
 // Start News Generate
 function newsGenerateHtml(...list) {
     let newsGenerateHtml = `
@@ -3636,7 +3690,7 @@ let clickednews = document.querySelectorAll('.forNewsPage');
 let newsUrlParams = new URLSearchParams(window.location.search);
 let newsId = newsUrlParams.get('id');
 
-if (currentPage.includes("index.html") || currentPage === "/" || currentPage.includes("news-generate.html")) {
+if (currentPage.includes("index.html") || currentPage.includes("all-news.html") || currentPage === "/") {
     clickednews.forEach(element => {
         element.addEventListener("click", () => window.location.href = `news-generate.html?id=${element.id}` );
     });
@@ -3654,8 +3708,12 @@ for (let i = 0; i < news.length; i++) {
     }
 }
 
-// End News Generate 
-// End Latest News
+// End News Generate
+
+
+
+
+
 
 
 
