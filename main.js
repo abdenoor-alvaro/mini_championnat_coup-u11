@@ -3471,7 +3471,7 @@ let newsData = {
         date: "20 Sep 2023",
         lan: "arabic",
         postId: "n9",
-        video: "C42yuyRpb6I?si=v6KHfsMd0K_nViKN"
+        // video: "C42yuyRpb6I?si=v6KHfsMd0K_nViKN"
     },
     news8: {
         img: "yaghmouracen2.png",
