@@ -3690,7 +3690,7 @@ let clickednews = document.querySelectorAll('.forNewsPage');
 let newsUrlParams = new URLSearchParams(window.location.search);
 let newsId = newsUrlParams.get('id');
 
-if (currentPage.includes("index.html") || currentPage.includes("all-news.html") || currentPage === "/") {
+if (currentPage.includes("index.html") || currentPage.includes("all-news.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
     clickednews.forEach(element => {
         element.addEventListener("click", () => window.location.href = `news-generate.html?id=${element.id}` );
     });
