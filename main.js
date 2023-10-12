@@ -3174,11 +3174,11 @@ if (currentPage.includes("knockout.html") || currentPage.includes("index.html") 
     let leftSemiFinal = document.querySelector(".leftSemiFinal")
     gameInfo("46", leftSemiFinal)
     
-    let thirdPlace = document.querySelector(".third-place")
-    gameInfo("47", thirdPlace)
+    // let thirdPlace = document.querySelector(".third-place")
+    // gameInfo("47", thirdPlace)
     
     let final = document.querySelector(".final")
-    gameInfo("48", final, finalHeader)
+    gameInfo("47", final, finalHeader)
 }
 // End Knockout Page
 // End Knockout
