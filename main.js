@@ -1,6 +1,6 @@
 
 const currentPage = window.location.pathname;
-
+console.log(currentPage)
 // Start page Header
 let pageHeaderHtml = `
     <!-- Start Header -->
@@ -32,7 +32,6 @@ if (!currentPage.includes("games-and-scores.html")) {
     pageBody.prepend(pageHeader)
 }
 // End page Header
-
 
 
 // Start Teams Data 
@@ -297,7 +296,6 @@ let allTeams = {
         //         proClub: "without club"
         //     }
         // }
-
     },
     t4: {
         name: "widad amal carteaux",
@@ -468,35 +466,6 @@ let days = {
             //     scoreTwo: "2"
             // }
         },
-        // game4: {
-        //     teamOne: {
-        //         name: "taraji senia",
-        //         flag: "esperance es-senia.png",
-        //         score: false,
-        //         goals: {
-                    
-        //         },
-        //         // winner: true
-        //     },
-        //     teamTwo: {
-        //         name: "yaghmouracen jil",
-        //         flag: "yaghmouracen.png",
-        //         score: false,
-        //         goals: {
-        //         },
-        //     },
-        //     group: "Group B",
-        //     time: "09:15",
-        //     match: "04",
-        //     city: "Oran",
-        //     stadium: "Stade Proxomite Emir Khaled",
-        //     highlight: "#"
-        //     // drawInfo: {
-        //     //     winnerTeam: "Barcelona",
-        //     //     scoreOne: "4",
-        //     //     scoreTwo: "2"
-        //     // }
-        // }
     },
     day2: {
         date: "Tuesday 05 September 2023",
@@ -544,29 +513,6 @@ let days = {
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
-        // game3: {
-        //     teamOne: {
-        //         name: "Kawkeb Sportif oran",
-        //         flag: "kso.png",
-        //         score: false,
-        //         goals: {
-                    
-        //         }
-        //     },
-        //     teamTwo: {
-        //         name: "jil monte carlo",
-        //         flag: "jil monte carlo.png",
-        //         score: false,
-        //         goals: {
-        //         },
-        //     },
-        //     group: "Group D",
-        //     time: "08:30",
-        //     match: "07",
-        //     city: "Oran",
-        //     stadium: "Stade Proxomite Emir Khaled",
-        //     highlight: "#"
-        // },
         game4: {
             teamOne: {
                 name: "widad hai el zitoun",
@@ -593,28 +539,6 @@ let days = {
     },
     day3: {
         date: "Friday 08 September 2023",
-        // game1: {
-        //     teamOne: {
-        //         name: "abtal hai yasmine",
-        //         flag: "abtal-hai-yasmine.png",
-        //         score: false,
-        //         goals: {
-        //         },
-        //     },
-        //     teamTwo: {
-        //         name: "chabeb fajer wahran",
-        //         flag: "fajr-wahran.png",
-        //         score: false,
-        //         goals: {
-        //         },
-        //     },
-        //     group: "Group A",
-        //     time: "08:30",
-        //     match: "09",
-        //     city: "Oran",
-        //     stadium: "Stade Proxomite Hai Yasmine",
-        //     highlight: "#"
-        // },
         game3: {
             teamOne: {
                 name: "emir khaled",
@@ -738,7 +662,7 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "Kawkeb Sportif oran",
+                name: "kawkeb sportif oran",
                 flag: "kso.png",
                 score: "1",
                 goals: {
@@ -876,7 +800,7 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "Kawkeb Sportif oran",
+                name: "kawkeb sportif oran",
                 flag: "kso.png",
                 score: "0",
                 goals: {
@@ -1145,6 +1069,29 @@ let days = {
     },
     day10: {
         date: "Friday 29 September 2023",
+        game5: {
+            teamOne: {
+                name: "abtal hai yasmine",
+                flag: "abtal-hai-yasmine.png",
+                score: "2",
+                goals: {
+                    
+                },
+            },
+            teamTwo: {
+                name: "chabeb fajer wahran",
+                flag: "fajr-wahran.png",
+                score: "3",
+                goals: {
+                },
+            },
+            group: "Group A",
+            time: "08:30",
+            match: "29",
+            city: "Oran",
+            stadium: "Stade Proxomite Hai Yasmine",
+            highlight: "#"
+        },
         game1: {
             teamOne: {
                 name: "canastel",
@@ -1162,7 +1109,7 @@ let days = {
             },
             group: "Group A",
             time: "08:30",
-            match: "29",
+            match: "30",
             city: "Oran",
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
@@ -1184,7 +1131,7 @@ let days = {
             },
             group: "Group B",
             time: "08:30",
-            match: "30",
+            match: "31",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
             highlight: "#"
@@ -1206,7 +1153,7 @@ let days = {
             },
             group: "Group A",
             time: "09:15",
-            match: "31",
+            match: "32",
             city: "Oran",
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
@@ -1228,9 +1175,33 @@ let days = {
             },
             group: "Group B",
             time: "09:15",
-            match: "32",
+            match: "33",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
+        },
+        game6: {
+            teamOne: {
+                name: "aaawo",
+                flag: "aaawo.png",
+                score: "3",
+                goals: {
+                    
+                },
+            },
+            teamTwo: {
+                name: "espoir senia",
+                flag: "espoir senia.png",
+                score: "0",
+                goals: {
+                    
+                },
+            },
+            group: "Group C",
+            time: "09:00",
+            match: "34",
+            city: "Oran",
+            stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         },
     },
@@ -1253,7 +1224,7 @@ let days = {
             },
             group: "Group C",
             time: "08:30",
-            match: "33",
+            match: "35",
             city: "Oran",
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
@@ -1267,7 +1238,7 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "Kawkeb Sportif oran",
+                name: "kawkeb sportif oran",
                 flag: "kso.png",
                 score: "3",
                 goals: {
@@ -1275,7 +1246,53 @@ let days = {
             },
             group: "Group D",
             time: "08:30",
-            match: "34",
+            match: "36",
+            city: "Oran",
+            stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
+        },
+        game5: {
+            teamOne: {
+                name: "yaghmouracen jil",
+                flag: "yaghmouracen.png",
+                score: "0",
+                goals: {
+                    
+                },
+            },
+            teamTwo: {
+                name: "taraji senia",
+                flag: "esperance es-senia.png",
+                score: "4",
+                goals: {
+                    
+                },
+            },
+            group: "Group B",
+            time: "08:30",
+            match: "37",
+            city: "Oran",
+            stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
+        },
+        game4: {
+            teamOne: {
+                name: "yaghmoracen jyo",
+                flag: "yaghmouracen2.png",
+                score: "1",
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "jil monte carlo",
+                flag: "jil monte carlo.png",
+                score: "3",
+                goals: {
+                },
+            },
+            group: "Group D",
+            time: "09:15",
+            match: "38",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
             highlight: "#"
@@ -1297,1776 +1314,246 @@ let days = {
             },
             group: "Group C",
             time: "09:15",
-            match: "35",
+            match: "39",
             city: "Oran",
             stadium: "Stade Proxomite Emir Hai Yasmine",
             highlight: "#"
         },
-        game4: {
+        game6: {
             teamOne: {
-                name: "yaghmoracen jyo",
-                flag: "yaghmouracen2.png",
-                score: "1",
-                goals: {
-                },
-            },
-            teamTwo: {
                 name: "jil monte carlo",
                 flag: "jil monte carlo.png",
                 score: "3",
                 goals: {
+                    
+                },
+            },
+            teamTwo: {
+                name: "kawkeb sportif oran",
+                flag: "kso.png",
+                score: "0",
+                goals: {
+                    
                 },
             },
             group: "Group D",
-            time: "09:15",
-            match: "36",
+            time: "10:00",
+            match: "40",
             city: "Oran",
             stadium: "Stade Proxomite Emir Khaled",
             highlight: "#"
         },
     },
-    // day8: {
-    //     date: "Tuesday 15 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Chelsea",
-    //             flag: "chelsea.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Bayern Munchen",
-    //             flag: "bayern.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group B",
-    //         time: "17:00",
-    //         match: "15",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Borusia Dortmund",
-    //             flag: "dortmund.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Atletico Madrid",
-    //             flag: "atletico.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group B",
-    //         time: "19:00",
-    //         match: "16",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day9: {
-    //     date: "Wednesday 16 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Liverpol",
-    //             flag: "liverpol.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Juventus",
-    //             flag: "juventus.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group C",
-    //         time: "17:00",
-    //         match: "17",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Manchester United",
-    //             flag: "man united.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Inter Milan",
-    //             flag: "inter.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group C",
-    //         time: "19:00",
-    //         match: "18",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day10: {
-    //     date: "Thursday 17 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Olympique Marseille",
-    //             flag: "marseille.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Newcaslte",
-    //             flag: "newcastle.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group D",
-    //         time: "17:00",
-    //         match: "19",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Paris S, German",
-    //             flag: "psg.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Napoli",
-    //             flag: "napoli.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group D",
-    //         time: "19:00",
-    //         match: "20",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // da11: {
-    //     date: "Friday 18 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Real Madrid",
-    //             flag: "real madrid.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Lazio",
-    //             flag: "lazio.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group E",
-    //         time: "17:00",
-    //         match: "21",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Tottenham Hotspur",
-    //             flag: "totenham.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "galatasaray",
-    //             flag: "galata saray.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group E",
-    //         time: "19:00",
-    //         match: "22",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day12: {
-    //     date: "Saturday 19 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Ajax Amsterdams",
-    //             flag: "ajax.jpg",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Leicester City",
-    //             flag: "leicester.jpg",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group F",
-    //         time: "17:00",
-    //         match: "23",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Roma",
-    //             flag: "roma.jpg",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Olympique Lyonnais",
-    //             flag: "lyon.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group F",
-    //         time: "19:00",
-    //         match: "24",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day13: {
-    //     date: "Sunday 20 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Milan",
-    //             flag: "milan.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Arsenal",
-    //             flag: "arsenal.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group A",
-    //         time: "17:00",
-    //         match: "25",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Barcelona",
-    //             flag: "barca.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Manchester City",
-    //             flag: "Screenshot 2023-07-18 020900.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group A",
-    //         time: "19:00",
-    //         match: "26",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day14: {
-    //     date: "Monday 21 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Atletico Madrid",
-    //             flag: "atletico.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Chelsea",
-    //             flag: "chelsea.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group B",
-    //         time: "17:00",
-    //         match: "27",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Borusia Dortmund",
-    //             flag: "dortmund.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Bayern Munchen",
-    //             flag: "bayern.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group B",
-    //         time: "19:00",
-    //         match: "28",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day15: {
-    //     date: "Tuesday 22 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Juventus",
-    //             flag: "juventus.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Manchester United",
-    //             flag: "man united.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group C",
-    //         time: "17:00",
-    //         match: "29",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Liverpol",
-    //             flag: "liverpol.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Inter Milan",
-    //             flag: "inter.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group C",
-    //         time: "19:00",
-    //         match: "30",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day16: {
-    //     date: "Wednesday 23 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Newcaslte",
-    //             flag: "newcastle.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Napoli",
-    //             flag: "napoli.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group D",
-    //         time: "17:00",
-    //         match: "31",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Paris S, German",
-    //             flag: "psg.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Olympique Marseille",
-    //             flag: "marseille.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group D",
-    //         time: "19:00",
-    //         match: "32",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day17: {
-    //     date: "Thursday 24 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "galatasaray",
-    //             flag: "galata saray.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Real Madrid",
-    //             flag: "real madrid.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group E",
-    //         time: "17:00",
-    //         match: "33",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Lazio",
-    //             flag: "lazio.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Tottenham Hotspur",
-    //             flag: "totenham.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group E",
-    //         time: "19:00",
-    //         match: "34",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day18: {
-    //     date: "Friday 25 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Roma",
-    //             flag: "roma.jpg",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Ajax Amsterdams",
-    //             flag: "ajax.jpg",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group F",
-    //         time: "17:00",
-    //         match: "35",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "Olympique Lyonnais",
-    //             flag: "lyon.png",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Leicester City",
-    //             flag: "leicester.jpg",
-    //             score: false,
-    //             goals: {
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // },
-    //                 // goal1: {
-    //                 //     minute: "89'",
-    //                 //     player: "riadh mahrez",
-    //                 //     assist: "roberto fermino",
-    //                 //     penalty: "(P)"
-    //                 // }
-    //             },
-    //         },
-    //         group: "Group F",
-    //         time: "19:00",
-    //         match: "36",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day19: {
-    //     date: "Saturday 26 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Atletico madrid",
-    //             flag: "atletico.png",
-    //             score: "2",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "66'",
-    //                     player: "Antoine Griezmann",
-    //                     assist: false,
-    //                     penalty: "(P)"
-    //                 },
-    //                 goal2: {
-    //                     minute: "70'",
-    //                     player: "Álvaro Morata",
-    //                     assist: false,
-    //                     penalty: false
-    //                 }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Newcastle",
-    //             flag: "newcastle.png",
-    //             score: "3",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "42'",
-    //                     player: "Miguel Almirón",
-    //                     assist: "sven botman",
-    //                     penalty: false
-    //                 },
-    //                 goal2: {
-    //                     minute: "55'",
-    //                     player: "KIERAN TRIPPIER",
-    //                     assist: false,
-    //                     penalty:false
-    //                 },
-    //                 goal3: {
-    //                     minute: "86'",
-    //                     player: "Miguel Almirón",
-    //                     assist: "ALEXANDER ISAK",
-    //                     penalty: false
-    //                 }
-    //             },
-    //             winner: true
-    //         },
-    //         group: "Round Of 16",
-    //         time: "17:00",
-    //         match: "37",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "milan",
-    //             flag: "milan.png",
-    //             score: "1",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "19'",
-    //                     player: "rafael leao",
-    //                     assist: false,
-    //                     penalty: false
-    //                 }
-    //             },
-    //             winner: true
-    //         },
-    //         teamTwo: {
-    //             name: "inter milan",
-    //             flag: "inter.png",
-    //             score: "1",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "44'",
-    //                     player: "Alexis Sánchez",
-    //                     assist: false,
-    //                     penalty: "(P)"
-    //                 }
-    //             },
-    //         },
-    //         group: "Round Of 16",
-    //         time: "19:00",
-    //         match: "38",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#",
-    //         drawInfo: {
-    //             winnerTeam: "Milan",
-    //             scoreOne: "4",
-    //             scoreTwo: "2"
-    //         }
-    //     }
-    // },
-    // day20: {
-    //     date: "Sunday 27 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "arsenal",
-    //             flag: "arsenal.png",
-    //             score: "4",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "26'",
-    //                     player: "martin odegaard",
-    //                     assist: false,
-    //                     penalty: false
-    //                 },
-    //                 goal2: {
-    //                     minute: "29'",
-    //                     player: "martin odeggard",
-    //                     assist: "kay havertz",
-    //                     penalty: false
-    //                 },
-    //                 goal3: {
-    //                     minute: "46'",
-    //                     player: "bokayo saka",
-    //                     assist: "martin odegaard",
-    //                     penalty: false
-    //                 },
-    //                 goal4: {
-    //                     minute: "62'",
-    //                     player: "jorginho",
-    //                     assist: false,
-    //                     penalty: "(P)"
-    //                 }
-    //             },
-    //             winner: true
-    //         },
-    //         teamTwo: {
-    //             name: "manchester united",
-    //             flag: "man united.png",
-    //             score: "2",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "54'",
-    //                     player: "marcus rashford",
-    //                     assist: false,
-    //                     penalty: false
-    //                 },
-    //                 goal2: {
-    //                     minute: "80'",
-    //                     player: "bruno fernandes",
-    //                     assist: "marcus rashford",
-    //                     penalty: false
-    //                 }
-    //             },
-    //         },
-    //         group: "Round Of 16",
-    //         time: "17:00",
-    //         match: "39",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "juventus",
-    //             flag: "juventus.png",
-    //             score: "0",
-    //             goals: {
+    day12: {
+        date: "Tuesday 13 October 2023",
+        game1: {
+            teamOne: {
+                name: "canastel",
+                flag: "canastel.png",
+                score: false,
+                goals: {
                     
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Barcelona",
-    //             flag: "barca.png",
-    //             score: "1",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "69'",
-    //                     player: "robert lewandowski",
-    //                     assist: false,
-    //                     penalty: "(P)"
-    //                 }
-    //             },
-    //             winner: true
-    //         },
-    //         group: "Round Of 16",
-    //         time: "19:00",
-    //         match: "40",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day21: {
-    //     date: "Monday 28 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Olympique Marseille",
-    //             flag: "marseille.png",
-    //             score: "0",
-    //             goals: {
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "chelsea",
-    //             flag: "chelsea.png",
-    //             score: "2",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "63'",
-    //                     player: "Raheem Sterling",
-    //                     assist: false,
-    //                     penalty: "(P)"
-    //                 },
-    //                 goal2: {
-    //                     minute: "92'",
-    //                     player: "Raheem Sterling",
-    //                     assist: false,
-    //                     penalty: false
-    //                 }
-    //             },
-    //             winner: true
-    //         },
-    //         group: "Round Of 16",
-    //         time: "17:00",
-    //         match: "41",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "bayern munchen",
-    //             flag: "bayern.png",
-    //             score: "6",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "15'",
-    //                     player: "Harry Kane",
-    //                     assist: "Serge Gnabry",
-    //                     penalty: false
-    //                 },
-    //                 goal2: {
-    //                     minute: "33'",
-    //                     player: "Serge Gnabry",
-    //                     assist: "Leroy Sané",
-    //                     penalty: false
-    //                 },
-    //                 goal3: {
-    //                     minute: "50'",
-    //                     player: "THOMAS MÜLLER",
-    //                     assist: "Harry Kane",
-    //                     penalty: false
-    //                 },
-    //                 goal4: {
-    //                     minute: "55'",
-    //                     player: "Harry Kane",
-    //                     assist: "Jamal Musiala",
-    //                     penalty: false
-    //                 },
-    //                 goal5: {
-    //                     minute: "72'",
-    //                     player: "Harry Kane",
-    //                     assist: false,
-    //                     penalty: "(P)"
-    //                 },
-    //                 goal6: {
-    //                     minute: "89'",
-    //                     player: "Leroy Sané",
-    //                     assist: false,
-    //                     penalty: false
-    //                 }
-    //             },
-    //             winner: true
-    //         },
-    //         teamTwo: {
-    //             name: "Leicester City",
-    //             flag: "leicester.jpg",
-    //             score: "1",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "87'",
-    //                     player: "jamie vardy",
-    //                     assist: false,
-    //                     penalty: "(P)"
-    //                 }
-    //             },
-    //         },
-    //         group: "Round Of 16",
-    //         time: "19:00",
-    //         match: "42",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day22: {
-    //     date: "Tuesday 29 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Real Madrid",
-    //             flag: "real madrid.png",
-    //             score: "4",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "10'",
-    //                     player: "Rodrygo",
-    //                     assist: "Luka Modric",
-    //                     penalty: false
-    //                 },
-    //                 goal2: {
-    //                     minute: "18'",
-    //                     player: "Vinícius Júnior",
-    //                     assist: "Rodrygo",
-    //                     penalty: false
-    //                 },
-    //                 goal3: {
-    //                     minute: "67'",
-    //                     player: "Vinícius Júnior",
-    //                     assist:false,
-    //                     penalty: false
-    //                 },
-    //                 goal4: {
-    //                     minute: "79'",
-    //                     player: "Arda Güler",
-    //                     assist: false,
-    //                     penalty: false
-    //                 }
-    //             },
-    //             winner: true
-    //         },
-    //         teamTwo: {
-    //             name: "napoli",
-    //             flag: "napoli.png",
-    //             score: "1",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "victor osimhen",
-    //                     assist: "khvicha kvaratskhelia",
-    //                     penalty: false
-    //                 }
-    //             },
-    //         },
-    //         group: "Round Of 16",
-    //         time: "17:00",
-    //         match: "43",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "roma",
-    //             flag: "roma.jpg",
-    //             score: "3",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "6'",
-    //                     player: "paulo dybala",
-    //                     assist: false,
-    //                     penalty: false
-    //                 },
-    //                 goal2: {
-    //                     minute: "36'",
-    //                     player: "andrea belotti",
-    //                     assist: "nikola zalewski",
-    //                     penalty:false
-    //                 },
-    //                 goal3: {
-    //                     minute: "81'",
-    //                     player: "oaulo dybala",
-    //                     assist: "andrea belotti",
-    //                     penalty: false
-    //                 }
-    //             },
-    //             winner: true
-    //         },
-    //         teamTwo: {
-    //             name: "Tottenham Hotspur",
-    //             flag: "totenham.png",
-    //             score: "3",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "13'",
-    //                     player: "Eric Dier",
-    //                     assist: false,
-    //                     penalty: false
-    //                 },
-    //                 goal2: {
-    //                     minute: "83'",
-    //                     player: "Heung-Min Son",
-    //                     assist: false,
-    //                     penalty: "(P)"
-    //                 },
-    //                 goal3: {
-    //                     minute: "95'",
-    //                     player: "Heung-Min Son",
-    //                     assist: false,
-    //                     penalty: false
-    //                 }
-    //             },
-    //         },
-    //         group: "Round Of 16",
-    //         time: "19:00",
-    //         match: "44",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#",
-    //         drawInfo: {
-    //             winnerTeam: "Roma",
-    //             scoreOne: "6",
-    //             scoreTwo: "5"
-    //         }
-    //     }
-    // },
-    // day23: {
-    //     date: "Wednesday 30 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "stA",
-    //             flag: "empty.png",
-    //             score: false,
-    //             goals: {
+                },
+            },
+            teamTwo: {
+                name: "aadl zabana",
+                flag: "cazamo.png",
+                score: false,
+                goals: {
                     
-    //             }
-    //         },
-    //         teamTwo: {
-    //             name: "ndB",
-    //             flag: "empty.png",
-    //             score: false,
-    //             goals: {
+                }
+            },
+            group: "Quarter Final",
+            time: "08:30",
+            match: "41",
+            city: "Oran",
+            stadium: "Stade Proxomite Hai Yasmine",
+            highlight: "#"
+        },
+        game2: {
+            teamOne: {
+                name: "chorouk castor",
+                flag: "chorouk castor.png",
+                score: false,
+                goals: {
                     
-    //             },
-    //         },
-    //         group: "Quarter Final",
-    //         time: "19:00",
-    //         match: "46",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "stB",
-    //             flag: "empty.png",
-    //             score: false,
-    //             goals: {
+                }
+            },
+            teamTwo: {
+                name: "chabeb fajer wahran",
+                flag: "fajr-wahran.png",
+                score: false,
+                goals: {
                     
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "ndA",
-    //             flag: "empty.png",
-    //             score: false,
-
-    //             goals: {
+                },
+            },
+            group: "Quarter Final",
+            time: "09:15",
+            match: "42",
+            city: "Oran",
+            stadium: "Stade Proxomite Hai Yasmine",
+            highlight: "#"
+        }
+    },
+    day13: {
+        date: "Friday 14 October 2023",
+        game1: {
+            teamOne: {
+                name: "yaghmoracen jyo",
+                flag: "yaghmouracen2.png",
+                score: false,
+                goals: {
                     
-    //             }
-    //         },
-    //         group: "Quarter Final",
-    //         time: "17:00",
-    //         match: "45",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day24: {
-    //     date: "Thursday 31 August 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "stC",
-    //             flag: "empty.png",
-    //             score: false,
-    //             goals: {
+                },
+            },
+            teamTwo: {
+                name: "rmot",
+                flag: "csarmot.png",
+                score: false,
+                goals: {
                     
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "ndD",
-    //             flag: "empty.png",
-    //             score: false,
-    //             goals: {
+                }
+            },
+            group: "Quarter Final",
+            time: "08:30",
+            match: "43",
+            city: "Oran",
+            stadium: "Stade Proxomite Hai Yasmine",
+            highlight: "#"
+        },
+        game2: {
+            teamOne: {
+                name: "espoir senia",
+                flag: "espoir senia.png",
+                score: false,
+                goals: {
                     
-    //             }
-    //         },
-    //         group: "Quarter Final",
-    //         time: "17:00",
-    //         match: "47",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     },
-    //     game2: {
-    //         teamOne: {
-    //             name: "stD",
-    //             flag: "empty.png",
-    //             score: false,
-    //             goals: {
+                }
+            },
+            teamTwo: {
+                name: "jil monte carlo",
+                flag: "jil monte carlo.png",
+                score: false,
+                goals: {
                     
-    //             }
-    //         },
-    //         teamTwo: {
-    //             name: "ndC",
-    //             flag: "empty.png",
-    //             score: false,
-    //             goals: {
+                },
+            },
+            group: "Quarter Final",
+            time: "09:15",
+            match: "44",
+            city: "Oran",
+            stadium: "Stade Proxomite Hai Yasmine",
+            highlight: "#"
+        }
+    },
+    day14: {
+        date: "NY",
+        game1: {
+            teamOne: {
+                name: "winner 41",
+                flag: "empty.png",
+                score: false,
+                goals: {
                     
-    //             },
-    //         },
-    //         group: "Quarter Final",
-    //         time: "19:00",
-    //         match: "48",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day25: {
-    //     date: "Friday 01 September 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "winner 38",
-    //             flag: "empty.png",
-    //             score: false,
-    //             goals: {
+                },
+            },
+            teamTwo: {
+                name: "winner 43",
+                flag: "empty.png",
+                score: false,
+                goals: {
                     
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "winner 37",
-    //             flag: "empty.png",
-    //             score: false,
-    //             goals: {
+                },
+            },
+            group: "Semi Final",
+            time: "NY",
+            match: "45",
+            city: "NY",
+            stadium: "NY",
+            highlight: "#"
+        }
+    },
+    day15: {
+        date: "NY",
+        game1: {
+            teamOne: {
+                name: "winner 42",
+                flag: "empty.png",
+                score: false,
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "winner 44",
+                flag: "empty.png",
+                score: false,
+                goals: {
+                },
+                // winner: true
+            },
+            group: "Semi Final",
+            time: "NY",
+            match: "46",
+            city: "NY",
+            stadium: "NY",
+            highlight: "#",
+            // drawInfo: {
+            //     winnerTeam: "bayern munchen",
+            //     scoreOne: "5",
+            //     scoreTwo: "4"
+            // }
+        }
+    },
+    day16: {
+        date: "NY",
+        game1: {
+            teamOne: {
+                name: "Loser 45",
+                flag: "empty.png",
+                score: {
+                },
+            },
+            teamTwo: {
+                name: "Loser 46",
+                flag: "empty.png",
+                score: false,
+                goals: {
+                }
+            },
+            group: "Third Place",
+            time: "NY",
+            match: "47",
+            city: "NY",
+            stadium: "NY",
+            highlight: "#"
+        }
+    },
+    day17: {
+        date: "NY",
+        game1: {
+            teamOne: {
+                name: "Winner 45",
+                flag: "empty.png",
+                score: false,
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "Winner 46",
+                flag: "empty.png",
+                score: false,
+                goals: {
                     
-    //             },
-    //         },
-    //         group: "Semi Final",
-    //         time: "17:00",
-    //         match: "49",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day26: {
-    //     date: "Saturday 02 September 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "WINNER",
-    //             flag: "barca.png",
-    //             score: "1",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 },
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "bayern munchen",
-    //             flag: "bayern.png",
-    //             score: "1",
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 },
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 }
-    //             },
-    //             winner: true
-    //         },
-    //         group: "Semi Final",
-    //         time: "17:00",
-    //         match: "50",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#",
-    //         drawInfo: {
-    //             winnerTeam: "bayern munchen",
-    //             scoreOne: "5",
-    //             scoreTwo: "4"
-    //         }
-    //     }
-    // },
-    // day27: {
-    //     date: "Sunday 03 September 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Loser 49",
-    //             flag: "empty.png",
-    //             score: false,
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 },
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "Barcelona",
-    //             flag: "barca.png",
-    //             score: false,
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 },
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 }
-    //             }
-    //         },
-    //         group: "Third Place",
-    //         time: "17:00",
-    //         match: "51",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // },
-    // day28: {
-    //     date: "Monday 04 September 2023",
-    //     game1: {
-    //         teamOne: {
-    //             name: "Winner 49",
-    //             flag: "empty.png",
-    //             score: false,
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 },
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 }
-    //             },
-    //         },
-    //         teamTwo: {
-    //             name: "bayern munchen",
-    //             flag: "bayern.png",
-    //             score: false,
-    //             goals: {
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 },
-    //                 goal1: {
-    //                     minute: "89'",
-    //                     player: "riadh mahrez",
-    //                     assist: "roberto fermino",
-    //                     penalty: "(P)"
-    //                 }
-    //             },
-    //         },
-    //         group: "Final",
-    //         time: "17:00",
-    //         match: "52",
-    //         city: "Al Daayen",
-    //         stadium: "Lusail",
-    //         highlight: "#"
-    //     }
-    // }
+                },
+            },
+            group: "Final",
+            time: "NY",
+            match: "48",
+            city: "NY",
+            stadium: "NY",
+            highlight: "#"
+        }
+    }
 }
     
 let dayss = Object.values(days)
@@ -3075,220 +1562,220 @@ let dayss = Object.values(days)
 
 
 // Start Groups Data
-const groupA = {
-    t2: {
-        played: 4,
-        win: 3,
-        draw: 0,
-        lose: 1,
-        GoalDifference: +10,
-        points: 9,
-        subName: "CSJC",
-        flagPic: "canastel.png",
-        qualified: true
-    },
-    t3: {
-        played: 3,
-        win: 2,
-        draw: 0,
-        lose: 1,
-        GoalDifference: 12,
-        points: 6,
-        subName: "CFO",
-        flagPic: "fajr-wahran.png"
-    },
-    t1: {
-        played: 3,
-        win: 2,
-        draw: 0,
-        lose: 1,
-        GoalDifference: 6,
-        points: 6,
-        subName: "AHY",
-        flagPic: "abtal-hai-yasmine.png"
-    },
-    t5: {
-        played: 4,
-        win: 2,
-        draw: 0,
-        lose: 2,
-        GoalDifference: -4,
-        points: 6,
-        subName: "WAB",
-        flagPic: "wihdat-amel-bir-eldjir.png"
-    },
-    t4: {
-        played: 4,
-        win: 0,
-        draw: 0,
-        lose: 4,
-        GoalDifference: -24,
-        points: 0,
-        subName: "WAC",
-        flagPic: "widad-amal-carteaux.png"
-    },
-}
-const groupB = {
-    t3: {
-        played: 4,
-        win: 4,
-        draw: 0,
-        lose: 0,
-        GoalDifference: 11,
-        points: 12,
-        subName: "CSC",
-        flagPic: "chorouk castor.png",
-        qualified: true
-    },
-    t1: {
-        played: 4,
-        win: 3,
-        draw: 0,
-        lose: 1,
-        GoalDifference: 5,
-        points: 9,
-        subName: "WZM",
-        flagPic: "cazamo.png",
-        qualified: true
-    },
-    t4: {
-        played: 3,
-        win: 1,
-        draw: 0,
-        lose: 2,
-        GoalDifference: -5,
-        points: 3,
-        subName: "ESS",
-        flagPic: "esperance es-senia.png"
-    },
-    t5: {
-        played: 3,
-        win: 0,
-        draw: 1,
-        lose: 1,
-        GoalDifference: -4,
-        points: 1,
-        subName: "JIL",
-        flagPic: "yaghmouracen.png"
-    },
-    t2: {
-        played: 4,
-        win: 0,
-        draw: 1,
-        lose: 3,
-        GoalDifference: -7,
-        points: 1,
-        subName: "CAK",
-        flagPic: "chabab emir khaled.png"
-    },
-}
-const groupC = {
-    t2: {
-        played: 4,
-        win: 4,
-        draw: 0,
-        lose: 0,
-        GoalDifference: 23,
-        points: 12,
-        subName: "RMT",
-        flagPic: "csarmot.png",
-        qualified: true
-    },
-    t5: {
-        played: 4,
-        win: 2,
-        draw: 0,
-        lose: 2,
-        GoalDifference: 2,
-        points: 6,
-        subName: "JO",
-        flagPic: "talent.png"
-    },
-    t3: {
-        played: 3,
-        win: 2,
-        draw: 0,
-        lose: 1,
-        GoalDifference: -3,
-        points: 6,
-        subName: "AAS",
-        flagPic: "espoir senia.png"
-    },
-    t4: {
-        played: 4,
-        win: 1,
-        draw: 0,
-        lose: 3,
-        GoalDifference: -10,
-        points: 3,
-        subName: "CSA",
-        flagPic: "pepso.png"
-    },
-    t1: {
-        played: 3,
-        win: 0,
-        draw: 0,
-        lose: 3,
-        GoalDifference: -12,
-        points: 0,
-        subName: "AWO",
-        flagPic: "aaawo.png"
-    },
-}
-const groupD = {
-    t4: {
-        played: 4,
-        win: 3,
-        draw: 0,
-        lose: 1,
-        GoalDifference: 8,
-        points: 9,
-        subName: "JYO",
-        flagPic: "yaghmouracen2.png",
-        qualified: true
-    },
-    t1: {
-        played: 3,
-        win: 3,
-        draw: 0,
-        lose: 0,
-        GoalDifference: 5,
-        points: 9,
-        subName: "JMC",
-        flagPic: "jil monte carlo.png",
-        qualified: true
-    },
-    t5: {
-        played: 3,
-        win: 1,
-        draw: 1,
-        lose: 1,
-        GoalDifference: -2,
-        points: 4,
-        subName: "KSO",
-        flagPic: "kso.png"
-    },
-    t2: {
-        played: 4,
-        win: 1,
-        draw: 1,
-        lose: 2,
-        GoalDifference: -5,
-        points: 4,
-        subName: "WHZ",
-        flagPic: "widad hai el zitoun.png"
-    },
-    t3: {
-        played: 4,
-        win: 0,
-        draw: 0,
-        lose: 4,
-        GoalDifference: -6,
-        points: 0,
-        subName: "SC",
-        flagPic: "espoir sport city.png"
-    },
-}
+// const groupA = {
+//     t2: {
+//         played: 4,
+//         win: 3,
+//         draw: 0,
+//         lose: 1,
+//         GoalDifference: +10,
+//         points: 9,
+//         subName: "CSJC",
+//         flagPic: "canastel.png",
+//         qualified: true
+//     },
+//     t3: {
+//         played: 3,
+//         win: 2,
+//         draw: 0,
+//         lose: 1,
+//         GoalDifference: 12,
+//         points: 6,
+//         subName: "CFO",
+//         flagPic: "fajr-wahran.png"
+//     },
+//     t1: {
+//         played: 3,
+//         win: 2,
+//         draw: 0,
+//         lose: 1,
+//         GoalDifference: 6,
+//         points: 6,
+//         subName: "AHY",
+//         flagPic: "abtal-hai-yasmine.png"
+//     },
+//     t5: {
+//         played: 4,
+//         win: 2,
+//         draw: 0,
+//         lose: 2,
+//         GoalDifference: -4,
+//         points: 6,
+//         subName: "WAB",
+//         flagPic: "wihdat-amel-bir-eldjir.png"
+//     },
+//     t4: {
+//         played: 4,
+//         win: 0,
+//         draw: 0,
+//         lose: 4,
+//         GoalDifference: -24,
+//         points: 0,
+//         subName: "WAC",
+//         flagPic: "widad-amal-carteaux.png"
+//     },
+// }
+// const groupB = {
+//     t3: {
+//         played: 4,
+//         win: 4,
+//         draw: 0,
+//         lose: 0,
+//         GoalDifference: 11,
+//         points: 12,
+//         subName: "CSC",
+//         flagPic: "chorouk castor.png",
+//         qualified: true
+//     },
+//     t1: {
+//         played: 4,
+//         win: 3,
+//         draw: 0,
+//         lose: 1,
+//         GoalDifference: 5,
+//         points: 9,
+//         subName: "WZM",
+//         flagPic: "cazamo.png",
+//         qualified: true
+//     },
+//     t4: {
+//         played: 3,
+//         win: 1,
+//         draw: 0,
+//         lose: 2,
+//         GoalDifference: -5,
+//         points: 3,
+//         subName: "ESS",
+//         flagPic: "esperance es-senia.png"
+//     },
+//     t5: {
+//         played: 3,
+//         win: 0,
+//         draw: 1,
+//         lose: 2,
+//         GoalDifference: -4,
+//         points: 1,
+//         subName: "JIL",
+//         flagPic: "yaghmouracen.png"
+//     },
+//     t2: {
+//         played: 4,
+//         win: 0,
+//         draw: 1,
+//         lose: 3,
+//         GoalDifference: -7,
+//         points: 1,
+//         subName: "CAK",
+//         flagPic: "chabab emir khaled.png"
+//     },
+// }
+// const groupC = {
+//     t2: {
+//         played: 4,
+//         win: 4,
+//         draw: 0,
+//         lose: 0,
+//         GoalDifference: 23,
+//         points: 12,
+//         subName: "RMT",
+//         flagPic: "csarmot.png",
+//         qualified: true
+//     },
+//     t5: {
+//         played: 4,
+//         win: 2,
+//         draw: 0,
+//         lose: 2,
+//         GoalDifference: 2,
+//         points: 6,
+//         subName: "JO",
+//         flagPic: "talent.png"
+//     },
+//     t3: {
+//         played: 3,
+//         win: 2,
+//         draw: 0,
+//         lose: 1,
+//         GoalDifference: -3,
+//         points: 6,
+//         subName: "AAS",
+//         flagPic: "espoir senia.png"
+//     },
+//     t4: {
+//         played: 4,
+//         win: 1,
+//         draw: 0,
+//         lose: 3,
+//         GoalDifference: -10,
+//         points: 3,
+//         subName: "CSA",
+//         flagPic: "pepso.png"
+//     },
+//     t1: {
+//         played: 3,
+//         win: 0,
+//         draw: 0,
+//         lose: 3,
+//         GoalDifference: -12,
+//         points: 0,
+//         subName: "AWO",
+//         flagPic: "aaawo.png"
+//     },
+// }
+// const groupD = {
+//     t4: {
+//         played: 4,
+//         win: 3,
+//         draw: 0,
+//         lose: 1,
+//         GoalDifference: 8,
+//         points: 9,
+//         subName: "JYO",
+//         flagPic: "yaghmouracen2.png",
+//         qualified: true
+//     },
+//     t1: {
+//         played: 3,
+//         win: 3,
+//         draw: 0,
+//         lose: 0,
+//         GoalDifference: 5,
+//         points: 9,
+//         subName: "JMC",
+//         flagPic: "jil monte carlo.png",
+//         qualified: true
+//     },
+//     t5: {
+//         played: 3,
+//         win: 1,
+//         draw: 1,
+//         lose: 1,
+//         GoalDifference: -2,
+//         points: 4,
+//         subName: "KSO",
+//         flagPic: "kso.png"
+//     },
+//     t2: {
+//         played: 4,
+//         win: 1,
+//         draw: 1,
+//         lose: 2,
+//         GoalDifference: -5,
+//         points: 4,
+//         subName: "WHZ",
+//         flagPic: "widad hai el zitoun.png"
+//     },
+//     t3: {
+//         played: 4,
+//         win: 0,
+//         draw: 0,
+//         lose: 4,
+//         GoalDifference: -6,
+//         points: 0,
+//         subName: "SC",
+//         flagPic: "espoir sport city.png"
+//     },
+// }
 // const groupE = {
 //     madrid: {
 //         played: 0,
@@ -3458,8 +1945,11 @@ const groupD = {
 //         flagPic: "leipzig.png"
 //     }
 // }
-console.log(currentPage)
 // End Groups Data
+let groupA = ["abtal hai yasmine", "chabeb fajer wahran", "canastel", "wihdat amel bir eldjir", "widad amal carteaux"]
+let groupB = [ "aadl zabana","taraji senia", "chorouk castor", "yaghmouracen jil", "emir khaled"]
+let groupC = ["rmot", "j.t oranais", "espoir senia", "pepso", "aaawo",]
+let groupD = ["jil monte carlo", "yaghmoracen jyo", "kawkeb sportif oran", "widad hai el zitoun", "espoir sport city",]
 
 
 
@@ -3769,14 +2259,26 @@ function gameHtml(penalties, time, ...list) {
         list[0].innerHTML += game
         return list[0].innerHTML
 }
-function createDay(day, today, specialTeam) {
+function createDay(day, today, specialTeam, playedNum) {
     let daysLocation = document.querySelector(".days-js")
     let div = document.createElement("div")
     let vsCommented = '<!-- <div class="vs">VS</div> -->'
     let vsNotCommented = '<div class="vs">VS</div>'
     let scoreCommented = '<!-- <div class="team-score">8</div> -->'
-    
+    let num =0
     for (let i = 0; i < day.length - 1; i++) {
+        let forbid = 0
+        for (let t = 0; t < day.length - 1; t++) {
+            let game = Object.values(day[t + 1])
+            let teamOne = Object.values(game[0])
+            let teamTwo = Object.values(game[1])
+            if (!(specialTeam === undefined)) {
+                if (teamOne[0].toLowerCase() === specialTeam || teamTwo[0].toLowerCase() === specialTeam) {
+                    forbid += 1
+                }
+            }
+        }
+        // console.log(forbid)
         let game = Object.values(day[i + 1])
         let teamOne = Object.values(game[0])
         let teamTwo = Object.values(game[1])
@@ -3831,6 +2333,7 @@ function createDay(day, today, specialTeam) {
             </div>
             `
         }
+        
         if (specialTeam === undefined) {
             
             if (i === day.length - 2) {
@@ -3839,9 +2342,24 @@ function createDay(day, today, specialTeam) {
                 gameHtml(penalties, time, ...list)
             }
         } else {
-            // console.log(teamOne[0].toLowerCase() === specialTeam || teamTwo[0].toLowerCase() === specialTeam)
-            if (teamOne[0].toLowerCase() === specialTeam || teamTwo[0].toLowerCase() === specialTeam) {  
-                dayHtml(daysLocation, today, gameHtml(penalties, time, ...list), groupsOrBrackets)
+            // console.log(day[0])
+            // console.log(i)
+            if (teamOne[0].toLowerCase() === specialTeam || teamTwo[0].toLowerCase() === specialTeam) {
+                num += 1
+                if ((forbid === 1)) {
+                    dayHtml(daysLocation, today, gameHtml(penalties, time, ...list), groupsOrBrackets)    
+                }
+                if ((forbid >= 2)) {
+                    if (num === forbid) {
+                        dayHtml(daysLocation, today, gameHtml(penalties, time, ...list), groupsOrBrackets)    
+                        
+                    } else {
+                        gameHtml(penalties, time, ...list)
+                        
+                    }
+                }
+                
+                
             }
         }
         
@@ -3861,6 +2379,15 @@ function dateConventer(dayName, dayNumber, month, year) {
     }
     if (dayName === -1) {
         dayName = 6
+    }
+    if (dayName === -2) {
+        dayName = 5
+    }
+    if (dayName === -3) {
+        dayName = 4
+    }
+    if (dayName === -4) {
+        dayName = 3
     }
     switch (dayName) {
         case 1:
@@ -3977,6 +2504,18 @@ if (currentPage.includes("index.html") || currentPage === "/" || currentPage ===
         returnedNum = creatDayInHomePage(fullDate)
     }
     if (returnedNum === 0) {
+        fullDate = dateConventer(dayName - 3, dayNumber - 3, month, year)
+        returnedNum = creatDayInHomePage(fullDate)
+    }
+    if (returnedNum === 0) {
+        fullDate = dateConventer(dayName - 4, dayNumber - 4, month, year)
+        returnedNum = creatDayInHomePage(fullDate)
+    }
+    if (returnedNum === 0) {
+        fullDate = dateConventer(dayName - 4, dayNumber - 4, month, year)
+        returnedNum = creatDayInHomePage(fullDate)
+    }
+    if (returnedNum === 0) {
         createDay(Object.values(dayss[dayss.length - 2]), Object.values(dayss[dayss.length - 2])[0])
         createDay(Object.values(dayss[dayss.length - 1]), Object.values(dayss[dayss.length - 1])[0])
     }
@@ -4050,7 +2589,7 @@ if (currentPage.includes("games-and-scores.html")) {
 
 // Start Group Stage
 // Start Group Stage Functions
-function groupCreat(groupName,location,teamLine) {
+function groupCreat(groupName, location, teamLine, gs, gc) {
     let boxHeader = `
                         <h3>${groupName}</h3>
                         <div class="spans">
@@ -4058,6 +2597,8 @@ function groupCreat(groupName,location,teamLine) {
                             <span>W</span>
                             <span>D</span>
                             <span>L</span>
+                            ${gs}
+                            ${gc}
                             <span>GD</span>
                             <span>Pts</span>
                         </div>
@@ -4091,6 +2632,8 @@ function teamlines(...list) {
                                 <span>${list[1]}</span> <!-- games win -->
                                 <span>${list[2]}</span> <!-- games draw -->
                                 <span>${list[3]}</span> <!-- games lose -->
+                                ${list[13]} <!-- goals scored -->
+                                ${list[14]} <!-- goals conceded -->
                                 <span>${list[4]}</span> <!-- goal difference -->
                                 <span>${list[5]}</span> <!-- points -->
                             </div>
@@ -4099,42 +2642,370 @@ function teamlines(...list) {
     list[9].innerHTML += teamLine
     return list[9].innerHTML
 }
-// End Group Stage Functions
-// Start Group Stage Page
-if (currentPage.includes("group-stage.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
-    let groups = [groupA, groupB, groupC, groupD]
-    let groupNames = ["Group A", "Group B", "Group C", "Group D"]
-
-    for (let j = 0; j < groups.length; j++) {
-        let div = document.createElement("div")
-        let objectGroups = Object.values(groups[j])
-        for (let i = 0; i < objectGroups.length; i++) {
-            let file = "#"
-            let teamline = Object.values(objectGroups[i])
-            let qualified = " "
-            if (teamline[8] !== undefined) {
-                file = teamline[8]
-            }
-            for (let i = 0; i < AllTeams.length; i++) {
-                let team = Object.values(AllTeams[i])
-                if (teamline[6] === team[1]) {
-                    file = team[0]
+function alreadyQualified(group) {
+    let firtsTeamQualified = 0
+    let secondTeamQualified = 0
+    let thirdTeamQualified = 0
+    let forthTeamQualified = 0
+    let fifthTeamQualified = 0
+    let totalGamesInGroupStageForOneTeam = group.length - 1
+    let actualPoints = []
+    let maxPoints = []
+    let playedArray = []
+    for (let b = 0; b < group.length; b++) {
+        let teamName = group[b]
+        let played = 0
+        let win = 0
+        let draw = 0
+        let lose = 0
+        let points = 0
+        let totalGoalScored = 0
+        let totalGoalConceded = 0
+        let goalDifference = 0
+        for (let i = 0; i < dayss.length; i++) {
+            let day = Object.values(dayss[i])
+            for (let j = 0; j < day.length - 1; j++) {
+                let game = Object.values(day[j + 1])
+                let teamOne = Object.values(game[0])
+                let teamTwo = Object.values(game[1])
+                if (teamOne[0] === teamName && teamOne[2] !== false) {
+                    played += 1
+                    let goalScored = parseInt(teamOne[2])
+                    let goalConceded = parseInt(teamTwo[2])
+                    totalGoalScored += parseInt(teamOne[2])
+                    totalGoalConceded += parseInt(teamTwo[2])
+                    if (goalScored > goalConceded) {
+                        win += 1
+                    }
+                    if (goalScored < goalConceded) {
+                        lose += 1
+                    }
+                    if (goalScored === goalConceded) {
+                        draw += 1
+                    }
+                }
+                if (teamTwo[0] === teamName && teamTwo[2] !== false) {
+                    played += 1
+                    let goalScored = parseInt(teamTwo[2])
+                    let goalConceded = parseInt(teamOne[2])
+                    totalGoalScored += parseInt(teamTwo[2])
+                    totalGoalConceded += parseInt(teamOne[2])
+                    if (goalScored > goalConceded) {
+                        win += 1
+                    }
+                    if (goalScored < goalConceded) {
+                        lose += 1
+                    }
+                    if (goalScored === goalConceded) {
+                        draw += 1
+                    }
                 }
             }
-            if (teamline[8] !== undefined) {
-                qualified = "qualified"
+        }
+        goalDifference = totalGoalScored - totalGoalConceded
+        points = win * 3 + lose * 0 + draw * 1
+        if (b === 0) {
+            actualPoints.push(points)
+            maxPoints.push(points + (totalGamesInGroupStageForOneTeam - played) * 3)
+            playedArray.push(played)
+        }
+        if (b === 1) {
+            actualPoints.push(points)
+            maxPoints.push(points + (totalGamesInGroupStageForOneTeam - played) * 3)
+            playedArray.push(played)
+        }
+        if (b === 2) {
+            actualPoints.push(points)
+            maxPoints.push( points + (totalGamesInGroupStageForOneTeam - played) * 3)
+            playedArray.push(played)
+        }
+        if (b === 3) {
+            actualPoints.push(points)
+            maxPoints.push(points + (totalGamesInGroupStageForOneTeam - played) * 3)
+            playedArray.push(played)
+        }
+        if (b === 4) {
+            actualPoints.push(points)
+            maxPoints.push(points + (totalGamesInGroupStageForOneTeam - played) * 3)
+            playedArray.push(played)
+        }
+    }
+    
+    for (let h = 0; h < actualPoints.length; h++) {
+        let teamPoints = actualPoints[h]
+        let aboveFirst = []
+        for (let u = 0; u < maxPoints.length; u++) {
+            if (h !== u) {
+                if (teamPoints <= maxPoints[u]) {
+                    if (h === 0) {
+                        if (((teamPoints === maxPoints[u]) && (playedArray[0] === totalGamesInGroupStageForOneTeam && playedArray[u] === totalGamesInGroupStageForOneTeam))) {
+                            firtsTeamQualified -= 1
+                        }
+                        aboveFirst.push(group[u])
+                        firtsTeamQualified += 1
+                    }
+                    if (h === 1) {
+                        secondTeamQualified += 1
+                    }
+                    if (h === 2) {
+                        thirdTeamQualified += 1
+                    }
+                    if (h === 3) {
+                        forthTeamQualified += 1
+                    }
+                    if (h === 4) {
+                        fifthTeamQualified += 1
+                    }
+                }
             }
-            let infoList = [teamline[0], teamline[1], teamline[2], teamline[3], teamline[4], teamline[5], teamline[6], teamline[7], i + 1, div, teamNameId(file),qualified]
+        }
+        if (aboveFirst.length === 2) {
+            for (let i = 0; i < dayss.length; i++) {
+                let day = Object.values(dayss[i])
+                for (let j = 0; j < day.length - 1; j++) {
+                    let game = Object.values(day[j + 1])
+                    let teamOne = Object.values(game[0])
+                    let teamTwo = Object.values(game[1])
+                    if (((teamOne[0] === aboveFirst[0] || teamTwo[0] === aboveFirst[0]) && (teamOne[0] === aboveFirst[1] || teamTwo[0] === aboveFirst[1])) && (teamOne[2] === false && teamTwo[2] === false)) {
+                        firtsTeamQualified -= 1
+                    }
+                }
+            }
+        }
+        
+    }
+    if (firtsTeamQualified > 1) {
+        firtsTeamQualified = false
+    } else {
+        firtsTeamQualified = true
+    }
+    if (secondTeamQualified > 1) {
+        secondTeamQualified = false
+    } else {
+        secondTeamQualified = true
+    }
+    if (thirdTeamQualified > 1) {
+        thirdTeamQualified = false
+    } else {
+        thirdTeamQualified = true
+    }
+    if (forthTeamQualified > 1) {
+        forthTeamQualified = false
+    } else {
+        forthTeamQualified = true
+    }
+    if (fifthTeamQualified > 1) {
+        fifthTeamQualified = false
+    } else {
+        fifthTeamQualified = true
+    }
+    let totalNumberOfGroupGames = sortedGroups[0].length * (sortedGroups[0].length - 1)
+    let playedNumberOfGroupGames = 0
+    for (let j = 0; j < playedArray.length; j++){
+        playedNumberOfGroupGames += playedArray[j]
+    }
+    
+    if (totalNumberOfGroupGames === playedNumberOfGroupGames) {
+        firtsTeamQualified = true
+        secondTeamQualified = true
+    }
+    return [firtsTeamQualified , secondTeamQualified]
+}
+// End Group Stage Functions
+// Start Sorting Group Teams
+let groups = [groupA, groupB, groupC, groupD]
+for (let n = 0; n < groups.length; n++) {
+    let sortedGroup = []
+    for (let x = 0; x < groups[n].length; x++) {
+        let firstP = " "
+        let pointsFirstP = -1
+        let goalDifferenceFirstP = 0
+        let totalGoalScoredFirstP = 0
+        for (let b = 0; b < groups[n].length; b++) {
+            let teamName = groups[n][b]
+            let played = 0
+            let win = 0
+            let draw = 0
+            let lose = 0
+            let points = 0
+            let totalGoalScored = 0
+            let totalGoalConceded = 0
+            let goalDifference = 0
+            for (let i = 0; i < dayss.length; i++) {
+                let day = Object.values(dayss[i])
+                for (let j = 0; j < day.length - 1; j++) {
+                    let game = Object.values(day[j + 1])
+                    let teamOne = Object.values(game[0])
+                    let teamTwo = Object.values(game[1])
+                    if (teamOne[0] === teamName && teamOne[2] !== false) {
+                        played += 1
+                        let goalScored = parseInt(teamOne[2])
+                        let goalConceded = parseInt(teamTwo[2])
+                        totalGoalScored += parseInt(teamOne[2])
+                        totalGoalConceded += parseInt(teamTwo[2])
+                        if (goalScored > goalConceded) {
+                            win += 1
+                        }
+                        if (goalScored < goalConceded) {
+                            lose += 1
+                        }
+                        if (goalScored === goalConceded) {
+                            draw += 1
+                        }
+                    }
+                    if (teamTwo[0] === teamName && teamTwo[2] !== false) {
+                        played += 1
+                        let goalScored = parseInt(teamTwo[2])
+                        let goalConceded = parseInt(teamOne[2])
+                        totalGoalScored += parseInt(teamTwo[2])
+                        totalGoalConceded += parseInt(teamOne[2])
+                        if (goalScored > goalConceded) {
+                            win += 1
+                        }
+                        if (goalScored < goalConceded) {
+                            lose += 1
+                        }
+                            if (goalScored === goalConceded) {
+                            draw += 1
+                        }
+                    }
+                }
+                goalDifference = totalGoalScored - totalGoalConceded
+                points = win * 3 + lose * 0 + draw * 1
+            }
+            if (sortedGroup.includes(teamName)) {
+                // console.log("heloo")
+            } else {
+                if (points > pointsFirstP) {
+                    pointsFirstP = points
+                    goalDifferenceFirstP = goalDifference
+                    totalGoalScoredFirstP = totalGoalScored
+                    firstP = teamName
+                } else if (points === pointsFirstP) {
+                    if (goalDifference > goalDifferenceFirstP) {
+                        firstP = teamName
+                        totalGoalScoredFirstP = totalGoalScored
+                    } else if (goalDifference === goalDifferenceFirstP) {
+                        if (totalGoalScored > totalGoalScoredFirstP) {
+                            totalGoalScoredFirstP = totalGoalScored
+                            firstP = teamName
+                        }
+                    }
+                }
+            }
+        }
+        sortedGroup.push(firstP)
+    }
+    if (n === 0) {
+        groupA = sortedGroup
+    } else if (n === 1) {
+        groupB = sortedGroup
+    } else if (n === 2) {
+        groupC = sortedGroup
+    } else if (n === 3) {
+        groupD = sortedGroup
+    } 
+}
+let sortedGroups = [groupA, groupB, groupC, groupD]
+// End Sorting Group Teams
+// Start Group Stage Page
+if (currentPage.includes("group-stage.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+    let groupNames = ["Group A", "Group B", "Group C", "Group D"]
+    for (let n = 0; n < sortedGroups.length; n++) {
+        let div = document.createElement("div")
+        for (let b = 0; b < sortedGroups[n].length; b++) {
+            let teamName = sortedGroups[n][b]
+            let file = teamNameId(sortedGroups[n][b])
+            let changeBg = " "
+            let qualified = " "
+            let gs = " "
+            let gc = " "
+            let gsScore = " "
+            let gcScore = " "
+            let played = 0
+            let win = 0
+            let draw = 0
+            let lose = 0
+            let points = 0
+            let totalGoalScored = 0
+            let totalGoalConceded = 0
+            let goalDifference = 0
+            let subName = " "
+            let flagPic = " "
+            for (let i = 0; i < AllTeams.length; i++) {
+                let team = Object.values(AllTeams[i])
+                if (teamName === team[0]) {
+                    subName = team[1]
+                    flagPic = team[2]
+                }
+            }
+            for (let i = 0; i < dayss.length; i++) {
+                let day = Object.values(dayss[i])
+                for (let j = 0; j < day.length - 1; j++) {
+                    let game = Object.values(day[j + 1])
+                    let teamOne = Object.values(game[0])
+                    let teamTwo = Object.values(game[1])
+                    if (teamOne[0] === teamName && teamOne[2] !== false) {
+                        played += 1
+                        let goalScored = parseInt(teamOne[2])
+                        let goalConceded = parseInt(teamTwo[2])
+                        totalGoalScored += parseInt(teamOne[2])
+                        totalGoalConceded += parseInt(teamTwo[2])
+                        if (goalScored > goalConceded) {
+                            win += 1
+                        }
+                        if (goalScored < goalConceded) {
+                            lose += 1
+                        }
+                        if (goalScored === goalConceded) {
+                            draw += 1
+                        }
+                    }
+                    if (teamTwo[0] === teamName && teamTwo[2] !== false) {
+                        played += 1
+                        let goalScored = parseInt(teamTwo[2])
+                        let goalConceded = parseInt(teamOne[2])
+                        totalGoalScored += parseInt(teamTwo[2])
+                        totalGoalConceded += parseInt(teamOne[2])
+                        if (goalScored > goalConceded) {
+                            win += 1
+                        }
+                        if (goalScored < goalConceded) {
+                            lose += 1
+                        }
+                        if (goalScored === goalConceded) {
+                            draw += 1
+                        }
+                    }
+                }
+            }
+            goalDifference = totalGoalScored - totalGoalConceded
+            points = win * 3 + lose * 0 + draw * 1
+            
+            
+            if (b === 0) {
+                if (alreadyQualified(sortedGroups[n])[0] === true) {
+                    qualified = "qualified"
+                }
+            }
+            if (b === 1) {
+                if (alreadyQualified(sortedGroups[n])[1] === true) {
+                    qualified = "qualified"
+                }
+            }
+            let infoList = [played, win, draw, lose, goalDifference, points, subName, flagPic, b + 1, div, file, qualified, changeBg, gsScore, gcScore]
             let location = document.querySelector(".bjs")
-
-            if (i === objectGroups.length - 1) {
-                groupCreat(groupNames[j], location, teamlines(...infoList))
+            if (b === sortedGroups[n].length - 1) {
+                groupCreat(groupNames[n], location, teamlines(...infoList), gs, gc)
+                
                 break
             } else {
                 teamlines(...infoList)
             }
         }
+        
     }
+    
     let qualifiedElement = document.querySelectorAll(".qualifiedText")
     for (let i = 0; i < qualifiedElement.length; i++) {
         if (qualifiedElement[i].innerHTML > " ") {
@@ -4158,172 +3029,176 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
 
 // Start Knockout
 // Start Knockout Functions
-// function addKnockoutBox(...list) {
-//     let knockoutBox = `
-//                         <div class="box game" id="g${list[11]}">
-//                         ${list[8]}
-//                             <div class="box-body">
-//                                 <div class="left-team">
-//                                     <div class="flag"><img ${list[9]} src="images/${list[1]}" alt=""></div>
-//                                     <div class="name">${list[0]}</div>
-//                                 </div>
-//                                 ${list[4]}
-//                                 <div class="right-team">
-//                                     <div class="flag"><img ${list[10]} src="images/${list[3]}" alt=""></div>
-//                                     <div class="name">${list[2]}</div>
-//                                 </div>
-//                             </div>
-//                             <span>${list[5]}</span>
-//                             ${list[6]}
-//                         </div>
-// `
-// list[7].innerHTML += knockoutBox
-// }
-// function gameInfo(gameNumber, stage, final) {
-//     for (let j = 0; j < dayss.length; j++) {
-//         let day = Object.values(dayss[j])
-//         for (let i = 0; i < day.length - 1; i++) {
-//             let game = Object.values(day[i + 1])
-//             let teamOne = Object.values(game[0])
-//             let teamTwo = Object.values(game[1])
-//             if (game[4] === gameNumber) {
-//                 let teamOneName = teamOne[0];
-//                 let teamTwoName = teamTwo[0];
-//                 let time = `<!-- -->`
-//                 let penalties = `<!-- -->`
-//                 let score = `<div class="score">${teamOne[2]} - ${teamTwo[2]}</div>`
-//                 let flagTeamOne = ` `
-//                 let flagTeamTwo = ` `
-//                 if (teamOne[0].toLowerCase().includes("winner") || teamOne[0].toLowerCase().includes("loser")) {
-//                     let winner = teamOne[0].split(" ")
-//                     teamOneName = winner[0][0] + winner[1]
-//                 }
-//                 if (teamTwo[0].toLowerCase().includes("winner") || teamTwo[0].toLowerCase().includes("loser")) {
-//                     let winner = teamTwo[0].split(" ")
-//                     teamTwoName = winner[0][0] + winner[1]
-//                 }
-//                 for (let i = 0; i < AllTeams.length; i++) {
-//                     let team = Object.values(AllTeams[i])
+function addKnockoutBox(...list) {
+    let knockoutBox = `
+                        <div class="box game" id="g${list[11]}">
+                        ${list[8]}
+                            <div class="box-body">
+                                <div class="left-team">
+                                    <div class="flag"><img ${list[9]} src="images/${list[1]}" alt=""></div>
+                                    <div class="name">${list[0]}</div>
+                                </div>
+                                ${list[4]}
+                                <div class="right-team">
+                                    <div class="flag"><img ${list[10]} src="images/${list[3]}" alt=""></div>
+                                    <div class="name">${list[2]}</div>
+                                </div>
+                            </div>
+                            <span>${list[5]}</span>
+                            ${list[6]}
+                        </div>
+`
+list[7].innerHTML += knockoutBox
+}
+function gameInfo(gameNumber, stage, final) {
+    for (let j = 0; j < dayss.length; j++) {
+        let day = Object.values(dayss[j])
+        for (let i = 0; i < day.length - 1; i++) {
+            let game = Object.values(day[i + 1])
+            let teamOne = Object.values(game[0])
+            let teamTwo = Object.values(game[1])
+            if (game[4] === gameNumber) {
+                let teamOneName = teamOne[0];
+                let teamTwoName = teamTwo[0];
+                let time = `<!-- -->`
+                let penalties = `<!-- -->`
+                let score = `<div class="score">${teamOne[2]} - ${teamTwo[2]}</div>`
+                let flagTeamOne = ` `
+                let flagTeamTwo = ` `
+                if (teamOne[0].toLowerCase().includes("winner") || teamOne[0].toLowerCase().includes("loser")) {
+                    let winner = teamOne[0].split(" ")
+                    teamOneName = winner[0][0] + winner[1]
+                }
+                if (teamTwo[0].toLowerCase().includes("winner") || teamTwo[0].toLowerCase().includes("loser")) {
+                    let winner = teamTwo[0].split(" ")
+                    teamTwoName = winner[0][0] + winner[1]
+                }
+                for (let i = 0; i < AllTeams.length; i++) {
+                    let team = Object.values(AllTeams[i])
             
-//                     if (teamOne[0].toLowerCase() === team[0]) {
-//                         teamOneName = team[1]
-//                     }
-//                     if (teamTwo[0].toLowerCase() === team[0]) {
-//                         teamTwoName = team[1]
-//                     }
-//                 }
+                    if (teamOne[0].toLowerCase() === team[0]) {
+                        teamOneName = team[1]
+                    }
+                    if (teamTwo[0].toLowerCase() === team[0]) {
+                        teamTwoName = team[1]
+                    }
+                }
         
-//                 if (teamOne[2] === false || teamTwo[2] === false) {
-//                     let dayDate = day[0].split(" ")
-//                     let dayNum = dayDate[1]
-//                     let year = dayDate[3].slice(2)
-//                     let month = dayDate[2]
-            
-//                     switch (month) {
-//                         case "January":
-//                             month = "01";
-//                             break
-//                         case "February":
-//                             month = "02";
-//                             break
-//                         case "March":
-//                             month = "03";
-//                             break
-//                         case "April":
-//                             month = "04";
-//                             break
-//                         case "May":
-//                             month = "05";
-//                             break
-//                         case "June":
-//                             month = "06";
-//                             break
-//                         case "July":
-//                             month = "07";
-//                             break
-//                         case "August":
-//                             month = "08";
-//                             break
-//                         case "September":
-//                             month = "09";
-//                             break
-//                         case "October":
-//                             month = "10";
-//                             break
-//                         case "November":
-//                             month = "11";
-//                             break
-//                         case "December":
-//                             month = "12";
-//                             break
-//                     }
-//                     time = game[3]
-//                     score = `<div class="score">${dayNum}/${month}/${year}</div>`
-//                 }
-//                 if (game[8] !== undefined) {
-//                     let drawInfo = Object.values(game[8])
-//                     penalties = `<p>${drawInfo[0]} wins <span>${drawInfo[1]} - ${drawInfo[2]}</span> on penalties</p>`
-//                 }
-//                 if (final === undefined) {
-//                     final = `<!-- -->`
-//                 }
+                if (teamOne[2] === false || teamTwo[2] === false) {
+                    if (day[0] === "NY") {
+                        score = day[0]
+                    } else {
+                        let dayDate = day[0].split(" ")
+                        let dayNum = dayDate[1]
+                        let year = dayDate[3].slice(2)
+                        let month = dayDate[2]
+                
+                        switch (month) {
+                            case "January":
+                                month = "01";
+                                break
+                            case "February":
+                                month = "02";
+                                break
+                            case "March":
+                                month = "03";
+                                break
+                            case "April":
+                                month = "04";
+                                break
+                            case "May":
+                                month = "05";
+                                break
+                            case "June":
+                                month = "06";
+                                break
+                            case "July":
+                                month = "07";
+                                break
+                            case "August":
+                                month = "08";
+                                break
+                            case "September":
+                                month = "09";
+                                break
+                            case "October":
+                                month = "10";
+                                break
+                            case "November":
+                                month = "11";
+                                break
+                            case "December":
+                                month = "12";
+                                break
+                        }
+                        time = game[3]
+                        score = `<div class="score">${dayNum}/${month}/${year}</div>`
+                    }
+                }
+                if (game[8] !== undefined) {
+                    let drawInfo = Object.values(game[8])
+                    penalties = `<p>${drawInfo[0]} wins <span>${drawInfo[1]} - ${drawInfo[2]}</span> on penalties</p>`
+                }
+                if (final === undefined) {
+                    final = `<!-- -->`
+                }
 
         
-//                 if (teamOne[1] === "empty.png") {
-//                     flagTeamOne = `style="border: 3px solid rgb(16, 30, 63);"`
-//                 } 
-//                 if (teamTwo[1] === "empty.png") {
-//                     flagTeamTwo =`style="border: 3px solid rgb(16, 30, 63);"`
-//                 } 
+                if (teamOne[1] === "empty.png") {
+                    flagTeamOne = `style="border: 3px solid rgb(16, 30, 63);"`
+                } 
+                if (teamTwo[1] === "empty.png") {
+                    flagTeamTwo =`style="border: 3px solid rgb(16, 30, 63);"`
+                } 
 
-//                 let list = [teamOneName, teamOne[1], teamTwoName, teamTwo[1], score, time, penalties, stage, final, flagTeamOne, flagTeamTwo, game[4]]
+                let list = [teamOneName, teamOne[1], teamTwoName, teamTwo[1], score, time, penalties, stage, final, flagTeamOne, flagTeamTwo, game[4]]
         
-//                 addKnockoutBox(...list)
-//             }
-//         }
-//     }
-// }
+                addKnockoutBox(...list)
+            }
+        }
+    }
+}
 // End Knockout Functions
 // Start Knockout Page
-// if (currentPage.includes("knockout.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
-//     let finalHeader = `<h3>FINAL</h3>`
+if (currentPage.includes("knockout.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+    let finalHeader = `<h3>FINAL</h3>`
 
-//     // let leftRoundOf16Upper = document.querySelector(".leftRoundOf16Upper")
-//     // gameInfo("40", leftRoundOf16Upper)
-//     // gameInfo("43", leftRoundOf16Upper)
+    // let leftRoundOf16Upper = document.querySelector(".leftRoundOf16Upper")
+    // gameInfo("40", leftRoundOf16Upper)
+    // gameInfo("43", leftRoundOf16Upper)
 
-//     // let leftRoundOf16Lower = document.querySelector(".leftRoundOf16Lower")
-//     // gameInfo("42", leftRoundOf16Lower)
-//     // gameInfo("39", leftRoundOf16Lower)
+    // let leftRoundOf16Lower = document.querySelector(".leftRoundOf16Lower")
+    // gameInfo("42", leftRoundOf16Lower)
+    // gameInfo("39", leftRoundOf16Lower)
 
-//     // let rightRoundOf16Upper = document.querySelector(".rightRoundOf16Upper")
-//     // gameInfo("41", rightRoundOf16Upper)
-//     // gameInfo("38", rightRoundOf16Upper)
+    // let rightRoundOf16Upper = document.querySelector(".rightRoundOf16Upper")
+    // gameInfo("41", rightRoundOf16Upper)
+    // gameInfo("38", rightRoundOf16Upper)
     
-//     // let rightRoundOf16Lower = document.querySelector(".rightRoundOf16Lower")
-//     // gameInfo("37", rightRoundOf16Lower)
-//     // gameInfo("44", rightRoundOf16Lower)
+    // let rightRoundOf16Lower = document.querySelector(".rightRoundOf16Lower")
+    // gameInfo("37", rightRoundOf16Lower)
+    // gameInfo("44", rightRoundOf16Lower)
 
-//     let leftQuarterFinal = document.querySelector('.leftQuarterFinal')
-//     gameInfo("47", leftQuarterFinal)
-//     gameInfo("48", leftQuarterFinal)
+    let leftQuarterFinal = document.querySelector('.leftQuarterFinal')
+    gameInfo("44", leftQuarterFinal)
+    gameInfo("42", leftQuarterFinal)
 
-//     let rightQuarterFinal = document.querySelector('.rightQuarterFinal')
-//     gameInfo("45", rightQuarterFinal)
-//     gameInfo("46", rightQuarterFinal)
+    let rightQuarterFinal = document.querySelector('.rightQuarterFinal')
+    gameInfo("43", rightQuarterFinal)
+    gameInfo("41", rightQuarterFinal)
 
-//     let rightSemiFinal = document.querySelector(".rightSemiFinal")
-//     gameInfo("49", rightSemiFinal)
+    let rightSemiFinal = document.querySelector(".rightSemiFinal")
+    gameInfo("45", rightSemiFinal)
 
-//     let leftSemiFinal = document.querySelector(".leftSemiFinal")
-//     gameInfo("50", leftSemiFinal)
+    let leftSemiFinal = document.querySelector(".leftSemiFinal")
+    gameInfo("46", leftSemiFinal)
     
-//     let thirdPlace = document.querySelector(".third-place")
-//     gameInfo("51", thirdPlace)
+    let thirdPlace = document.querySelector(".third-place")
+    gameInfo("47", thirdPlace)
     
-//     let final = document.querySelector(".final")
-//     gameInfo("52", final, finalHeader)
-// }
+    let final = document.querySelector(".final")
+    gameInfo("48", final, finalHeader)
+}
 // End Knockout Page
 // End Knockout
 
@@ -4506,62 +3381,137 @@ if (currentPage.includes("team-profile-generate.html") ) {
         let team = Object.values(AllTeams[i])
         let teamName = teamNameId(team[0])
         if (teamId === teamName) {
-            console.log(teamId)
             let list = [team[2], capitalize(team[0])]
             teamHtml(...list)
             let teamName = team[0].toLowerCase()
             for (let j = 0; j < dayss.length; j++) {
                 let day = Object.values(dayss[j])
+                let replecatedDate = " "
                 for (let i = 0; i < day.length - 1; i++) {
                     let game = Object.values(day[i + 1])
                     let teamOne = Object.values(game[0])
                     let teamTwo = Object.values(game[1])
                     if (teamOne[0].toLowerCase() === teamName || teamTwo[0].toLowerCase() === teamName) {
                         document.querySelector('title').textContent = teamName.toUpperCase()
-                        createDay(day, day[0], teamName)
+                        if (replecatedDate !== day[0]) {
+                            createDay(day, day[0], teamName)
+                            replecatedDate = day[0]
+                            // console.log("h")
+                        }
+                        
                     }
                 }
             }
 
-
-            let groups = [groupA, groupB, groupC, groupD]
             let groupNames = ["Group A", "Group B", "Group C", "Group D"]
-            for (let j = 0; j < groups.length; j++) {
+            for (let n = 0; n < sortedGroups.length; n++) {
                 let div = document.createElement("div")
-                let objectGroups = Object.values(groups[j])
-                for (let n = 0; n < objectGroups.length; n++) {
-                    let teamline = Object.values(objectGroups[n])
-                    if (team[1] === teamline[6]) {
-                        for (let i = 0; i < objectGroups.length; i++) {
-                            let file = "#"
-                            let teamline = Object.values(objectGroups[i])
+                
+                for (let b = 0; b < sortedGroups[n].length; b++) {
+                    let teamName = sortedGroups[n][b]
+                    if (teamName === team[0]) {
+                        for (let b = 0; b < sortedGroups[n].length; b++) {
+                            let location = document.querySelector(".bjs")
+                            let teamName = sortedGroups[n][b]
+                            let file = teamNameId(sortedGroups[n][b])
+                            let changeBg = " "
                             let qualified = " "
-                            let changeBg = ""
-                            if (teamline[8] !== undefined) {
-                                file = teamline[8]
-                            }
+                            let gs = " "
+                            let gc = " "
+                            let gsScore = " "
+                            let gcScore = " "
+                            let played = 0
+                            let win = 0
+                            let draw = 0
+                            let lose = 0
+                            let points = 0
+                            let totalGoalScored = 0
+                            let totalGoalConceded = 0
+                            let goalDifference = 0
+                            let subName = " "
+                            let flagPic = " "
                             for (let i = 0; i < AllTeams.length; i++) {
                                 let team = Object.values(AllTeams[i])
-                                if (teamline[6] === team[1]) {
-                                    file = team[0]
+                                if (teamName === team[0]) {
+                                    subName = team[0].toUpperCase()
+                                    flagPic = team[2]
+                                    if (screen.width < 768) {
+                                        subName = team[1]
+                                    }
                                 }
                             }
-                            if (teamline[8] !== undefined) {
-                                qualified = "qualified"
+                            for (let i = 0; i < dayss.length; i++) {
+                                let day = Object.values(dayss[i])
+                                for (let j = 0; j < day.length - 1; j++) {
+                                    let game = Object.values(day[j + 1])
+                                    let teamOne = Object.values(game[0])
+                                    let teamTwo = Object.values(game[1])
+                                    if (teamOne[0] === teamName && teamOne[2] !== false) {
+                                        played += 1
+                                        let goalScored = parseInt(teamOne[2])
+                                        let goalConceded = parseInt(teamTwo[2])
+                                        totalGoalScored += parseInt(teamOne[2])
+                                        totalGoalConceded += parseInt(teamTwo[2])
+                                        if (goalScored > goalConceded) {
+                                            win += 1
+                                        }
+                                        if (goalScored < goalConceded) {
+                                            lose += 1
+                                        }
+                                        if (goalScored === goalConceded) {
+                                            draw += 1
+                                        }
+                                    }
+                                    if (teamTwo[0] === teamName && teamTwo[2] !== false) {
+                                        played += 1
+                                        let goalScored = parseInt(teamTwo[2])
+                                        let goalConceded = parseInt(teamOne[2])
+                                        totalGoalScored += parseInt(teamTwo[2])
+                                        totalGoalConceded += parseInt(teamOne[2])
+                                        if (goalScored > goalConceded) {
+                                            win += 1
+                                        }
+                                        if (goalScored < goalConceded) {
+                                            lose += 1
+                                        }
+                                        if (goalScored === goalConceded) {
+                                            draw += 1
+                                        }
+                                    }
+                                }
                             }
-                            if (team[1] === teamline[6]) {
+                            goalDifference = totalGoalScored - totalGoalConceded
+                            points = win * 3 + lose * 0 + draw * 1
+                            
+                            if (teamName === team[0]) {
                                 changeBg = `style="background-color:#faf7f7;"`                               
                             }
-                            let infoList = [teamline[0], teamline[1], teamline[2], teamline[3], teamline[4], teamline[5], teamline[6], teamline[7], i + 1, div, teamNameId(file), qualified, changeBg]
-                            let location = document.querySelector(".bjs")
-                            if (i === objectGroups.length - 1) {
-                                groupCreat(groupNames[j], location, teamlines(...infoList))
+                            if (screen.width > 399) {
+                                gs = "<span>GS</span>"
+                                gc = "<span>GC</span>"
+                                gsScore = `<span>${totalGoalScored}</span>`
+                                gcScore = `<span>${totalGoalConceded}</span>`
+                            }
+                            if (b === 0) {
+                                if (alreadyQualified(sortedGroups[n])[0] === true) {
+                                    qualified = "qualified"
+                                }
+                            }
+                            if (b === 1) {
+                                if (alreadyQualified(sortedGroups[n])[1] === true) {
+                                    qualified = "qualified"
+                                }
+                            }
+                            let infoList = [played, win, draw, lose, goalDifference, points, subName, flagPic, b + 1, div, file, qualified, changeBg, gsScore, gcScore]
+                            
+                            location.style.gridTemplateColumns = "1fr"
+                            if (b === sortedGroups[n].length - 1) {
+                                groupCreat(groupNames[n], location, teamlines(...infoList), gs, gc)
                                 break
                             } else {
                                 teamlines(...infoList)
                             }
                         }
-                        
                         let qualifiedElement = document.querySelectorAll(".qualifiedText")
                         for (let i = 0; i < qualifiedElement.length; i++) {
                         if (qualifiedElement[i].innerHTML > " ") {
@@ -4577,9 +3527,8 @@ if (currentPage.includes("team-profile-generate.html") ) {
                                 qualified[i].style.borderLeft = "2px solid #76b300"
                             }
                         }
-                    } 
+                    }
                 }
-                
             }
 
             if (team[3] !== undefined) {
@@ -4744,10 +3693,19 @@ for (let i = 0; i < dayss.length; i++) {
         let game = Object.values(day[j + 1])
         let teamOne = Object.values(game[0])
         let teamTwo = Object.values(game[1])
-        let goalsTeamOne = Object.values(teamOne[3])
-        let goalsTeamTwo = Object.values(teamTwo[3])
-        let dateArray = day[0].split(" ")
-        let date = `${dateArray[1]} ${dateArray[2].slice(0, 3).toUpperCase()} ${dateArray[3]}`
+        let goalsTeamOne = []
+        let goalsTeamTwo = []
+        if (teamOne[3] !== undefined) {
+            goalsTeamOne = Object.values(teamOne[3])
+        }
+        if (teamTwo[3] !== undefined) {
+            goalsTeamTwo = Object.values(teamTwo[3])
+        }
+        let date = "NY"
+        if (day[0] !== "NY") {
+            let dateArray = day[0].split(" ")
+            date = `${dateArray[1]} ${dateArray[2].slice(0, 3).toUpperCase()} ${dateArray[3]}`
+        }
         let score
         let penalties = ` `
         let fullTime = `<div class="full-time">Full Time</div>`
@@ -4825,7 +3783,7 @@ for (let i = 0; i < dayss.length; i++) {
                 }
             }
             if (teamTwo[0].toLowerCase().includes("loser") || teamTwo[0].toLowerCase().includes("winner")) {
-                rightTeamName = `${teamOne[0].split(" ")[0].charAt(0)}${teamOne[0].split(" ")[1]}`
+                rightTeamName = `${teamTwo[0].split(" ")[0].charAt(0)}${teamTwo[0].split(" ")[1]}`
             }
             if (teamOne[0].toLowerCase().includes("loser") || teamOne[0].toLowerCase().includes("winner")) {
                 leftTeamName = `${teamOne[0].split(" ")[0].charAt(0)}${teamOne[0].split(" ")[1]}`
