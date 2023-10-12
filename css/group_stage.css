@@ -202,7 +202,7 @@ header input:checked ~ .burger span:nth-of-type(3) {
 /* End Header */
 /* Start News Slider */
 .latest-news {
-    margin-top: 50px;
+    margin-block: 50px;
 }
 .news-special-header {
     display: flex;
@@ -763,25 +763,19 @@ header input:checked ~ .burger span:nth-of-type(3) {
     z-index: 2;
 }
 .knockout .games-content {
-    max-width: 1140px;
+    max-width: fit-content;
     display: flex;
     gap: 20px;
-    justify-content: space-between;
     position: relative;
     overflow-x: auto;
     padding-bottom: 20px;
     padding-top: 50px;
+    margin: auto;
 }
 .knockout .games-content .right,
 .knockout .games-content .left {
     display: flex;
     gap: 20px;
-}
-.knockout .games-content .left{
-    margin-left: 192px;
-}
-.knockout .games-content .right {
-    margin-right: 192px;
 }
 .knockout .games-content .column4 {
     display: flex;
@@ -947,7 +941,8 @@ header input:checked ~ .burger span:nth-of-type(3) {
 .final,
 .third-place {
     position: absolute;
-    left: 570px;
+    /* left: 570px; */
+    left: 377px;
     transform: translate(-50%);
     border: 2px solid transparent;
     z-index: 1;
@@ -1004,7 +999,12 @@ header input:checked ~ .burger span:nth-of-type(3) {
     height: 261.8;
     top: 48.9%;
 }
-.c2-right .box::before,
+.c2-right .box::before {
+    left: -13;
+    /* width: 194px; */
+    width: 180px;
+    z-index: -1;
+}
 .c2-left .box::before {
     width: 194px;
     z-index: -1;
@@ -1076,14 +1076,14 @@ header input:checked ~ .burger span:nth-of-type(3) {
     background-color: #fe5211;
 }
     /* lines for semi final */
-.c3-right .box::after,
+/* .c3-right .box::after,
 .c3-left .box::before,
 .c3-left .box::after,
 .c3-right .box::before,
 .c2-right .box:first-of-type:after,
 .c2-left .box:first-of-type:after {
     background-color: #fe5211;
-}
+} */
     /* lines for final */
 /* .third-place::before,
 .final::before,
@@ -1097,17 +1097,17 @@ header input:checked ~ .burger span:nth-of-type(3) {
     border: 2px solid #fe5211;
 }
 .knockout .games-content .c3 .box  {
-    border: 2px solid #fe5211;
-} */
+    border: 2px solid #fe5211; 
+}*/
 
-.knockout .games-content .right-column::after,
+/* .knockout .games-content .right-column::after,
 .knockout .games-content .left-column::after{
     color: #fe5211;
-}
-.knockout .games-content .c2-right::after,
+} */
+/* .knockout .games-content .c2-right::after,
 .knockout .games-content .c2-left::after {
     color: #fe5211;
-}
+} */
 
 
 @media (max-width:1200px) {
