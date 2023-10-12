@@ -1447,7 +1447,7 @@ let days = {
         }
     },
     day14: {
-        date: "NY",
+        date: "Saturday 21 October 2023",
         game1: {
             teamOne: {
                 name: "winner 41",
@@ -1466,16 +1466,13 @@ let days = {
                 },
             },
             group: "Semi Final",
-            time: "NY",
+            time: "09:00",
             match: "45",
-            city: "NY",
-            stadium: "NY",
+            city: "Oran",
+            stadium: "Stade Proxomite Emir Khaled",
             highlight: "#"
-        }
-    },
-    day15: {
-        date: "NY",
-        game1: {
+        },
+        game2: {
             teamOne: {
                 name: "winner 42",
                 flag: "empty.png",
@@ -1492,11 +1489,11 @@ let days = {
                 // winner: true
             },
             group: "Semi Final",
-            time: "NY",
+            time: "10:00",
             match: "46",
-            city: "NY",
-            stadium: "NY",
-            highlight: "#",
+            city: "Oran",
+            stadium: "Stade Proxomite Emir Khaled",
+            highlight: "#"
             // drawInfo: {
             //     winnerTeam: "bayern munchen",
             //     scoreOne: "5",
@@ -1504,32 +1501,8 @@ let days = {
             // }
         }
     },
-    day16: {
-        date: "NY",
-        game1: {
-            teamOne: {
-                name: "Loser 45",
-                flag: "empty.png",
-                score: {
-                },
-            },
-            teamTwo: {
-                name: "Loser 46",
-                flag: "empty.png",
-                score: false,
-                goals: {
-                }
-            },
-            group: "Third Place",
-            time: "NY",
-            match: "47",
-            city: "NY",
-            stadium: "NY",
-            highlight: "#"
-        }
-    },
-    day17: {
-        date: "NY",
+    day15: {
+        date: "Saturday 28 October 2023",
         game1: {
             teamOne: {
                 name: "Winner 45",
@@ -1547,10 +1520,10 @@ let days = {
                 },
             },
             group: "Final",
-            time: "NY",
+            time: "09:00",
             match: "48",
-            city: "NY",
-            stadium: "NY",
+            city: "Oran",
+            stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
         }
     }
@@ -1956,15 +1929,23 @@ let groupD = ["jil monte carlo", "yaghmoracen jyo", "kawkeb sportif oran", "wida
 
 // Start Latest News Data
 let newsData = {
-    news9: {
-        img: "news9.jpg",
-        header: " قرعة الدور التمهيدي الأول",
-        description: "رسميا تم تحديد يوم  الجمعة 22 سبتمبر 2023 لاجراء قرعة الكأس في دورها التمهيدي الأول",
-        date: "20 Sep 2023",
+    news10: {
+        img: "news10.jpg",
+        header: " قرعة الدور الربع نهائي",
+        description: "إصطدام قوي لأصحاب الريادة في الدور الربع نهائي البلاي أوف فئة اقل 13 سنة و لا حديث الا عن التأهل إلى الدور النصف نهائي .",
+        date: "12 Oct 2023",
         lan: "arabic",
-        postId: "n9",
-        // video: "TVV95Cw05og?si=Vl6BRuQVvy3K1I77"
+        postId: "n10",
     },
+    // news9: {
+    //     img: "news9.jpg",
+    //     header: " قرعة الدور التمهيدي الأول",
+    //     description: "رسميا تم تحديد يوم  الجمعة 22 سبتمبر 2023 لاجراء قرعة الكأس في دورها التمهيدي الأول",
+    //     date: "20 Sep 2023",
+    //     lan: "arabic",
+    //     postId: "n9",
+    //     // video: "TVV95Cw05og?si=Vl6BRuQVvy3K1I77"
+    // },
     news8: {
         img: "yaghmouracen2.png",
         header: "JYO الى الدور الثاني",
