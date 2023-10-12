@@ -1521,7 +1521,7 @@ let days = {
             },
             group: "Final",
             time: "09:00",
-            match: "48",
+            match: "47",
             city: "Oran",
             stadium: "Stade Proxomite Hai Yasmine",
             highlight: "#"
