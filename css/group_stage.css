@@ -1026,11 +1026,11 @@ header input:checked ~ .burger span:nth-of-type(3) {
 .c3-right .box::before {
     content: "";
     width: 2px;
-    height: 100px;
+    height: 90px;
     background-color: #a5acbb;
     position: absolute;
-    left: 50.5%;
-    top: 50%;
+    left: 50.8%;
+    top: 56%;
     transform: translatey(-50%);
     z-index: -1;
 }
@@ -1048,7 +1048,7 @@ header input:checked ~ .burger span:nth-of-type(3) {
 .third-place::before,
 .final::before {
     content: "";
-    width: 196px;
+    width: 194px;
     height: 2px;
     background-color: #a5acbb;
     position: absolute;
