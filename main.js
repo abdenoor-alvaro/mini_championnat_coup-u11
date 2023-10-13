@@ -1345,20 +1345,21 @@ let days = {
         },
     },
     day12: {
-        date: "Tuesday 13 October 2023",
+        date: "Friday 13 October 2023",
         game1: {
             teamOne: {
                 name: "canastel",
                 flag: "canastel.png",
-                score: false,
+                score: "9",
                 goals: {
                     
                 },
+                winner: true
             },
             teamTwo: {
                 name: "aadl zabana",
                 flag: "cazamo.png",
-                score: false,
+                score: "1",
                 goals: {
                     
                 }
@@ -1374,15 +1375,16 @@ let days = {
             teamOne: {
                 name: "chorouk castor",
                 flag: "chorouk castor.png",
-                score: false,
+                score: "3",
                 goals: {
                     
-                }
+                },
+                winner: true
             },
             teamTwo: {
                 name: "chabeb fajer wahran",
                 flag: "fajr-wahran.png",
-                score: false,
+                score: "3",
                 goals: {
                     
                 },
@@ -1392,11 +1394,16 @@ let days = {
             match: "42",
             city: "Oran",
             stadium: "Stade Proxomite Hai Yasmine",
-            highlight: "#"
+            highlight: "#",
+            drawInfo: {
+                winnerTeam: "chorouk castor",
+                scoreOne: "3",
+                scoreTwo: "2"
+            }
         }
     },
     day13: {
-        date: "Friday 14 October 2023",
+        date: "Saturday 14 October 2023",
         game1: {
             teamOne: {
                 name: "yaghmoracen jyo",
@@ -1450,8 +1457,8 @@ let days = {
         date: "Saturday 21 October 2023",
         game1: {
             teamOne: {
-                name: "winner 41",
-                flag: "empty.png",
+                name: "canastel",
+                flag: "canastel.png",
                 score: false,
                 goals: {
                     
@@ -1474,8 +1481,8 @@ let days = {
         },
         game2: {
             teamOne: {
-                name: "winner 42",
-                flag: "empty.png",
+                name: "chorouk castor",
+                flag: "chorouk castor.png",
                 score: false,
                 goals: {
                 },
@@ -3786,9 +3793,9 @@ for (let i = 0; i < dayss.length; i++) {
             let drawInfo = Object.values(game[8])
             penalties = `<div class="penalties">${drawInfo[0]} wins ${drawInfo[1]} - ${drawInfo[2]} on penalties</div>`
             score = `
-            <span>(${drawInfo[2]})</span>
-            <p>${teamOne[2]}&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;${teamTwo[2]}</p>
             <span>(${drawInfo[1]})</span>
+            <p>${teamOne[2]}&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;${teamTwo[2]}</p>
+            <span>(${drawInfo[2]})</span>
             `
         }
         if (teamOne[1] === "empty.png") {
