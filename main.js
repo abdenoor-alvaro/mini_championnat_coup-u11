@@ -1408,7 +1408,7 @@ let days = {
             teamOne: {
                 name: "yaghmoracen jyo",
                 flag: "yaghmouracen2.png",
-                score: false,
+                score: "0",
                 goals: {
                     
                 },
@@ -1416,10 +1416,11 @@ let days = {
             teamTwo: {
                 name: "rmot",
                 flag: "csarmot.png",
-                score: false,
+                score: "9",
                 goals: {
                     
-                }
+                },
+                winner: true
             },
             group: "Quarter Final",
             time: "08:30",
@@ -1432,15 +1433,16 @@ let days = {
             teamOne: {
                 name: "espoir senia",
                 flag: "espoir senia.png",
-                score: false,
+                score: "4",
                 goals: {
                     
-                }
+                },
+                winner: true
             },
             teamTwo: {
                 name: "jil monte carlo",
                 flag: "jil monte carlo.png",
-                score: false,
+                score: "3",
                 goals: {
                     
                 },
@@ -1465,8 +1467,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "winner 43",
-                flag: "empty.png",
+                name: "rmot",
+                flag: "csarmot.png",
                 score: false,
                 goals: {
                     
@@ -1488,8 +1490,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "winner 44",
-                flag: "empty.png",
+                name: "espoir senia",
+                flag: "espoir senia.png",
                 score: false,
                 goals: {
                 },
@@ -2656,7 +2658,7 @@ function alreadyQualified(group) {
                 let game = Object.values(day[j + 1])
                 let teamOne = Object.values(game[0])
                 let teamTwo = Object.values(game[1])
-                if (teamOne[0] === teamName && teamOne[2] !== false) {
+                if ((teamOne[0] === teamName && teamOne[2] !== false) && (game[2].includes("Group"))) {
                     played += 1
                     let goalScored = parseInt(teamOne[2])
                     let goalConceded = parseInt(teamTwo[2])
@@ -2672,7 +2674,7 @@ function alreadyQualified(group) {
                         draw += 1
                     }
                 }
-                if (teamTwo[0] === teamName && teamTwo[2] !== false) {
+                if ((teamTwo[0] === teamName && teamTwo[2] !== false) && (game[2].includes("Group"))){
                     played += 1
                     let goalScored = parseInt(teamTwo[2])
                     let goalConceded = parseInt(teamOne[2])
@@ -2825,7 +2827,7 @@ for (let n = 0; n < groups.length; n++) {
                     let game = Object.values(day[j + 1])
                     let teamOne = Object.values(game[0])
                     let teamTwo = Object.values(game[1])
-                    if (teamOne[0] === teamName && teamOne[2] !== false) {
+                    if ((teamOne[0] === teamName && teamOne[2] !== false) && (game[2].includes("Group"))) {
                         played += 1
                         let goalScored = parseInt(teamOne[2])
                         let goalConceded = parseInt(teamTwo[2])
@@ -2841,7 +2843,7 @@ for (let n = 0; n < groups.length; n++) {
                             draw += 1
                         }
                     }
-                    if (teamTwo[0] === teamName && teamTwo[2] !== false) {
+                    if ((teamTwo[0] === teamName && teamTwo[2] !== false) && (game[2].includes("Group"))) {
                         played += 1
                         let goalScored = parseInt(teamTwo[2])
                         let goalConceded = parseInt(teamOne[2])
@@ -2933,7 +2935,7 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
                     let game = Object.values(day[j + 1])
                     let teamOne = Object.values(game[0])
                     let teamTwo = Object.values(game[1])
-                    if (teamOne[0] === teamName && teamOne[2] !== false) {
+                    if ((teamOne[0] === teamName && teamOne[2] !== false) && (game[2].includes("Group"))) {
                         played += 1
                         let goalScored = parseInt(teamOne[2])
                         let goalConceded = parseInt(teamTwo[2])
@@ -2949,7 +2951,7 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
                             draw += 1
                         }
                     }
-                    if (teamTwo[0] === teamName && teamTwo[2] !== false) {
+                    if ((teamTwo[0] === teamName && teamTwo[2] !== false) && (game[2].includes("Group"))) {
                         played += 1
                         let goalScored = parseInt(teamTwo[2])
                         let goalConceded = parseInt(teamOne[2])
@@ -3434,7 +3436,7 @@ if (currentPage.includes("team-profile-generate.html") ) {
                                     let game = Object.values(day[j + 1])
                                     let teamOne = Object.values(game[0])
                                     let teamTwo = Object.values(game[1])
-                                    if (teamOne[0] === teamName && teamOne[2] !== false) {
+                                    if ((teamOne[0] === teamName && teamOne[2] !== false) && (game[2].includes("Group"))) {
                                         played += 1
                                         let goalScored = parseInt(teamOne[2])
                                         let goalConceded = parseInt(teamTwo[2])
@@ -3450,7 +3452,7 @@ if (currentPage.includes("team-profile-generate.html") ) {
                                             draw += 1
                                         }
                                     }
-                                    if (teamTwo[0] === teamName && teamTwo[2] !== false) {
+                                    if ((teamTwo[0] === teamName && teamTwo[2] !== false) && (game[2].includes("Group"))) {
                                         played += 1
                                         let goalScored = parseInt(teamTwo[2])
                                         let goalConceded = parseInt(teamOne[2])
